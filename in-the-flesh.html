@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In the Flesh | Brandon Smith</title>
+    <meta
+      name="description"
+      content="A destructible voxel horror game inside a living organism. I built procedural terrain, GPU-driven rendering, omnidirectional controls, and custom level tools."
+    />
+    <meta name="theme-color" content="#0062b9" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="header">
+      <div class="header__content">
+        <a
+          class="header__logo-container"
+          href="./index.html"
+          aria-label="Brandon Smith home"
+          ><div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/brandon-smith.jpg"
+              alt="Brandon Smith"
+              class="header__logo-img"
+              width="50"
+              height="50"
+            />
+          </div>
+          <span class="header__logo-sub">Brandon Smith</span></a
+        >
+        <nav class="header__main" aria-label="Main navigation">
+          <ul class="header__links"><li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Projects</a></li>
+<li class="header__link-wrapper"><a href="./index.html#about" class="header__link">About Me</a></li>
+<li class="header__link-wrapper"><a href="./index.html#contact" class="header__link">Contact</a></li></ul>
+          <button
+            class="header__main-ham-menu-cont"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt=""
+              class="header__main-ham-menu"
+            /><img
+              src="./assets/svg/ham-menu-close.svg"
+              alt=""
+              class="header__main-ham-menu-close d-none"
+            />
+          </button>
+        </nav>
+      </div>
+      <nav
+        class="header__sm-menu"
+        id="mobile-menu"
+        aria-label="Mobile navigation"
+      >
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links"><li class="header__sm-menu-link"><a href="./index.html#projects">Projects</a></li>
+<li class="header__sm-menu-link"><a href="./index.html#about">About Me</a></li>
+<li class="header__sm-menu-link"><a href="./index.html#contact">Contact</a></li></ul>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="project-cs-hero">
+        <div class="project-cs-hero__content">
+          <p class="portfolio-kicker">Technical Designer</p>
+          <h1 class="heading-primary">In the Flesh</h1>
+          <div class="project-cs-hero__info">
+            <p class="text-primary">
+              A destructible voxel horror game inside a living organism. I built
+              procedural terrain, GPU-driven rendering, omnidirectional
+              controls, and custom level tools.
+            </p>
+          </div>
+          <div class="project-cs-hero__cta">
+            <a
+              href="https://glikgames.itch.io/in-the-flesh"
+              class="btn btn--bg"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Play on itch.io</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="project-details" id="overview">
+        <div class="main-container">
+          <div class="project-details__content">
+            <div class="project-details__showcase-img-cont">
+              <img
+                src="./assets/gif/in-the-flesh-preview.gif"
+                alt="In the Flesh gameplay preview"
+                class="project-details__showcase-img"
+              />
+            </div>
+            <div class="project-details__content-main">
+              <dl class="project-facts">
+                <div>
+                  <dt>Role</dt>
+                  <dd>Technical Designer</dd>
+                </div>
+                <div>
+                  <dt>Engine</dt>
+                  <dd>Unity</dd>
+                </div>
+                <div>
+                  <dt>Platform</dt>
+                  <dd>PC</dd>
+                </div>
+                <div>
+                  <dt>Project type</dt>
+                  <dd>Summer project</dd>
+                </div>
+                <div>
+                  <dt>Team size</dt>
+                  <dd>8</dd>
+                </div>
+                <div>
+                  <dt>Duration</dt>
+                  <dd>3 months</dd>
+                </div>
+              </dl>
+              <div class="project-details__desc">
+                <h2 class="project-details__content-title">Project overview</h2>
+                <p class="project-details__desc-para">
+                  A flesh-eating parasite has crawled aboard an abandoned
+                  spaceship, completely overtaken by THE FLESH. Tunnel through
+                  flesh to uncover organs hidden deep inside the ship. Each
+                  organ can help you grow, but eat them carelessly and THE CELL
+                  will FEEL it. The more organs you consume, the larger your
+                  jaws become, letting you tear through tougher layers of flesh
+                  and access new areas.
+                </p>
+              </div>
+              <div class="project-details__desc">
+                <h2 class="project-details__content-title">My contributions</h2>
+                <p class="project-details__desc-para">
+                  Engineered a procedural generation system to create a dynamic,
+                  destructible flesh substance that accurately updates and
+                  deforms as it is consumed by the player.
+                </p>
+                <p class="project-details__desc-para">
+                  Developed omnidirectional player controls to allow seamless,
+                  360-degree traversal and navigation through dense, organic
+                  environments.
+                </p>
+                <p class="project-details__desc-para">
+                  Designed and programmed core gathering mechanics, including a
+                  drill harvesting system and a timed-slider active minigame
+                  utilized for upgrading extraction efficiency.
+                </p>
+                <p class="project-details__desc-para">
+                  Built a custom level editor tool that automatically populates
+                  confined map spaces with dynamically scaled terrain assets
+                  based on room dimensions.
+                </p>
+              </div>
+              <div class="project-details__desc">
+                <h2 id="procedural-worlds" class="project-details__content-title">
+                  Design &amp; development
+                </h2>
+                <h3 class="project-details__content-title">
+                  Goal: Procedural Destructible Environments
+                </h3>
+                <p class="project-details__desc-para">
+                  The objective was to engineer a fully destructible,
+                  voxel-based terrain system capable of handling thousands of
+                  organic blocks with real-time scaling, rotation, dynamic
+                  damage tracking, and idle breathing effects without
+                  sacrificing frame rate.
+                </p>
+                <p class="project-details__desc-para">
+                  Solution: Procedural Destructible Environments
+                </p>
+                <p class="project-details__desc-para">
+                  To resolve performance bottlenecks, the architecture splits
+                  environmental processing into a hybrid pipeline where heavy
+                  visual computational work is offloaded entirely to custom GPU
+                  computing while the CPU handles structural logic at a
+                  constrained frequency.
+                </p>
+                <p class="project-details__desc-para">
+                  GPU-Driven Indirect Instancing: A custom GPUChunkRenderer uses
+                  an append-structured ComputeShader to dynamically sort and
+                  compile model matrices into specialized sub-buffers based on
+                  block damage states. These states include Full, Cracked, and
+                  Almost Destroyed assets. Visually displaying thousands of
+                  voxels via Graphics.DrawMeshInstancedIndirect completely
+                  bypasses CPU rendering overhead.
+                </p>
+                <p class="project-details__desc-para">
+                  Deferred CPU Physics Optimization: Rather than rebuilding
+                  complex physics colliders every single time a block receives
+                  damage, the CPU-bound ChunkMeshGenerator utilizes a dirty flag
+                  system inside LateUpdate. Collider mesh combinations run on an
+                  explicit refresh interval. This design choice prevents
+                  frame-stutter when a drill tool impacts multiple blocks across
+                  the same frame.
+                </p>
+                <p class="project-details__desc-para">
+                  State &amp; Memory Management: Each individual voxel functions
+                  as a lightweight state engine handling localized damage
+                  interpolation and scaling properties. The memory footprint is
+                  kept minimal by pulling static geometric configurations from a
+                  shared BlockMeshLibrary. Additionally, a dedicated
+                  ChunkAutoDestroyer unloads and registers completely mined
+                  chunk coordinates to prevent memory leakage.
+                </p>
+                <h3 class="project-details__content-title">
+                  Goal: Modular Level Layout Iteration
+                </h3>
+                <p class="project-details__desc-para">
+                  The objective was to build a robust, designer-facing utility
+                  that streamlines large-scale level configuration by allowing
+                  development teams to instantly assemble, manipulate, and clear
+                  full multi-dimensional layouts within the editor without
+                  encountering runtime performance hits or asset optimization
+                  overhead.
+                </p>
+                <p class="project-details__desc-para">
+                  Solution: Custom Chunk Grid Baker Tool
+                </p>
+                <p class="project-details__desc-para">
+                  Automated Asset Deduplication Engine: Implemented an
+                  integrated ComputeMeshHash routine using an MD5 hashing
+                  algorithm to scan and convert vertex, index, normal, and UV
+                  buffer data arrays into unique identifiers during asset
+                  generation. If a generated chunk mesh structure perfectly
+                  matches another elsewhere in the grid, the tool automatically
+                  reuses the existing asset instead of writing a redundant file.
+                </p>
+                <p class="project-details__desc-para">
+                  Persistent Mesh Baking Workflow: Designed an intelligent asset
+                  creation pipeline that systematically iterates over
+                  three-dimensional layout coordinate points, instantiates
+                  layout building blocks, forces structural baking, and cleanly
+                  saves persistent geometry into separate unique asset paths.
+                  This pipeline compiles the final layout directly into a single
+                  optimized nested prefab file.
+                </p>
+                <p class="project-details__desc-para">
+                  Responsive Layout Previews: Integrated real-time gizmo
+                  manipulation logic and distinct editor button handlers that
+                  allow team members to seamlessly clear boundaries, commit
+                  structural components, or trigger layout visual rebuild checks
+                  within a few mouse clicks.
+                </p>
+              </div>
+              <div class="project-details__tools-used">
+                <h2 class="project-details__content-title">
+                  Tools &amp; disciplines
+                </h2>
+                <div class="skills">
+                  <div class="skills__skill">Unity</div>
+                  <div class="skills__skill">GitHub</div>
+                  <div class="skills__skill">Compute shaders</div>
+                  <div class="skills__skill">Editor tools</div>
+                </div>
+              </div>
+            </div>
+            <section class="project-media">
+              <h2 class="project-details__content-title">
+                Gameplay &amp; demonstrations
+              </h2>
+              <figure>
+                <iframe
+                  class="project-video"
+                  src="https://www.youtube.com/embed/a86Hit61EgE"
+                  title="In the Flesh Trailer"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <figcaption>
+                  <a
+                    href="https://www.youtube.com/watch?v=a86Hit61EgE"
+                    class="portfolio-text-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Watch In the Flesh Trailer on YouTube</a
+                  >
+                </figcaption>
+              </figure>
+              <figure>
+                <iframe
+                  class="project-video"
+                  src="https://www.youtube.com/embed/-gQHZt3L1Zw"
+                  title="Iteration of Procedural Generation"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <figcaption>
+                  <a
+                    href="https://www.youtube.com/watch?v=-gQHZt3L1Zw"
+                    class="portfolio-text-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Watch Iteration of Procedural Generation on YouTube</a
+                  >
+                </figcaption>
+              </figure>
+            </section>
+            <figure>
+              <iframe
+                class="project-video"
+                src="https://www.youtube.com/embed/2bJPCLR_asw"
+                title="Consume | Run | Evolve"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <figcaption>
+                <a
+                  class="portfolio-text-link"
+                  href="https://www.youtube.com/watch?v=2bJPCLR_asw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Watch Consume | Run | Evolve on YouTube</a
+                >
+              </figcaption>
+            </figure>
+            <figure>
+              <iframe
+                class="project-video"
+                src="https://www.youtube.com/embed/UOLjDz0hohY"
+                title="ChunkEditor Tool"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <figcaption>
+                <a
+                  class="portfolio-text-link"
+                  href="https://www.youtube.com/watch?v=UOLjDz0hohY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Watch ChunkEditor Tool on YouTube</a
+                >
+              </figcaption>
+            </figure>
+            <section class="project-media">
+              <h2 class="project-details__content-title">
+                Screenshots &amp; development gallery
+              </h2>
+              <div class="project-gallery">
+                <figure>
+                  <a
+                    href="./assets/png/in-the-flesh-01.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open In the Flesh — screenshot or development image 1 at full size"
+                    ><img
+                      src="./assets/png/in-the-flesh-01.png"
+                      alt="In the Flesh — screenshot or development image 1"
+                      loading="lazy"
+                      decoding="async"
+                  /></a>
+                  <figcaption>
+                    In the Flesh — screenshot or development image 1
+                  </figcaption>
+                </figure>
+                <figure>
+                  <a
+                    href="./assets/png/in-the-flesh-02.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open In the Flesh — screenshot or development image 2 at full size"
+                    ><img
+                      src="./assets/png/in-the-flesh-02.png"
+                      alt="In the Flesh — screenshot or development image 2"
+                      loading="lazy"
+                      decoding="async"
+                  /></a>
+                  <figcaption>
+                    In the Flesh — screenshot or development image 2
+                  </figcaption>
+                </figure>
+                <figure>
+                  <a
+                    href="./assets/png/in-the-flesh-03.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open In the Flesh — screenshot or development image 3 at full size"
+                    ><img
+                      src="./assets/png/in-the-flesh-03.png"
+                      alt="In the Flesh — screenshot or development image 3"
+                      loading="lazy"
+                      decoding="async"
+                  /></a>
+                  <figcaption>
+                    In the Flesh — screenshot or development image 3
+                  </figcaption>
+                </figure>
+                <figure>
+                  <a
+                    href="./assets/png/in-the-flesh-04.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open In the Flesh — screenshot or development image 4 at full size"
+                    ><img
+                      src="./assets/png/in-the-flesh-04.png"
+                      alt="In the Flesh — screenshot or development image 4"
+                      loading="lazy"
+                      decoding="async"
+                  /></a>
+                  <figcaption>
+                    In the Flesh — screenshot or development image 4
+                  </figcaption>
+                </figure>
+                <figure>
+                  <a
+                    href="./assets/png/in-the-flesh-05.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open In the Flesh — screenshot or development image 5 at full size"
+                    ><img
+                      src="./assets/png/in-the-flesh-05.png"
+                      alt="In the Flesh — screenshot or development image 5"
+                      loading="lazy"
+                      decoding="async"
+                  /></a>
+                  <figcaption>
+                    In the Flesh — screenshot or development image 5
+                  </figcaption>
+                </figure>
+                <figure>
+                  <a
+                    href="./assets/png/in-the-flesh-06.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open In the Flesh — screenshot or development image 6 at full size"
+                    ><img
+                      src="./assets/png/in-the-flesh-06.png"
+                      alt="In the Flesh — screenshot or development image 6"
+                      loading="lazy"
+                      decoding="async"
+                  /></a>
+                  <figcaption>
+                    In the Flesh — screenshot or development image 6
+                  </figcaption>
+                </figure>
+                <figure>
+                  <a
+                    href="./assets/png/in-the-flesh-07.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open In the Flesh — screenshot or development image 7 at full size"
+                    ><img
+                      src="./assets/png/in-the-flesh-07.png"
+                      alt="In the Flesh — screenshot or development image 7"
+                      loading="lazy"
+                      decoding="async"
+                  /></a>
+                  <figcaption>
+                    In the Flesh — screenshot or development image 7
+                  </figcaption>
+                </figure>
+                <figure>
+                  <a
+                    href="./assets/png/in-the-flesh-08.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open In the Flesh — screenshot or development image 8 at full size"
+                    ><img
+                      src="./assets/png/in-the-flesh-08.png"
+                      alt="In the Flesh — screenshot or development image 8"
+                      loading="lazy"
+                      decoding="async"
+                  /></a>
+                  <figcaption>
+                    In the Flesh — screenshot or development image 8
+                  </figcaption>
+                </figure>
+                <figure>
+                  <a
+                    href="./assets/png/in-the-flesh-09.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open In the Flesh — screenshot or development image 9 at full size"
+                    ><img
+                      src="./assets/png/in-the-flesh-09.png"
+                      alt="In the Flesh — screenshot or development image 9"
+                      loading="lazy"
+                      decoding="async"
+                  /></a>
+                  <figcaption>
+                    In the Flesh — screenshot or development image 9
+                  </figcaption>
+                </figure>
+              </div>
+            </section>
+            <div class="project-details__content-main">
+              <div class="project-details__links">
+                <h2 class="project-details__content-title">
+                  Explore the project
+                </h2>
+                <div class="portfolio-actions">
+                  <a
+                    href="https://glikgames.itch.io/in-the-flesh"
+                    class="btn btn--med btn--theme"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Play on itch.io</a
+                  ><a
+                    href="./index.html#projects"
+                    class="btn btn--med btn--theme-inv"
+                    >All projects</a
+                  >
+                </div>
+              </div>
+              <nav class="project-pagination" aria-label="Other projects">
+                <a href="./charons-corner.html">&larr; Charon's Corner</a
+                ><a href="./psycorp.html">Psycorp &rarr;</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm">Find me online</h2>
+            <div class="main-footer__social-cont">
+              <a
+                href="https://www.linkedin.com/in/brandon-smith5701/"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              ><a
+                href="https://brandon5701.itch.io/"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >itch.io</a
+              ><a
+                href="./assets/documents/brandon-smith-resume.pdf"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Résumé</a
+              >
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h2 class="heading heading-sm text-lt">Brandon Smith</h2>
+            <p class="main-footer__short-desc">
+              Technical game designer bridging gameplay design and software
+              engineering. Modular systems, clear player feedback, and
+              thoughtful iteration.
+            </p>
+          </div>
+        </div>
+        <div class="main-footer__lower">
+          &copy; 2026 Brandon Smith. Template by
+          <a
+            href="https://rammaheshwari.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ram Maheshwari</a
+          >.
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js" defer></script>
+  </body>
+</html>

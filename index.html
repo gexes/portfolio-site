@@ -1,14 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dopefolio</title>
-    <meta name="description" content="Portfolio Template for Developer" />
-
-    <link rel="stylesheet" href="css/style.css" />
-
+    <title>Technical Game Designer &amp; Unity Developer | Brandon Smith</title>
+    <meta
+      name="description"
+      content="Brandon Smith’s game development portfolio: Unity gameplay systems, combat design, procedural worlds, and developer tools."
+    />
+    <meta name="theme-color" content="#0062b9" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,396 +19,528 @@
     />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="header">
       <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
+        <a
+          class="header__logo-container"
+          href="./index.html"
+          aria-label="Brandon Smith home"
+          ><div class="header__logo-img-cont">
             <img
-              src="./assets/png/john-doe.png"
-              alt="Ram Maheshwari Logo Image"
+              src="./assets/jpeg/brandon-smith.jpg"
+              alt="Brandon Smith"
               class="header__logo-img"
+              width="50"
+              height="50"
             />
           </div>
-          <span class="header__logo-sub">John Doe</span>
-        </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <section class="home-hero">
-      <div class="home-hero__content">
-        <h1 class="heading-primary">Hey, My name is John Doe</h1>
-        <div class="home-hero__info">
-          <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente solutions for
-            complex problems
-          </p>
-        </div>
-        <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projects</a>
-        </div>
-      </div>
-      <div class="home-hero__socials">
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/linkedin-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/github-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/twitter-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/yt-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a
-            href="#"
-            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          <span class="header__logo-sub">Brandon Smith</span></a
+        >
+        <nav class="header__main" aria-label="Main navigation">
+          <ul class="header__links"><li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Projects</a></li>
+<li class="header__link-wrapper"><a href="./index.html#about" class="header__link">About Me</a></li>
+<li class="header__link-wrapper"><a href="./index.html#contact" class="header__link">Contact</a></li></ul>
+          <button
+            class="header__main-ham-menu-cont"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
           >
             <img
-              src="./assets/png/insta-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
+              src="./assets/svg/ham-menu.svg"
+              alt=""
+              class="header__main-ham-menu"
+            /><img
+              src="./assets/svg/ham-menu-close.svg"
+              alt=""
+              class="header__main-ham-menu-close d-none"
             />
-          </a>
+          </button>
+        </nav>
+      </div>
+      <nav
+        class="header__sm-menu"
+        id="mobile-menu"
+        aria-label="Mobile navigation"
+      >
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links"><li class="header__sm-menu-link"><a href="./index.html#projects">Projects</a></li>
+<li class="header__sm-menu-link"><a href="./index.html#about">About Me</a></li>
+<li class="header__sm-menu-link"><a href="./index.html#contact">Contact</a></li></ul>
         </div>
-      </div>
-      <div class="home-hero__mouse-scroll-cont">
-        <div class="mouse"></div>
-      </div>
-    </section>
-    <section id="about" class="about sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">About Me</span>
-          <span class="heading-sec__sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
-          </span>
-        </h2>
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">
-                Hey! It's
-                <strong>John Doe</strong>
-                and I'm a <strong> Frontend Web Developer </strong> located in
-                Los Angeles. I've done
-                <strong> remote </strong>
-                projects for agencies, consulted for startups, and collaborated
-                with talented people to create
-                <strong>digital products </strong>
-                for both business and consumer use.
-              </p>
-              <p class="about__content-details-para">
-                I'm a bit of a digital product junky. Over the years, I've used
-                hundreds of web and mobile apps in different industries and
-                verticals. Feel free to
-                <strong>contact</strong> me here.
-              </p>
-            </div>
-            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
-              >Contact</a
+      </nav>
+    </header>
+    <main id="main">
+      <section class="home-hero">
+        <div class="home-hero__content">
+          <p class="portfolio-kicker">
+            Technical game designer · Unity developer
+          </p>
+          <h1 class="heading-primary">Hey, I'm Brandon Smith</h1>
+          <div class="home-hero__info">
+            <p class="text-primary">
+              I build gameplay systems that turn creative ideas into responsive,
+              playable experiences. From combat balancing to procedural worlds,
+              I bridge game design and software engineering.
+            </p>
+          </div>
+          <div class="home-hero__cta portfolio-actions">
+            <a href="#projects" class="btn btn--bg">View my projects</a
+            ><a
+              href="./assets/documents/brandon-smith-resume.pdf"
+              class="portfolio-text-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Résumé (PDF)</a
             >
           </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">React</div>
-              <div class="skills__skill">SASS</div>
-              <div class="skills__skill">GIT</div>
-              <div class="skills__skill">Shopify</div>
-              <div class="skills__skill">Wordpress</div>
-              <div class="skills__skill">Google ADS</div>
-              <div class="skills__skill">Facebook Ads</div>
-              <div class="skills__skill">Android</div>
-              <div class="skills__skill">IOS</div>
-            </div>
+          <div class="portfolio-stats">
+            <span>20+ projects</span><span>Gameplay systems</span
+            ><span>Cross-functional leadership</span>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
-          </span>
-        </h2>
+        <div class="home-hero__socials">
+          <div class="home-hero__social">
+            <a
+              href="https://www.linkedin.com/in/brandon-smith5701/"
+              class="home-hero__social-icon-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Brandon Smith on LinkedIn"
+              ><img
+                src="./assets/png/linkedin-ico.png"
+                alt=""
+                class="home-hero__social-icon"
+            /></a>
+          </div>
+        </div>
+        <div class="home-hero__mouse-scroll-cont" aria-hidden="true">
+          <div class="mouse"></div>
+        </div>
+      </section>
 
-        <div class="projects__content">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 1</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
+      <section id="projects" class="projects sec-pad">
+        <div class="main-container">
+          <h2 class="heading heading-sec heading-sec__mb-bg">
+            <span class="heading-sec__main">Game projects</span
+            ><span class="heading-sec__sub"
+              >Explore the mechanics I built, the design problems I tackled, and
+              the iteration behind each game.</span
+            >
+          </h2>
+          <div class="projects__content">
+            <article class="projects__row">
               <a
-                href="./project-1.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
+                class="projects__row-img-cont"
+                href="./project-dreamscape.html"
+                aria-label="Explore Project Dreamscape"
+                ><img
+                  src="./assets/gif/project-dreamscape-preview.gif"
+                  alt="Project Dreamscape gameplay preview"
+                  class="projects__row-img"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <div class="projects__row-content">
+                <p class="portfolio-kicker">Enemy Designer &amp; Programmer</p>
+                <h3 class="projects__row-content-title">Project Dreamscape</h3>
+                <p class="projects__row-content-desc">
+                  A surreal hack-and-slash roguelite. I tuned enemy archetypes,
+                  combat pacing, and player response windows through balancing
+                  and QA iteration.
+                </p>
+                <a href="./project-dreamscape.html" class="btn btn--med btn--theme"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+            <article class="projects__row">
+              <a
+                class="projects__row-img-cont"
+                href="./birds-of-impalitism.html"
+                aria-label="Explore Birds of Impalitism"
+                ><img
+                  src="./assets/gif/birds-of-impalitism-08.gif"
+                  alt="Birds of Impalitism gameplay preview"
+                  class="projects__row-img"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <div class="projects__row-content">
+                <p class="portfolio-kicker">Technical Designer</p>
+                <h3 class="projects__row-content-title">Birds of Impalitism</h3>
+                <p class="projects__row-content-desc">
+                  A vaporwave-inspired momentum shooter. I designed and
+                  implemented save/load architecture, progression, and dialogue
+                  systems across multiple scenes.
+                </p>
+                <a href="./birds-of-impalitism.html" class="btn btn--med btn--theme"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+            <article class="projects__row">
+              <a
+                class="projects__row-img-cont"
+                href="./charons-corner.html"
+                aria-label="Explore Charon's Corner"
+                ><img
+                  src="./assets/gif/charons-corner-06.gif"
+                  alt="Charon's Corner gameplay preview"
+                  class="projects__row-img"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <div class="projects__row-content">
+                <p class="portfolio-kicker">Game Designer &amp; Programmer</p>
+                <h3 class="projects__row-content-title">Charon's Corner</h3>
+                <p class="projects__row-content-desc">
+                  A high-speed, bowling-inspired adventure through the
+                  afterlife. I led feature iteration and built guiding-light,
+                  checkpoint, and spline-based navigation systems.
+                </p>
+                <a href="./charons-corner.html" class="btn btn--med btn--theme"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+            <article class="projects__row">
+              <a
+                class="projects__row-img-cont"
+                href="./in-the-flesh.html"
+                aria-label="Explore In the Flesh"
+                ><img
+                  src="./assets/gif/in-the-flesh-preview.gif"
+                  alt="In the Flesh gameplay preview"
+                  class="projects__row-img"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <div class="projects__row-content">
+                <p class="portfolio-kicker">Technical Designer</p>
+                <h3 class="projects__row-content-title">In the Flesh</h3>
+                <p class="projects__row-content-desc">
+                  A destructible voxel horror game inside a living organism. I
+                  built procedural terrain, GPU-driven rendering,
+                  omnidirectional controls, and custom level tools.
+                </p>
+                <a href="./in-the-flesh.html" class="btn btn--med btn--theme"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+            <article class="projects__row">
+              <a
+                class="projects__row-img-cont"
+                href="./psycorp.html"
+                aria-label="Explore Psycorp"
+                ><img
+                  src="./assets/png/psycorp-01.png"
+                  alt="Psycorp project artwork"
+                  class="projects__row-img"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <div class="projects__row-content">
+                <p class="portfolio-kicker">
+                  Technical Designer · In development
+                </p>
+                <h3 class="projects__row-content-title">Psycorp</h3>
+                <p class="projects__row-content-desc">
+                  A narrative walking simulator about three siblings, AI
+                  cybernetics, and a surveillance empire. A Unity project in
+                  development.
+                </p>
+                <a href="./psycorp.html" class="btn btn--med btn--theme"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+            <article class="projects__row">
+              <a
+                class="projects__row-img-cont"
+                href="./harvest-nuke.html"
+                aria-label="Explore Harvest Nuke"
+                ><img
+                  src="./assets/gif/harvest-nuke-07.gif"
+                  alt="Harvest Nuke gameplay preview"
+                  class="projects__row-img"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <div class="projects__row-content">
+                <p class="portfolio-kicker">Technical Designer</p>
+                <h3 class="projects__row-content-title">Harvest Nuke</h3>
+                <p class="projects__row-content-desc">
+                  A radioactive wasteland where survival meets resource
+                  management. I built modular quests, designer-facing tools,
+                  dialogue interactions, and priority-driven enemy AI.
+                </p>
+                <a href="./harvest-nuke.html" class="btn btn--med btn--theme"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+            <article class="projects__row">
+              <a
+                class="projects__row-img-cont"
+                href="./mythical-messenger.html"
+                aria-label="Explore Mythical Messenger"
+                ><img
+                  src="./assets/gif/mythical-messenger-03.gif"
+                  alt="Mythical Messenger gameplay preview"
+                  class="projects__row-img"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <div class="projects__row-content">
+                <p class="portfolio-kicker">
+                  Game Designer &amp; Lead Programmer
+                </p>
+                <h3 class="projects__row-content-title">Mythical Messenger</h3>
+                <p class="projects__row-content-desc">
+                  A three-day arcade game jam. I programmed spline-based
+                  enemies, dynamic spawning, and a manually loaded bubble gun
+                  that turns shooting into a hands-on interaction.
+                </p>
+                <a href="./mythical-messenger.html" class="btn btn--med btn--theme"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+            <article class="projects__row">
+              <a
+                class="projects__row-img-cont"
+                href="./striking-hell.html"
+                aria-label="Explore Striking Hell"
+                ><img
+                  src="./assets/gif/striking-hell-03.gif"
+                  alt="Striking Hell gameplay preview"
+                  class="projects__row-img"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <div class="projects__row-content">
+                <p class="portfolio-kicker">Level Designer</p>
+                <h3 class="projects__row-content-title">Striking Hell</h3>
+                <p class="projects__row-content-desc">
+                  A platformer built around a bloodthirsty sword. I designed
+                  levels and enemy concepts around chained slash-and-stab combat
+                  and traversal.
+                </p>
+                <a href="./striking-hell.html" class="btn btn--med btn--theme"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="highlights" class="highlights sec-pad">
+        <div class="main-container">
+          <h2 class="heading heading-sec heading-sec__mb-bg">
+            <span class="heading-sec__main">Development highlights</span>
+            <span class="heading-sec__sub"
+              >A closer look at the systems, tools, and design decisions behind
+              the games.</span
+            >
+          </h2>
+          <div class="highlights__grid">
+            <article class="highlight-card">
+              <a class="highlight-card__image-link" href="./project-dreamscape.html#combat-balance" aria-label="Read more about Dreamscape combat balance">
+                <img src="./assets/png/project-dreamscape-01.png" alt="Project Dreamscape combat encounter" class="highlight-card__image" loading="lazy" decoding="async" />
+              </a>
+              <div class="highlight-card__body">
+                <p class="portfolio-kicker">Combat design</p>
+                <h3 class="highlight-card__title">Making every enemy matter</h3>
+                <p class="highlight-card__desc">I tuned enemy roles, telegraphs, and stagger windows so encounters read clearly and still create pressure.</p>
+                <a href="./project-dreamscape.html#combat-balance" class="portfolio-text-link">Read more</a>
+              </div>
+            </article>
+            <article class="highlight-card">
+              <a class="highlight-card__image-link" href="./in-the-flesh.html#procedural-worlds" aria-label="Read more about In the Flesh procedural worlds">
+                <img src="./assets/png/in-the-flesh-01.png" alt="In the Flesh procedural world" class="highlight-card__image" loading="lazy" decoding="async" />
+              </a>
+              <div class="highlight-card__body">
+                <p class="portfolio-kicker">Technical design</p>
+                <h3 class="highlight-card__title">Building worlds that scale</h3>
+                <p class="highlight-card__desc">A procedural terrain pipeline helped the team create a living, destructible world without hand-authoring every space.</p>
+                <a href="./in-the-flesh.html#procedural-worlds" class="portfolio-text-link">Read more</a>
+              </div>
+            </article>
+            <article class="highlight-card">
+              <a class="highlight-card__image-link" href="./charons-corner.html#navigation-systems" aria-label="Read more about Charon's Corner navigation systems">
+                <img src="./assets/png/charons-corner-01.png" alt="Charon's Corner navigation system" class="highlight-card__image" loading="lazy" decoding="async" />
+              </a>
+              <div class="highlight-card__body">
+                <p class="portfolio-kicker">Gameplay systems</p>
+                <h3 class="highlight-card__title">Guiding players through chaos</h3>
+                <p class="highlight-card__desc">I built checkpoints, guiding lights, and spline-based navigation to keep a fast racing game readable.</p>
+                <a href="./charons-corner.html#navigation-systems" class="portfolio-text-link">Read more</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about sec-pad">
+        <div class="main-container">
+          <h2 class="heading heading-sec heading-sec__mb-bg">
+            <span class="heading-sec__main">About me</span
+            ><span class="heading-sec__sub"
+              >A systems-minded game developer with a designer’s eye for feel,
+              feedback, and flow.</span
+            >
+          </h2>
+          <div class="about__content">
+            <div class="about__content-main">
+              <h3 class="about__content-title">Get to know me!</h3>
+              <div class="about__content-details">
+                <p class="about__content-details-para">
+                  I'm <strong>Brandon Smith</strong>, a
+                  <strong>Technical Game Designer</strong> who treats gameplay
+                  systems as iterative design problems. Across 20+ projects,
+                  I've built and refined core mechanics through testing, with an
+                  emphasis on modular architecture and long-term stability.
+                </p>
+                <p class="about__content-details-para">
+                  My work bridges
+                  <strong>game design and software engineering</strong>. I build
+                  systems grounded in SOLID principles so teams can experiment,
+                  collaborate, and add features with confidence. I've led design
+                  across cross-functional teams ranging from 4 to 70+
+                  developers.
+                </p>
+                <p class="about__content-details-para">
+                  My background includes game design studies through
+                  <strong>CUNYBA</strong>, the
+                  <strong>Thomas W. Smith Academic Fellowship</strong>, and
+                  helping newcomers explore game development at
+                  <strong>EGD Collective</strong>. Competitive play in Gears of
+                  War and Apex Legends sharpened my interest in engaging,
+                  readable mechanics.
+                </p>
+                <p class="about__content-details-para">
+                  Away from development, I enjoy cooking for friends and
+                  listening to house, disco, and lo-fi rap.
+                </p>
+              </div>
+              <a href="#contact" class="btn btn--med btn--theme"
+                >Let's connect</a
               >
             </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 2</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-2.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
+            <div class="about__content-skills">
+              <h3 class="about__content-title">My skills</h3>
+              <div class="skills">
+                <div class="skills__skill">Unity</div>
+                <div class="skills__skill">Gameplay programming</div>
+                <div class="skills__skill">Technical design</div>
+                <div class="skills__skill">Systems design</div>
+                <div class="skills__skill">Enemy AI</div>
+                <div class="skills__skill">Combat balancing</div>
+                <div class="skills__skill">Save/load architecture</div>
+                <div class="skills__skill">Procedural generation</div>
+                <div class="skills__skill">Compute shaders</div>
+                <div class="skills__skill">Editor tools</div>
+                <div class="skills__skill">Level design</div>
+                <div class="skills__skill">Spline systems</div>
+                <div class="skills__skill">GitHub</div>
+                <div class="skills__skill">Figma</div>
+                <div class="skills__skill">Playtesting</div>
+                <div class="skills__skill">Design documentation</div>
+              </div>
             </div>
           </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 3</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
+        </div>
+      </section>
+      <section id="contact" class="contact sec-pad">
+        <div class="main-container">
+          <h2 class="heading heading-sec heading-sec__mb-med">
+            <span class="heading-sec__main heading-sec__main--lt"
+              >Let's talk games</span
+            ><span class="heading-sec__sub heading-sec__sub--lt"
+              >Interested in my work or want to connect about game
+              development?</span
+            >
+          </h2>
+          <div class="contact__form-container portfolio-contact">
+            <p>
+              Connect with me on LinkedIn, explore my games on itch.io, or take
+              a look at my résumé.
+            </p>
+            <div class="portfolio-actions">
               <a
-                href="./project-3.html"
-                class="btn btn--med btn--theme dynamicBgClr"
+                href="https://www.linkedin.com/in/brandon-smith5701/"
+                class="btn btn--med btn--theme"
                 target="_blank"
-                >Case Study</a
+                rel="noopener noreferrer"
+                >Connect on LinkedIn</a
+              ><a
+                href="https://brandon5701.itch.io/"
+                class="portfolio-text-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Games on itch.io</a
+              ><a
+                href="./assets/documents/brandon-smith-resume.pdf"
+                class="portfolio-text-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Résumé (PDF)</a
               >
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="contact" class="contact sec-pad dynamicBg">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-          <span class="heading-sec__sub heading-sec__sub--lt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
-          </span>
-        </h2>
-        <div class="contact__form-container">
-          <form action="#" class="contact__form">
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                class="contact__form-input"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
-              <input
-                required
-                placeholder="Enter Your Email"
-                type="text"
-                class="contact__form-input"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-                placeholder="Enter Your Message"
-                name="message"
-                id="message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn--theme contact__btn">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
           <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
+            <h2 class="heading heading-sm">Find me online</h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
+              <a
+                href="https://www.linkedin.com/in/brandon-smith5701/"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              ><a
+                href="https://brandon5701.itch.io/"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >itch.io</a
+              ><a
+                href="./assets/documents/brandon-smith-resume.pdf"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Résumé</a
+              >
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h2 class="heading heading-sm text-lt">Brandon Smith</h2>
             <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+              Technical game designer bridging gameplay design and software
+              engineering. Modular systems, clear player feedback, and
+              thoughtful iteration.
             </p>
           </div>
         </div>
-
-        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
         <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+          &copy; 2026 Brandon Smith. Template by
+          <a
+            href="https://rammaheshwari.com"
+            target="_blank"
+            rel="noopener noreferrer"
             >Ram Maheshwari</a
-          >
+          >.
         </div>
       </div>
     </footer>
-
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
   </body>
 </html>

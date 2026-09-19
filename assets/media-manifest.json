@@ -1,0 +1,512 @@
+[
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_c38e4c25dec647ff8e99164aac2e38ff~mv2.png",
+    "path": "assets/png/project-dreamscape-01.png",
+    "bytes": 848805,
+    "sha256": "a465d975e07f18276dcbf17bbc1edca2c8fae25e6d5bd558eb32b1cd899cef49"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_fa104002a5e64cf99c26bc5d3cf7eaeb~mv2.jpg",
+    "path": "assets/jpeg/project-dreamscape-02.jpg",
+    "bytes": 32482,
+    "sha256": "df73129be3ec894a9834462fb1602fa5e62dfe9a66ff8cc2c7c6deffae9bf774"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_583a05ecc8164f068634228466e7714b~mv2.jpg",
+    "path": "assets/jpeg/project-dreamscape-03.jpg",
+    "bytes": 39218,
+    "sha256": "6f946e1127c2fc565337604ce11622da046042d7e2ee18adec8b33429ee3c761"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_bb4e471e26a04975a530ba566ca7efee~mv2.jpg",
+    "path": "assets/jpeg/project-dreamscape-04.jpg",
+    "bytes": 30470,
+    "sha256": "99796577256cb1cbbe62982123c106b3d1a4aebde676891b3ab5525b23d16541"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_0d36eb36d28c47a5813eea8330c5d2a4~mv2.jpg",
+    "path": "assets/jpeg/project-dreamscape-05.jpg",
+    "bytes": 36596,
+    "sha256": "237dd0331e5fcb7c265e6ba747e28ed0403ed3c87da2e242e85ecad8081876e8"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_a6a8525c7391447989d6bfb92c51103b~mv2.jpg",
+    "path": "assets/jpeg/project-dreamscape-06.jpg",
+    "bytes": 40234,
+    "sha256": "c67f446954ecea4d4a496a2736cefa009ed37f60ce83f3924b6cfa4505ce8dfa"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_b81eb67af126408b8929888a7aa30410~mv2.gif",
+    "path": "assets/gif/project-dreamscape-07.gif",
+    "bytes": 6394385,
+    "sha256": "741d11234d2743c87d06a42a77797f6425ec8ed8c91a3b4e32f3f39b78ac710e"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_c98de81fbee04261bbb59ea86d4af34e~mv2.gif",
+    "path": "assets/gif/project-dreamscape-08.gif",
+    "bytes": 4947236,
+    "sha256": "779553ee72a42dab6ac25d74f68e4422e489c833dfb13e7cfe4a1eee4ae3063a"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_d91d7e5c50714820bb243be5d2678109~mv2.gif",
+    "path": "assets/gif/project-dreamscape-09.gif",
+    "bytes": 8526628,
+    "sha256": "e70ed136ab98c8d3d62aba95cdca1c31afd4d7b1818e175ab8bdf0ba4181542b"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_6f3c48b36d694c54903713d06f437ac0~mv2.gif",
+    "path": "assets/gif/project-dreamscape-10.gif",
+    "bytes": 4319237,
+    "sha256": "4a7d02ecc7e84a0719d68d74e98d1706ebcdce012e002811d2fcdea13b5b30da"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_e00734a0ddaf444ab736c44ad2fb0131~mv2.gif",
+    "path": "assets/gif/project-dreamscape-11.gif",
+    "bytes": 5505830,
+    "sha256": "6a31b3d120963e64be822e7603126c8cfb62d7222b02ff741b0063d33d71566f"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_73d813dc5f054a12951c57cc06f1434c~mv2.gif",
+    "path": "assets/gif/project-dreamscape-12.gif",
+    "bytes": 1757167,
+    "sha256": "f30f5fe1e184f793e4cfb7887e2c24b1bc9a2cf7b52f3bd3c5bef2f41ed89fb0"
+  },
+  {
+    "url": "https://a500c004-4ed8-417a-82cf-69ecfe7f1e9e.usrfiles.com/ugd/e0f561_248b799aea1a440596c45e7333cdc3ce.pdf",
+    "path": "assets/documents/project-dreamscape-design.pdf",
+    "bytes": 75574,
+    "sha256": "2fe17202c6925968db7284853c90f8dcbd5bfb1cac64de912f654f9c9c5cae80"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_6300e7497c1d47f182b78591064a7c02~mv2.gif",
+    "path": "assets/gif/birds-of-impalitism-01.gif",
+    "bytes": 11038373,
+    "sha256": "fed6b25c253d1b49a2e275688d8d538da642762a6d4105f2707a2afe2fa2dfc1"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_c811421ebc2947b1b2558b61e58799b4~mv2.png",
+    "path": "assets/png/birds-of-impalitism-02.png",
+    "bytes": 181724,
+    "sha256": "b919cfe5c4ef4a60967a259a0e66768bdb6dc8e16a171511a00ce0d23d0841d3"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_2a51251d251d42dabe97c3088bf3b479~mv2.png",
+    "path": "assets/png/birds-of-impalitism-03.png",
+    "bytes": 231800,
+    "sha256": "d72b1754d5ef2146fedba2b911528217c75e4770fdffd0195d01deef9fada41b"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_9f2a5f5eb96741f98d13664c405cd720~mv2.png",
+    "path": "assets/png/birds-of-impalitism-04.png",
+    "bytes": 331387,
+    "sha256": "c0b53d100233bba28588a75d89eb1700ec241e2ffe52a04fd8d6e5f517195687"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_d74e7b82640244bf9fa6ef31b45bb122~mv2.png",
+    "path": "assets/png/birds-of-impalitism-05.png",
+    "bytes": 484954,
+    "sha256": "82cdf67107f8fd02329b6cd723226e0774ed72ef882315560b77ec665890e4ad"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_9412aa896f624333b2ed20c264342a97~mv2.png",
+    "path": "assets/png/birds-of-impalitism-06.png",
+    "bytes": 1501886,
+    "sha256": "e9f639203e870a58c25fff68b5ad82c2a005276f7058e3f49440b51827e7aeb5"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_2d556983aab94940b98249bfe7a226eb~mv2.png",
+    "path": "assets/png/birds-of-impalitism-07.png",
+    "bytes": 197932,
+    "sha256": "ff8c468a756c8f51b535e830faeaf07c41a265dbed47a34dc3629983e78795d5"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_0cfa1a5f37984d67b4f795a49cab7889~mv2.gif",
+    "path": "assets/gif/birds-of-impalitism-08.gif",
+    "bytes": 19369744,
+    "sha256": "aa5a82ddd5125e1575547b2dfc0654ef61938f827b678e74875547a7fd8f138c"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_d5467981d2514640ab16b9ba9941b7bb~mv2.gif",
+    "path": "assets/gif/birds-of-impalitism-09.gif",
+    "bytes": 13731413,
+    "sha256": "c7ef1ecf4bee2f3d555962b8350a9f70fd6da22680a05a3da4fe407fb80347c0"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_74eba860937749098f65b948878fa9c4~mv2.gif",
+    "path": "assets/gif/birds-of-impalitism-10.gif",
+    "bytes": 21416957,
+    "sha256": "bbe914bc2017218c7f41fd8dda4277d54e04f5efc374ee547b9f30537aa312dd"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_6f1b03b1584b462f97ba0bdd152d6b75~mv2.png",
+    "path": "assets/png/birds-of-impalitism-11.png",
+    "bytes": 8988,
+    "sha256": "8d19028a07db443330dc6fc9fa0a7a88c51631fca5aeabd7ddfb4b48a1ffc89f"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_769d7cb1b540416ba9ea5edfdead6cda~mv2.png",
+    "path": "assets/png/birds-of-impalitism-12.png",
+    "bytes": 12344,
+    "sha256": "6c0ca467cb50856df3f961c23e3f92f897faa055e911ee3be0d7d50c2aefb8f1"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_0fe84ff1cb1c4ba9ac6286bf69d48601~mv2.png",
+    "path": "assets/png/birds-of-impalitism-13.png",
+    "bytes": 20025,
+    "sha256": "4dfb570bf84a38c091c1a70f3f35b0c6eff9455f9d3da811956d5c55ef493e0d"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_0788960444c740efa230ab860c373c81~mv2.png",
+    "path": "assets/png/birds-of-impalitism-14.png",
+    "bytes": 8960,
+    "sha256": "c572e11cf8fc01f16327d39933a54bd6e46cf00e25069830689a70b1af7c5e65"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_663b5f236eab4f3dbaa71d663345135e~mv2.png",
+    "path": "assets/png/birds-of-impalitism-15.png",
+    "bytes": 51819,
+    "sha256": "83d729f57e8c3a3b23e9807c2f08ef86d9d16b9e0a2540cff459cd360d0c22d2"
+  },
+  {
+    "url": "https://a500c004-4ed8-417a-82cf-69ecfe7f1e9e.usrfiles.com/ugd/e0f561_0708ca3ae1b347e19cadd626c9025bef.pdf",
+    "path": "assets/documents/birds-of-impalitism-design.pdf",
+    "bytes": 365147,
+    "sha256": "3ecc68f10483e91b20f5391b6a892957159f941d055c0374e40fa2587ca07e66"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_9beb4f647eec46398b27d2855aefc9b0~mv2.png",
+    "path": "assets/png/charons-corner-01.png",
+    "bytes": 423832,
+    "sha256": "9fa5a0657046b3f0fb3e450410a7b13f6174494cc931c1788e585cbe33e97b23"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_01ee44b6239042168bbf53e5313e9d45~mv2.png",
+    "path": "assets/png/charons-corner-02.png",
+    "bytes": 26175,
+    "sha256": "2cb23157f7e7ef2a3fafa32f1d4363d01c231d15ab13d1f06c5fd5f9ef8016d0"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_9c0d425741164c20a0d712ae2d47e67c~mv2.png",
+    "path": "assets/png/charons-corner-03.png",
+    "bytes": 78123,
+    "sha256": "c0118077d28c76f34f1dabc2ccc25bcf35ed578a4cde0a1237a772033bf68e94"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_ba2159b5ccbc400493bd19d88abe0e80~mv2.png",
+    "path": "assets/png/charons-corner-04.png",
+    "bytes": 94990,
+    "sha256": "a3cfc331a209b29e495fc75630f1fbae93a8d295d1b4c988baed3667fcf3fc48"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_bbd039d3179a401fa5961a23d5f76866~mv2.png",
+    "path": "assets/png/charons-corner-05.png",
+    "bytes": 97909,
+    "sha256": "3a0f5e8d5e08cea6d274b8b2ce1909b734229dbf6908d8dab3afc3d3d9a76819"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_80cf5e93a4ae46f8958985147943e043~mv2.gif",
+    "path": "assets/gif/charons-corner-06.gif",
+    "bytes": 25544035,
+    "sha256": "b7fc159e024c4cd18d692b10ac881b46baffa06be9f81a061cad24369d967413"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_f03791602001463c8115421d22e1e3b6~mv2.png",
+    "path": "assets/png/charons-corner-07.png",
+    "bytes": 144122,
+    "sha256": "4bed973c6409cf03af2942eb47fe4a4ca42580f6fc9d6e4175b8fc61f74a50e0"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_fb669d5d484144628b63578ecab3315d~mv2.png",
+    "path": "assets/png/in-the-flesh-01.png",
+    "bytes": 585512,
+    "sha256": "e90be60c0679e47ecd093f077de5a461f8920ed4c5500cac1ad9958fd901e176"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_5fef11003c9f4b15a83bb061111a74af~mv2.png",
+    "path": "assets/png/in-the-flesh-02.png",
+    "bytes": 89513,
+    "sha256": "1dfd5142b66baf18a9b0a70a5e402ea9d2068416e9d44e40a73a12b3b50e43f0"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_7940a150778a436882c56c0f8307864b~mv2.png",
+    "path": "assets/png/in-the-flesh-03.png",
+    "bytes": 100590,
+    "sha256": "739095c642d0575d060601a51d5866e32ab2d02e0a5f7a94d394a313cccd5d00"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_899287a54e31458791519c2fad2bbe68~mv2.png",
+    "path": "assets/png/in-the-flesh-04.png",
+    "bytes": 97108,
+    "sha256": "ca0a6c630db79e700539b39ec01de6a3322aad8caec983aebb57cdcfa945e625"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_0d8dac120126405791afe3eec1f95c75~mv2.png",
+    "path": "assets/png/in-the-flesh-05.png",
+    "bytes": 392513,
+    "sha256": "0aa10ffc326188a6d11e3e99b8d9eaa0e77826dd43e7e49098a9b56d6e774eaf"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_10adcdd77c324f1ab0361948ccfe6d61~mv2.png",
+    "path": "assets/png/in-the-flesh-06.png",
+    "bytes": 254675,
+    "sha256": "3e3586156387db00c5dc7dcd57554f3bdf4f46cacb2270f30d01306c0eb9f960"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_b6ca4c1003bf4ba29ebc7fdf68579e07~mv2.png",
+    "path": "assets/png/in-the-flesh-07.png",
+    "bytes": 973670,
+    "sha256": "336913f5aae9150370c586c8167f2101699619de2f288bb4b592cb779c0c0732"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_47eb19831e30429cad63a7aff73aff92~mv2.png",
+    "path": "assets/png/in-the-flesh-08.png",
+    "bytes": 69892,
+    "sha256": "c0706964e4b003a6a4efa80c930d6a0a3569c11f965d72cc42c670c4aa39b6d7"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_4c3006c98f3f4507a855244a5be6f5a6~mv2.png",
+    "path": "assets/png/in-the-flesh-09.png",
+    "bytes": 890468,
+    "sha256": "fde90f3940ac2918494bef4aaa8554f039932cdcbb8930768e465d258739431f"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_a4d5a0bed8fa4c3a84792a5cf16368ea~mv2.png",
+    "path": "assets/png/psycorp-01.png",
+    "bytes": 131275,
+    "sha256": "1e23a0def1edc070aae48b3afe23e18f130a50b1d926f4b709caa104e626fc8f"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_afc26d03ef2f40aebc2c8ea439312062~mv2.png",
+    "path": "assets/png/harvest-nuke-01.png",
+    "bytes": 722808,
+    "sha256": "8ca530599d2ffaca69b61402032284280571ebb0b2924b748755139e2c8943cd"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_285355c8a5b942c0ae6e2e48885e66c1~mv2.png",
+    "path": "assets/png/harvest-nuke-02.png",
+    "bytes": 189175,
+    "sha256": "a9c34cf5dbeee8b3e0ab15545e45661007d6c6bf53be0ee7744fff396aeff923"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_b2b6ef9abb754307aedd04c320191a15~mv2.png",
+    "path": "assets/png/harvest-nuke-03.png",
+    "bytes": 177013,
+    "sha256": "bb2f535624e1f5ef7381e262478e8b46b9a5f893d681fecde449b560ddf25dbd"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_fcde1d7ea22b4275a6c55aa81ef14588~mv2.png",
+    "path": "assets/png/harvest-nuke-04.png",
+    "bytes": 192379,
+    "sha256": "02da48deaa8a6ae7e116210deb4b30e57d566514bd882c667a522e7c42cace9d"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_aff899cf56df41fbaf6342900357cd0b~mv2.png",
+    "path": "assets/png/harvest-nuke-05.png",
+    "bytes": 189377,
+    "sha256": "138fe5078d8a405baba529a8505c72e7953e8f5bf9270feeb67d8dae1914f185"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_267cc984e5934d30b3be2e2f6458946b~mv2.png",
+    "path": "assets/png/harvest-nuke-06.png",
+    "bytes": 194639,
+    "sha256": "22f05fb32027133ac843972bd8eaefad270ea91f93dd2f33a9ea36f0150a8b9f"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_2c983b354ebd475997dcd381c32bbf88~mv2.gif",
+    "path": "assets/gif/harvest-nuke-07.gif",
+    "bytes": 11553198,
+    "sha256": "f40612eb9af7b040ea794a9ddeea25925f0e6cc9fc23464ae3b9ec40cf5fadb0"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_c5c30c8b040248f5b229a0230eacfe42~mv2.gif",
+    "path": "assets/gif/harvest-nuke-08.gif",
+    "bytes": 1373589,
+    "sha256": "86729909712343b46d4b94953a3538e5b64b287965fb9031d41580b09413c431"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_09af4fc28eb04401949a4df72754e2b8~mv2.gif",
+    "path": "assets/gif/harvest-nuke-09.gif",
+    "bytes": 5293773,
+    "sha256": "2e297dd1670d0e173dbb088e8f80e1bb7c500ebc8b694e0b0f534171f9235f61"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_f3ed04e1413c4861bb7e7bfece7dd345~mv2.gif",
+    "path": "assets/gif/harvest-nuke-10.gif",
+    "bytes": 251068,
+    "sha256": "e1831db031be3f831ed5a6cfa0a7495bdd280c7a931fbe7fe400871e1bc59cb3"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_251bcbfb86c04a078ebde5c154cae83f~mv2.gif",
+    "path": "assets/gif/harvest-nuke-11.gif",
+    "bytes": 2397462,
+    "sha256": "4a1a96d249ffc716987a32e85e1290244f4b07d9bdad03f297ce4206d6768c1b"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_d9022d15d1924c9e923ed531094fa3c4~mv2.gif",
+    "path": "assets/gif/harvest-nuke-12.gif",
+    "bytes": 1745730,
+    "sha256": "3d91f07d054fd89dd038c0ecb2c33b2349a68dbe2b91098500b450ac1f953d7b"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_3b3f4efe944c41fb8428806e674337da~mv2.gif",
+    "path": "assets/gif/mythical-messenger-01.gif",
+    "bytes": 9478194,
+    "sha256": "d65abfd63f092b274c1ee014c444fa03dcd43c2917989235693c5058ee4480ea"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_0c91769e6ea346f8bfe973c8830136a9~mv2.gif",
+    "path": "assets/gif/mythical-messenger-02.gif",
+    "bytes": 6060592,
+    "sha256": "5f8c77531b823025da2d09f1b70f4932358ba60302a06195afcd07c76fd27052"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_180bd640e0ee4a27b68a89ce92f89039~mv2.gif",
+    "path": "assets/gif/mythical-messenger-03.gif",
+    "bytes": 11571738,
+    "sha256": "ad0ef230da7f17a168302d5d771d46815dcc44d32f4e89185e6dadd72e5ca747"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_e228e08769884ba68f22dad65ab45e42~mv2.png",
+    "path": "assets/png/mythical-messenger-04.png",
+    "bytes": 314815,
+    "sha256": "33326868eded1bce1d0276f049f3fc771587d274aebfa158452f156d9cf223fc"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_8e58b4fb15134a5a965933754bcebbbe~mv2.png",
+    "path": "assets/png/mythical-messenger-05.png",
+    "bytes": 1145652,
+    "sha256": "fd1d7040d9a692f5139a1c2011b17664d0212804e2859af7453ff6a60e225751"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_18987d7bcf1644a2bc84d442be650271~mv2.png",
+    "path": "assets/png/mythical-messenger-06.png",
+    "bytes": 1275192,
+    "sha256": "2bb29ca83d6dbdfee6e426ef32ff2a235077169328039b37c990e5e16ef7030e"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_0e2156ecb56047bab7e77adcf1fd72e3~mv2.gif",
+    "path": "assets/gif/mythical-messenger-07.gif",
+    "bytes": 13159049,
+    "sha256": "64d2a111a2a0d11d240b0be8fb77463f8a16318e82b4244a0ba30f06e6040879"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_2ba40310057f42a898531c4679e648cd~mv2.png",
+    "path": "assets/png/mythical-messenger-08.png",
+    "bytes": 382849,
+    "sha256": "6e232b62346e489dec78e464202d8c299980a7956a63b358f066a95a8489d95b"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_e754eff2d75a404d9b33a4ac3bce3a08~mv2.png",
+    "path": "assets/png/mythical-messenger-09.png",
+    "bytes": 1019648,
+    "sha256": "44bc5fd8c910cc8aab747d33cf229ce917f506524f6b17771875bd093bcc2697"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_123a4ba563684fc382c4200471fc4406~mv2.gif",
+    "path": "assets/gif/mythical-messenger-10.gif",
+    "bytes": 208680,
+    "sha256": "1f97d0686dc07d62edd666055ab447c63184760bb31126d10fc64bb7fbf85637"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_b85e7557a27d4b44b2f494b9e06870c4~mv2.gif",
+    "path": "assets/gif/mythical-messenger-11.gif",
+    "bytes": 1269516,
+    "sha256": "93b30f012af365288db3b3c082fa627100d0e11758a0c6a4cd57c5a9ab1395d8"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_caa43482b43d4a60bdddf1b8fb5b303f~mv2.gif",
+    "path": "assets/gif/striking-hell-01.gif",
+    "bytes": 781401,
+    "sha256": "55c0e3e5f294eaeec60721d95372a64b838e0dda29a2a41edf234f75dfa5e8a9"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_a47d39596e4a461989654b69ae03ef6f~mv2.gif",
+    "path": "assets/gif/striking-hell-02.gif",
+    "bytes": 1163819,
+    "sha256": "43f5359a164bfb0fb413021c1f0ff823a50579cd1c4fab168a69da1f8e125452"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_aadbcfffd9bf46e6a1d24d88174d6fe6~mv2.gif",
+    "path": "assets/gif/striking-hell-03.gif",
+    "bytes": 6103297,
+    "sha256": "2f54067759aab9e90189bb9507501103cfa2d3d48bd15107e7f7feb5fc840110"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_be5b9370540d424d8226132a08de575b~mv2.png",
+    "path": "assets/png/striking-hell-04.png",
+    "bytes": 1797399,
+    "sha256": "fbd9f640fb188d064965b37f789bcb375fec1afb2ae3a2cc5683aed185d86f1c"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_ac644de4640c44a2a1f51c93356f93d7~mv2.png",
+    "path": "assets/png/striking-hell-05.png",
+    "bytes": 1556840,
+    "sha256": "c423c757e70d9db3632fc625c6ff6111e2a7ba5fb0507211afd835a3e43aa700"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_328b37df2176455db51f630b43cbc03a~mv2.png",
+    "path": "assets/png/striking-hell-06.png",
+    "bytes": 2577826,
+    "sha256": "0c808f2c20cce265aa6c81133870aaa7b59d83a5efdbe0694100c8fea8c04b19"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_dd5a44e18d62452a8876f7432c1a075d~mv2.png",
+    "path": "assets/png/striking-hell-07.png",
+    "bytes": 964923,
+    "sha256": "752edd4c4ffd8c8299f3d1093676b1d22ca928abb6a894738cd18de5d856005e"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_921611d8c52947fa96f77b1df9997193~mv2.png",
+    "path": "assets/png/striking-hell-08.png",
+    "bytes": 147685,
+    "sha256": "a7bc6019df236fbd5758bce6f3f18133479904c03cd49d11508b94425d2cc846"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_b824ec6fed134f97998e221a721e1d3c~mv2.png",
+    "path": "assets/png/striking-hell-09.png",
+    "bytes": 98211,
+    "sha256": "41e5cc37493fcb755b398d8c7622062c8e8aef1ba36645b70eaefbc22d07f053"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_92504372453441cc964af975f12432cb~mv2.png",
+    "path": "assets/png/striking-hell-10.png",
+    "bytes": 294600,
+    "sha256": "dae71ecb77aa29e19fe71cb9f8300e0954cad89932eb8747c597c28b5f2e17fe"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_741b038210944557b64cf0201164ebc5~mv2.png",
+    "path": "assets/png/striking-hell-11.png",
+    "bytes": 284908,
+    "sha256": "007620d9283af012b7a11d426ec802a7aec8365861022e624752e6f2938062ce"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_0672a3930ef347ca8727a6d2f87cd444~mv2.png",
+    "path": "assets/png/striking-hell-12.png",
+    "bytes": 316494,
+    "sha256": "ed44af8466e2cddb86a8134a340007238f1bfc40358ad3e1ed9e2331a98ace9a"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_8ff1251bea504676b35b8c974a998e42~mv2.gif",
+    "path": "assets/gif/project-dreamscape-preview.gif",
+    "bytes": 2636554,
+    "sha256": "3cd785b4d7ec20efdc059e77278701c2023e6bcb00abb70056f911bed0bb4a98"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_4c38cef084af409b8a0af577441234f4~mv2.gif",
+    "path": "assets/gif/in-the-flesh-preview.gif",
+    "bytes": 1949862,
+    "sha256": "6a0452106ec2c64a9d4da10908507c6b8a0396a4a9b621edad0845007d8e6ecb"
+  },
+  {
+    "url": "https://static.wixstatic.com/media/e0f561_685cc8632f434ba4bc42395e714addc5~mv2.jpg",
+    "path": "assets/jpeg/brandon-smith.jpg",
+    "bytes": 910906,
+    "sha256": "221bb41fa5f0e035f7712b77d15961833579bf7505f95d99305cdd8d0ab29577"
+  },
+  {
+    "url": "https://customer.powrcdn.com/6RdNvd/pdf/KVhNEJLZWHIWfDpqzt5nQ.pdf",
+    "path": "assets/documents/brandon-smith-resume.pdf",
+    "bytes": 77460,
+    "sha256": "8763f0071ba6d86f97e85d414b4cde7d5eb40355d1c2565dacea7a5eec1aa4ce"
+  }
+]

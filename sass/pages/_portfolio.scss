@@ -1,0 +1,263 @@
+// Game portfolio additions retain the original Dopefolio layout and palette.
+:focus-visible {
+  outline: 3px solid #0062b9;
+  outline-offset: 5px;
+}
+section[id] {
+  scroll-margin-top: 10rem;
+}
+.skip-link {
+  position: fixed;
+  top: -10rem;
+  left: 2rem;
+  z-index: 2000;
+  padding: 1rem 2rem;
+  background: white;
+  color: #0062b9;
+  font-size: 1.8rem;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+.header__main-ham-menu-cont {
+  background: transparent;
+}
+.header__logo-img {
+  object-position: 50% 35%;
+}
+.portfolio-kicker {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.home-hero__content .portfolio-kicker,
+.project-cs-hero__content .portfolio-kicker {
+  text-align: center;
+}
+.portfolio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-text-link {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.portfolio-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem 4rem;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+}
+.projects__row-img-cont {
+  align-self: center;
+  border-radius: 8px;
+  background: #f1f3f5;
+}
+.projects__row-img {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+.projects__row-content .portfolio-kicker {
+  color: #0062b9;
+  letter-spacing: 0.08em;
+}
+.highlights {
+  background: #f5f7fa;
+}
+.highlights__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem;
+}
+.highlight-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.highlight-card__image-link {
+  display: block;
+  overflow: hidden;
+  background: #e9edf1;
+}
+.highlight-card__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.highlight-card__image-link:hover .highlight-card__image {
+  transform: scale(1.04);
+}
+.highlight-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2.5rem;
+}
+.highlight-card__body .portfolio-kicker {
+  color: #0062b9;
+  letter-spacing: 0.08em;
+}
+.highlight-card__title {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+.highlight-card__desc {
+  flex: 1;
+  color: #777;
+  font-size: 1.7rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+.project-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 0 0 5rem;
+  padding: 3rem;
+  background: #f5f7fa;
+  border-radius: 6px;
+}
+.project-facts dt {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #555;
+}
+.project-facts dd {
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+}
+.project-details__desc .project-details__content-title:not(:first-child) {
+  margin-top: 4rem;
+}
+.project-details__desc-para {
+  white-space: normal;
+}
+.project-media {
+  margin: 6rem 0;
+}
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+}
+.project-gallery figure {
+  min-width: 0;
+}
+.project-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  background: #f5f7fa;
+  border-radius: 5px;
+}
+.project-gallery figcaption {
+  color: #555;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.project-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  background: #111;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+.project-document {
+  width: 100%;
+  height: 65rem;
+  border: 1px solid #ddd;
+  margin-top: 2rem;
+}
+.project-media .portfolio-text-link {
+  display: inline-block;
+  margin: 1rem 0 2rem;
+  color: #0062b9;
+}
+.contact__form-container.portfolio-contact {
+  text-align: center;
+}
+.portfolio-contact p {
+  color: #555;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+.portfolio-contact .portfolio-actions {
+  gap: 2rem 3rem;
+}
+.main-footer__social-cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 1.6rem;
+}
+.main-footer__social-cont a {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+}
+.project-pagination {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd;
+  padding-top: 3rem;
+  margin-top: 6rem;
+  font-size: 1.6rem;
+  color: #0062b9;
+}
+@media only screen and (max-width: 37.5em) {
+  .project-gallery,
+  .project-facts {
+    grid-template-columns: 1fr;
+  }
+  .highlights__grid {
+    grid-template-columns: 1fr;
+  }
+  .project-facts {
+    gap: 1.5rem;
+  }
+  .project-document {
+    height: 45rem;
+  }
+  .portfolio-actions .btn {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .home-hero__content {
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+  }
+  .header__logo-sub {
+    font-size: 1.6rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

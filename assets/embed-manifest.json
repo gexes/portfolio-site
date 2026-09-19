@@ -1,0 +1,97 @@
+[
+  {
+    "page": "project-dreamscape.html",
+    "source": "https://bsmith5701.wixsite.com/brandonsmithdesign/copy-4-of-project-page-item-1",
+    "videos": [
+      {
+        "url": "https://www.youtube-nocookie.com/embed/mWIYSN_xd70",
+        "title": "Dreamscape Trailer"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/embed/0OBYuj_qeoA",
+        "title": "Project Dreamscape Gameplay"
+      }
+    ]
+  },
+  {
+    "page": "birds-of-impalitism.html",
+    "source": "https://bsmith5701.wixsite.com/brandonsmithdesign/copy-2-of-project-page-item",
+    "videos": [
+      {
+        "url": "https://www.youtube-nocookie.com/embed/CB3qhprgHqI",
+        "title": "Birds of Impalitism Showcase"
+      }
+    ]
+  },
+  {
+    "page": "charons-corner.html",
+    "source": "https://bsmith5701.wixsite.com/brandonsmithdesign/copy-of-project-template",
+    "videos": [
+      {
+        "url": "https://www.youtube-nocookie.com/embed/gnw9XCENpQg",
+        "title": "Charon's Corner Summer Trailer"
+      }
+    ]
+  },
+  {
+    "page": "in-the-flesh.html",
+    "source": "https://bsmith5701.wixsite.com/brandonsmithdesign/copy-of-charon-s-corner",
+    "videos": [
+      {
+        "url": "https://www.youtube-nocookie.com/embed/a86Hit61EgE",
+        "title": "In the Flesh Trailer"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/embed/-gQHZt3L1Zw",
+        "title": "Iteration of Procedural Generation"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/embed/2bJPCLR_asw",
+        "title": "Consume | Run | Evolve"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/embed/UOLjDz0hohY",
+        "title": "ChunkEditor Tool"
+      }
+    ]
+  },
+  {
+    "page": "psycorp.html",
+    "source": "https://bsmith5701.wixsite.com/brandonsmithdesign/copy-of-in-the-flesh",
+    "videos": []
+  },
+  {
+    "page": "harvest-nuke.html",
+    "source": "https://bsmith5701.wixsite.com/brandonsmithdesign/harvest-nuke",
+    "videos": [
+      {
+        "url": "https://www.youtube-nocookie.com/embed/SJzXT3wWook",
+        "title": "Harvest Nuke Showcase"
+      }
+    ]
+  },
+  {
+    "page": "mythical-messenger.html",
+    "source": "https://bsmith5701.wixsite.com/brandonsmithdesign/copy-4-of-project-page-item",
+    "videos": [
+      {
+        "url": "https://www.youtube-nocookie.com/embed/IFHROUiKo98",
+        "title": "Mythical Messenger Gameplay"
+      }
+    ]
+  },
+  {
+    "page": "striking-hell.html",
+    "source": "https://bsmith5701.wixsite.com/brandonsmithdesign/copy-of-project-page-item",
+    "videos": [
+      {
+        "url": "https://www.youtube-nocookie.com/embed/4XRPSNWno84",
+        "title": "Striking Hell Gameplay"
+      },
+      {
+        "url": "https://www.youtube-nocookie.com/embed/YtuT_JURfOQ",
+        "title": "Striking Hell Demo Test"
+      }
+    ]
+  }
+]
