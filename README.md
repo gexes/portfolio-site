@@ -1,3 +1,44 @@
+# Brandon Smith — game developer portfolio
+
+A static, multipage game development portfolio migrated from [Brandon's Wix portfolio](https://bsmith5701.wixsite.com/brandonsmithdesign). The original Dopefolio structure, blue theme, homepage sections, project rows, and case-study layout are retained. No framework or runtime build is required to view the site.
+
+## Run and edit
+
+Open `index.html`, or serve this folder with a local static server. Edit page content directly in the HTML files. Shared behavior lives in `index.js`; styles live in `sass/`, compiled to `css/style.css`.
+
+- `npm install` installs development tools.
+- `npm run compile:scss` watches Sass changes.
+- `npm run build` compiles, prefixes, and compresses CSS.
+
+Dart Sass replaces the old Node Sass dependency, which does not support the installed Node 24 runtime. The existing Sass partial structure is unchanged. Legacy Sass import deprecation notices are non-blocking.
+
+## Project pages
+
+1. `project-dreamscape.html`: Project Dreamscape — enemy design and combat balancing.
+2. `birds-of-impalitism.html`: Birds of Impalitism — progression and save/load systems.
+3. `charons-corner.html`: Charon's Corner — gameplay leadership and spline navigation.
+4. `in-the-flesh.html`: In the Flesh — destructible voxels, GPU rendering, and editor tools.
+5. `psycorp.html`: Psycorp — verified overview of a project in development.
+6. `harvest-nuke.html`: Harvest Nuke — quests, dialogue, and enemy AI.
+7. `mythical-messenger.html`: Mythical Messenger — bubble-gun interaction and spline enemies.
+8. `striking-hell.html`: Striking Hell — level and enemy design.
+
+## Migration notes (September 19, 2026)
+
+- Project images and original animated GIFs are local in `assets/png`, `assets/jpeg`, and `assets/gif`. Identical downloads are shared between pages. The media archive contains 85 unique files (about 213 MB), so galleries and project previews use lazy loading. GIFs retain their original animation; video conversion is a possible later optimization.
+- The résumé and two embedded design documents are local PDFs in `assets/documents`. Embedded PDFs include direct open links for browsers without PDF viewing support.
+- All 12 distinct YouTube videos on the seven complete Wix case studies are embedded with responsive players, descriptive titles, lazy loading, and direct YouTube fallback links. Playback still depends on YouTube and the source video's availability.
+- `assets/media-manifest.json` records original download URLs, local paths, byte sizes, and SHA-256 hashes. `assets/embed-manifest.json` records project sources and external video embeds.
+- Psycorp's Wix detail page duplicates Dreamscape's overview, contributions, metadata, images, and Steam link. Its migrated page uses only the distinct description, role, engine, and artwork from the Wix project index. Add Psycorp-specific contributions, media, team details, and a build link when available.
+- The source uses both "Birds of Impalitism" and "Birds of Impalatism". Navigation retains the portfolio's title, while the verified itch.io URL keeps its published spelling.
+- The homepage highlights technical game design and Unity development. Personal details come from the public home/about pages. No degree completion date, email address, or additional social profiles have been invented.
+- The template's inactive form is replaced with verified LinkedIn, itch.io, and résumé links. A contact form will need a real submission service if added later.
+- Only relevant portfolio media are shown; Wix chrome and social-icon duplicates are omitted. Source project descriptions and process explanations are preserved, with heading levels normalized for the case-study layout.
+
+The original template documentation follows. Its John Doe examples describe the starter template, not the current portfolio.
+
+---
+
 # Dopefolio 🔥
 
 ## A Blazing Fast Multipage Portfolio Template for Developers 🚀
@@ -363,9 +404,9 @@ Go to `/index.html` and fill your information, there are 6 sections:
 
   - `.projects__row-content-title` is where you need to add your Project title.
   - `.projects__row-content-desc` is where you need to add a short 2-3 lines description of your project. As there's going to be a separate page for each project so there you can add all the details for each project on the specific project page.
-  - The Anchor tag ( **Case Study** button) on press will take you to the details page for each project ( For example: If you click the **Case Study** button of Project 1 then it will take you to the `project-1.html` file where you will have all the details about that particular project).
+  - The Anchor tag ( **Case Study** button) on press will take you to the details page for each project ( For example: If you click the **Case Study** button of Project 1 then it will take you to the `project-dreamscape.html` file where you will have all the details about that particular project).
 
-Currently, I have already added a separate for each project ( considering there are 3 projects ) the file names are `project-1.html`, `project-2.html`, and `project-3.html`. They all contain the same code only the project title, description and image will change. If you like to add more projects then you can just create a new file for it and paste the same code that we have in `project-1.html` as the code is going to be the same and the only thing that you need to change is the data inside each project.
+Currently, I have already added a separate for each project ( considering there are 3 projects ) the file names are `project-dreamscape.html`, `birds-of-impalitism.html`, and `charons-corner.html`. They all contain the same code only the project title, description and image will change. If you like to add more projects then you can just create a new file for it and paste the same code that we have in `project-dreamscape.html` as the code is going to be the same and the only thing that you need to change is the data inside each project.
 
 ```html
 <!-- **** Projects Section of Homepage **** -->
@@ -396,10 +437,10 @@ Currently, I have already added a separate for each project ( considering there 
             tempora, explicabo quae quod deserunt eius sapiente praesentium.
           </p>
           <a
-            href="./project-1.html"
+            href="./project-dreamscape.html"
             class="btn btn--med btn--theme dynamicBgClr"
             target="_blank"
-            >Case Study</a
+            >Learn More</a
           >
         </div>
       </div>
@@ -419,10 +460,10 @@ Currently, I have already added a separate for each project ( considering there 
             tempora, explicabo quae quod deserunt eius sapiente praesentium.
           </p>
           <a
-            href="./project-2.html"
+            href="./birds-of-impalitism.html"
             class="btn btn--med btn--theme dynamicBgClr"
             target="_blank"
-            >Case Study</a
+            >Learn More</a
           >
         </div>
       </div>
@@ -442,10 +483,10 @@ Currently, I have already added a separate for each project ( considering there 
             tempora, explicabo quae quod deserunt eius sapiente praesentium.
           </p>
           <a
-            href="./project-3.html"
+            href="./charons-corner.html"
             class="btn btn--med btn--theme dynamicBgClr"
             target="_blank"
-            >Case Study</a
+            >Learn More</a
           >
         </div>
       </div>
@@ -789,4 +830,3 @@ Special thanks to [Jacobo Martínez](https://github.com/cobidev) for inspiring m
 ## License 📄
 
 This project is licensed under the  **GPL-3.0** License - see the [LICENSE](LICENSE) file for details
-
