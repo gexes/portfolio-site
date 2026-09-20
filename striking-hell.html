@@ -168,6 +168,19 @@
                   core gameplay
                 </p>
               </div>
+              <section class="project-highlights" aria-labelledby="striking-highlights-title">
+                <h2 id="striking-highlights-title" class="project-details__content-title">Technical Highlights</h2>
+                <div class="project-highlight-grid">
+                  <a class="project-highlight-card" href="#level-prototyping">
+                    <img class="project-highlight-card__media" src="./assets/gif/striking-hell-02.gif" alt="Striking Hell level prototype" loading="lazy" decoding="async" />
+                    <span class="project-highlight-card__body"><span class="project-highlight-card__title">Movement-first level design</span><span class="project-highlight-card__desc">Sketching and prototyping spaces around chained slash-and-stab traversal.</span><span class="project-highlight-card__link">Read more</span></span>
+                  </a>
+                  <a class="project-highlight-card" href="#enemy-design">
+                    <img class="project-highlight-card__media" src="./assets/png/striking-hell-10.png" alt="Striking Hell enemy design" loading="lazy" decoding="async" />
+                    <span class="project-highlight-card__body"><span class="project-highlight-card__title">Enemy design concepts</span><span class="project-highlight-card__desc">Enemy roles designed to disrupt momentum and pressure player choices.</span><span class="project-highlight-card__link">Read more</span></span>
+                  </a>
+                </div>
+              </section>
               <div class="project-details__desc">
                 <h2 class="project-details__content-title">
                   Gameplay &amp; features
@@ -221,7 +234,12 @@
                   Thinking about the moment-to-moment gameplay with the level
                   sketch
                 </p>
-                <h3 class="project-details__content-title">
+                <div class="project-detail-media">
+                  <figure><img src="./assets/gif/striking-hell-01.gif" alt="Striking Hell early movement study" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/striking-hell-04.png" alt="Rooftop level sketch" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/striking-hell-05.png" alt="City traversal sketch" loading="lazy" decoding="async" /></figure>
+                </div>
+                <h3 id="level-prototyping" class="project-details__content-title">
                   Goal: Prototyping &amp; concepting
                 </h3>
                 <p class="project-details__desc-para">
@@ -244,7 +262,15 @@
                   should be able to interact, just like the yellow blocks in
                   Mario
                 </p>
-                <h3 class="project-details__content-title">
+                <div class="project-detail-media">
+                  <figure><img src="./assets/gif/striking-hell-02.gif" alt="Slash-and-stab traversal prototype" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/gif/striking-hell-03.gif" alt="Level prototype gameplay" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/striking-hell-06.png" alt="Isometric city prototype" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/striking-hell-07.png" alt="Traversal mechanic placement" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/striking-hell-08.png" alt="Interactive level guidance" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/striking-hell-09.png" alt="Level prototype outcome" loading="lazy" decoding="async" /></figure>
+                </div>
+                <h3 id="enemy-design" class="project-details__content-title">
                   Enemy Design Concept
                 </h3>
                 <p class="project-details__desc-para">
@@ -258,6 +284,11 @@
                   A flying-type enemy that shoots disruptive projectiles to stop
                   player attacks
                 </p>
+                <div class="project-detail-media">
+                  <figure><img src="./assets/png/striking-hell-10.png" alt="Striking Hell enemy concept" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/striking-hell-11.png" alt="Close-range enemy design" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/striking-hell-12.png" alt="Flying enemy design" loading="lazy" decoding="async" /></figure>
+                </div>
               </div>
               <div class="project-details__tools-used">
                 <h2 class="project-details__content-title">
@@ -276,22 +307,10 @@
                 Gameplay &amp; demonstrations
               </h2>
               <figure>
-                <iframe
-                  class="project-video"
-                  src="https://www.youtube.com/embed/4XRPSNWno84"
-                  title="Striking Hell Gameplay"
-                  allow="
-                    accelerometer;
-                    autoplay;
-                    clipboard-write;
-                    encrypted-media;
-                    gyroscope;
-                    picture-in-picture;
-                    web-share;
-                  "
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
+                <video class="project-video" controls preload="metadata" playsinline title="Striking Hell Gameplay">
+                  <source src="./assets/videos/4XRPSNWno84.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                </video>
                 <figcaption>
                   <a
                     href="https://www.youtube.com/watch?v=4XRPSNWno84"
@@ -304,22 +323,10 @@
               </figure>
             </section>
             <figure>
-              <iframe
-                class="project-video"
-                src="https://www.youtube.com/embed/YtuT_JURfOQ"
-                title="Striking Hell Demo Test"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+              <video class="project-video" controls preload="metadata" playsinline title="Striking Hell Demo Test">
+                <source src="./assets/videos/YtuT_JURfOQ.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
               <figcaption>
                 <a
                   class="portfolio-text-link"
@@ -330,7 +337,7 @@
                 >
               </figcaption>
             </figure>
-            <section class="project-media">
+            <section class="project-media project-media--legacy-gallery">
               <h2 class="project-details__content-title">
                 Screenshots &amp; development gallery
               </h2>
@@ -554,7 +561,7 @@
       <div class="main-container">
         <div class="main-footer__upper">
           <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm">Find me online</h2>
+            <h2 class="heading heading-sm">Socials</h2>
             <div class="main-footer__social-cont">
               <a
                 href="https://www.linkedin.com/in/brandon-smith5701/"
@@ -563,17 +570,11 @@
                 rel="noopener noreferrer"
                 >LinkedIn</a
               ><a
-                href="https://brandon5701.itch.io/"
+                href="https://github.com/Gexes"
                 class=""
                 target="_blank"
                 rel="noopener noreferrer"
-                >itch.io</a
-              ><a
-                href="./assets/documents/brandon-smith-resume.pdf"
-                class=""
-                target="_blank"
-                rel="noopener noreferrer"
-                >Résumé</a
+                >GitHub</a
               >
             </div>
           </div>
