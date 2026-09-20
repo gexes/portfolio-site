@@ -171,6 +171,19 @@
                   strengthen story delivery and Player Immersion.
                 </p>
               </div>
+              <section class="project-highlights" aria-labelledby="birds-highlights-title">
+                <h2 id="birds-highlights-title" class="project-details__content-title">Technical Highlights</h2>
+                <div class="project-highlight-grid">
+                  <a class="project-highlight-card" href="#save-system-design">
+                    <img class="project-highlight-card__media" src="./assets/png/birds-of-impalitism-02.png" alt="Birds of Impalitism save-system design" loading="lazy" decoding="async" />
+                    <span class="project-highlight-card__body"><span class="project-highlight-card__title">Save-system architecture</span><span class="project-highlight-card__desc">A scalable data model for progression, collectibles, and world state.</span><span class="project-highlight-card__link">Read more</span></span>
+                  </a>
+                  <a class="project-highlight-card" href="#save-system-programming">
+                    <img class="project-highlight-card__media" src="./assets/gif/birds-of-impalitism-09.gif" alt="Birds of Impalitism save-system implementation" loading="lazy" decoding="async" />
+                    <span class="project-highlight-card__body"><span class="project-highlight-card__title">Reliable persistence</span><span class="project-highlight-card__desc">Validation and modular save behavior that keeps player data predictable.</span><span class="project-highlight-card__link">Read more</span></span>
+                  </a>
+                </div>
+              </section>
               <div class="project-details__desc">
                 <h2 class="project-details__content-title">
                   Gameplay &amp; features
@@ -192,7 +205,7 @@
                 <h2 class="project-details__content-title">
                   Design &amp; development
                 </h2>
-                <h3 class="project-details__content-title">
+                <h3 id="save-system-design" class="project-details__content-title">
                   Goal: Designing the Save System
                 </h3>
                 <p class="project-details__desc-para">
@@ -223,7 +236,16 @@
                   Focused on keeping the design scalable, so future content or
                   mechanics could be added without rewriting the entire system.
                 </p>
-                <h3 class="project-details__content-title">
+                <div class="project-detail-media">
+                  <figure><img src="./assets/gif/birds-of-impalitism-01.gif" alt="Birds of Impalitism save-system design in motion" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/birds-of-impalitism-02.png" alt="Save-system architecture diagram" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/birds-of-impalitism-03.png" alt="Save data design" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/birds-of-impalitism-04.png" alt="Progression data design" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/birds-of-impalitism-05.png" alt="World-state design" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/birds-of-impalitism-06.png" alt="Save-system documentation" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/birds-of-impalitism-07.png" alt="Save-system flow" loading="lazy" decoding="async" /></figure>
+                </div>
+                <h3 id="save-system-programming" class="project-details__content-title">
                   Goal: Programming the Save System
                 </h3>
                 <p class="project-details__desc-para">
@@ -252,6 +274,16 @@
                   Implemented safeguards against data corruption by validating
                   save files and resetting invalid entries to prevent errors.
                 </p>
+                <div class="project-detail-media">
+                  <figure><img src="./assets/gif/birds-of-impalitism-08.gif" alt="Save-system implementation demonstration" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/gif/birds-of-impalitism-09.gif" alt="Persistent player data demonstration" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/gif/birds-of-impalitism-10.gif" alt="World-state restoration demonstration" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/birds-of-impalitism-11.png" alt="Save controller implementation" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/birds-of-impalitism-12.png" alt="Player-data implementation" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/birds-of-impalitism-13.png" alt="Subsystem save implementation" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/birds-of-impalitism-14.png" alt="Loading process implementation" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/birds-of-impalitism-15.png" alt="Save-file validation implementation" loading="lazy" decoding="async" /></figure>
+                </div>
               </div>
               <div class="project-details__tools-used">
                 <h2 class="project-details__content-title">
@@ -270,22 +302,10 @@
                 Gameplay &amp; demonstrations
               </h2>
               <figure>
-                <iframe
-                  class="project-video"
-                  src="https://www.youtube.com/embed/CB3qhprgHqI"
-                  title="Birds of Impalitism Showcase"
-                  allow="
-                    accelerometer;
-                    autoplay;
-                    clipboard-write;
-                    encrypted-media;
-                    gyroscope;
-                    picture-in-picture;
-                    web-share;
-                  "
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
+                <video class="project-video" controls preload="metadata" playsinline title="Birds of Impalitism Showcase">
+                  <source src="./assets/videos/CB3qhprgHqI.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                </video>
                 <figcaption>
                   <a
                     href="https://www.youtube.com/watch?v=CB3qhprgHqI"
@@ -297,7 +317,7 @@
                 </figcaption>
               </figure>
             </section>
-            <section class="project-media">
+            <section class="project-media project-media--legacy-gallery">
               <h2 class="project-details__content-title">
                 Screenshots &amp; development gallery
               </h2>
@@ -593,7 +613,7 @@
       <div class="main-container">
         <div class="main-footer__upper">
           <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm">Find me online</h2>
+            <h2 class="heading heading-sm">Socials</h2>
             <div class="main-footer__social-cont">
               <a
                 href="https://www.linkedin.com/in/brandon-smith5701/"
@@ -602,17 +622,11 @@
                 rel="noopener noreferrer"
                 >LinkedIn</a
               ><a
-                href="https://brandon5701.itch.io/"
+                href="https://github.com/Gexes"
                 class=""
                 target="_blank"
                 rel="noopener noreferrer"
-                >itch.io</a
-              ><a
-                href="./assets/documents/brandon-smith-resume.pdf"
-                class=""
-                target="_blank"
-                rel="noopener noreferrer"
-                >Résumé</a
+                >GitHub</a
               >
             </div>
           </div>

@@ -167,6 +167,19 @@
                   &amp; pacing.
                 </p>
               </div>
+              <section class="project-highlights" aria-labelledby="messenger-highlights-title">
+                <h2 id="messenger-highlights-title" class="project-details__content-title">Technical Highlights</h2>
+                <div class="project-highlight-grid">
+                  <a class="project-highlight-card" href="#bubble-gun">
+                    <img class="project-highlight-card__media" src="./assets/gif/mythical-messenger-02.gif" alt="Mythical Messenger bubble gun" loading="lazy" decoding="async" />
+                    <span class="project-highlight-card__body"><span class="project-highlight-card__title">Bubble-gun interaction</span><span class="project-highlight-card__desc">Tracking, manual loading, and responsive aiming built around player agency.</span><span class="project-highlight-card__link">Read more</span></span>
+                  </a>
+                  <a class="project-highlight-card" href="#enemy-spline-movement">
+                    <img class="project-highlight-card__media" src="./assets/gif/mythical-messenger-11.gif" alt="Mythical Messenger spline enemy movement" loading="lazy" decoding="async" />
+                    <span class="project-highlight-card__body"><span class="project-highlight-card__title">Spline enemy movement</span><span class="project-highlight-card__desc">Controlled paths create predictable encounters without sacrificing motion.</span><span class="project-highlight-card__link">Read more</span></span>
+                  </a>
+                </div>
+              </section>
               <div class="project-details__desc">
                 <h2 class="project-details__content-title">
                   Gameplay &amp; features
@@ -212,7 +225,10 @@
                   Considered the mouse click &amp; move as part of the main
                   mechanic for the game's &quot;manual effect.&quot;
                 </p>
-                <h3 class="project-details__content-title">
+                <div class="project-detail-media project-detail-media--single">
+                  <figure><img src="./assets/gif/mythical-messenger-01.gif" alt="Mouse interaction prototype" loading="lazy" decoding="async" /></figure>
+                </div>
+                <h3 id="bubble-gun" class="project-details__content-title">
                   Bubble Gun Tracking
                 </h3>
                 <p class="project-details__desc-para">
@@ -235,6 +251,12 @@
                   experimented with combining the two mechanics to then interact
                   with one another.
                 </p>
+                <div class="project-detail-media">
+                  <figure><img src="./assets/gif/mythical-messenger-02.gif" alt="Bubble gun tracking prototype" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/mythical-messenger-04.png" alt="Bubble gun aiming setup" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/mythical-messenger-05.png" alt="Bubble tracking implementation" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/mythical-messenger-06.png" alt="Bubble gun interaction outcome" loading="lazy" decoding="async" /></figure>
+                </div>
                 <h3 class="project-details__content-title">
                   Manual Reload + Bubble Interaction
                 </h3>
@@ -260,7 +282,13 @@
                   Reinforces the game's theme by making bubble-shooting feel
                   natural and satisfying.
                 </p>
-                <h3 class="project-details__content-title">
+                <div class="project-detail-media">
+                  <figure><img src="./assets/gif/mythical-messenger-03.gif" alt="Manual bubble reload demonstration" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/gif/mythical-messenger-07.gif" alt="Bubble interaction demonstration" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/mythical-messenger-08.png" alt="Manual reload implementation" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/mythical-messenger-09.png" alt="Bubble interaction setup" loading="lazy" decoding="async" /></figure>
+                </div>
+                <h3 id="enemy-spline-movement" class="project-details__content-title">
                   Enemy Spline Movement
                 </h3>
                 <p class="project-details__desc-para">
@@ -284,6 +312,10 @@
                   Prevents frustration by avoiding erratic or unpredictable
                   movement patterns.
                 </p>
+                <div class="project-detail-media">
+                  <figure><img src="./assets/gif/mythical-messenger-10.gif" alt="Enemy spline path setup" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/gif/mythical-messenger-11.gif" alt="Enemy spline movement outcome" loading="lazy" decoding="async" /></figure>
+                </div>
               </div>
               <div class="project-details__tools-used">
                 <h2 class="project-details__content-title">
@@ -301,22 +333,10 @@
                 Gameplay &amp; demonstrations
               </h2>
               <figure>
-                <iframe
-                  class="project-video"
-                  src="https://www.youtube.com/embed/IFHROUiKo98"
-                  title="Mythical Messenger Gameplay"
-                  allow="
-                    accelerometer;
-                    autoplay;
-                    clipboard-write;
-                    encrypted-media;
-                    gyroscope;
-                    picture-in-picture;
-                    web-share;
-                  "
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
+                <video class="project-video" controls preload="metadata" playsinline title="Mythical Messenger Gameplay">
+                  <source src="./assets/videos/IFHROUiKo98.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                </video>
                 <figcaption>
                   <a
                     href="https://www.youtube.com/watch?v=IFHROUiKo98"
@@ -328,7 +348,7 @@
                 </figcaption>
               </figure>
             </section>
-            <section class="project-media">
+            <section class="project-media project-media--legacy-gallery">
               <h2 class="project-details__content-title">
                 Screenshots &amp; development gallery
               </h2>
@@ -559,7 +579,7 @@
       <div class="main-container">
         <div class="main-footer__upper">
           <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm">Find me online</h2>
+            <h2 class="heading heading-sm">Socials</h2>
             <div class="main-footer__social-cont">
               <a
                 href="https://www.linkedin.com/in/brandon-smith5701/"
@@ -568,17 +588,11 @@
                 rel="noopener noreferrer"
                 >LinkedIn</a
               ><a
-                href="https://brandon5701.itch.io/"
+                href="https://github.com/Gexes"
                 class=""
                 target="_blank"
                 rel="noopener noreferrer"
-                >itch.io</a
-              ><a
-                href="./assets/documents/brandon-smith-resume.pdf"
-                class=""
-                target="_blank"
-                rel="noopener noreferrer"
-                >Résumé</a
+                >GitHub</a
               >
             </div>
           </div>

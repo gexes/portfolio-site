@@ -177,11 +177,24 @@
                   face away from the objective.
                 </p>
               </div>
+              <section class="project-highlights" aria-labelledby="charon-highlights-title">
+                <h2 id="charon-highlights-title" class="project-details__content-title">Technical Highlights</h2>
+                <div class="project-highlight-grid">
+                  <a class="project-highlight-card" href="#spline-level-design">
+                    <img class="project-highlight-card__media" src="./assets/png/charons-corner-03.png" alt="Charon's Corner spline level design" loading="lazy" decoding="async" />
+                    <span class="project-highlight-card__body"><span class="project-highlight-card__title">Spline-driven level design</span><span class="project-highlight-card__desc">A reusable track framework built around speed, flow, and readable navigation.</span><span class="project-highlight-card__link">Read more</span></span>
+                  </a>
+                  <a class="project-highlight-card" href="#navigation-outcome">
+                    <img class="project-highlight-card__media" src="./assets/gif/charons-corner-06.gif" alt="Charon's Corner spline track in motion" loading="lazy" decoding="async" />
+                    <span class="project-highlight-card__body"><span class="project-highlight-card__title">Navigation outcome</span><span class="project-highlight-card__desc">Elevation, obstacles, and guidance systems turned the spline into a repeatable pipeline.</span><span class="project-highlight-card__link">Read more</span></span>
+                  </a>
+                </div>
+              </section>
               <div class="project-details__desc">
                 <h2 id="navigation-systems" class="project-details__content-title">
                   Design &amp; development
                 </h2>
-                <h3 class="project-details__content-title">
+                <h3 id="spline-level-design" class="project-details__content-title">
                   Goal: Spline-Driven Cinematic Level
                 </h3>
                 <p class="project-details__desc-para">
@@ -201,6 +214,11 @@
                   directional flow that naturally guides the player forward
                   without leading them astray.
                 </p>
+                <div class="project-detail-media">
+                  <figure><img src="./assets/png/charons-corner-01.png" alt="Charon's Corner level overview" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/charons-corner-02.png" alt="Spline-driven track layout" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/charons-corner-03.png" alt="Spline level-design workflow" loading="lazy" decoding="async" /></figure>
+                </div>
                 <h3 class="project-details__content-title">
                   Challenge: Maintaining Variety within Spline Design
                 </h3>
@@ -212,7 +230,11 @@
                   that kept traversal engaging without overcomplicating the
                   underlying tech.
                 </p>
-                <h3 class="project-details__content-title">Outcome</h3>
+                <div class="project-detail-media">
+                  <figure><img src="./assets/png/charons-corner-04.png" alt="Spline elevation variation" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/charons-corner-05.png" alt="Spline obstacle placement" loading="lazy" decoding="async" /></figure>
+                </div>
+                <h3 id="navigation-outcome" class="project-details__content-title">Outcome</h3>
                 <p class="project-details__desc-para">
                   By integrating varying elevation slopes and physical obstacle
                   &quot;pins&quot; along the spline pathways, the core movement
@@ -222,6 +244,9 @@
                   distinct level layouts while keeping the player's core
                   interaction with the spline consistently fun.
                 </p>
+                <div class="project-detail-media project-detail-media--single">
+                  <figure><img src="./assets/gif/charons-corner-06.gif" alt="Completed Charon's Corner spline track in motion" loading="lazy" decoding="async" /><figcaption>Completed spline-driven track</figcaption></figure>
+                </div>
                 <h3 class="project-details__content-title">Reflection</h3>
                 <p class="project-details__desc-para">
                   This project highlighted how core player mechanics must
@@ -248,6 +273,9 @@
                   about building a single great stage, but empowering the team
                   to build many.
                 </p>
+                <div class="project-detail-media project-detail-media--single">
+                  <figure><img src="./assets/png/charons-corner-07.png" alt="Charon's Corner final level-design result" loading="lazy" decoding="async" /></figure>
+                </div>
               </div>
               <div class="project-details__tools-used">
                 <h2 class="project-details__content-title">
@@ -266,22 +294,10 @@
                 Gameplay &amp; demonstrations
               </h2>
               <figure>
-                <iframe
-                  class="project-video"
-                  src="https://www.youtube.com/embed/gnw9XCENpQg"
-                  title="Charon's Corner Summer Trailer"
-                  allow="
-                    accelerometer;
-                    autoplay;
-                    clipboard-write;
-                    encrypted-media;
-                    gyroscope;
-                    picture-in-picture;
-                    web-share;
-                  "
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
+                <video class="project-video" controls preload="metadata" playsinline title="Charon's Corner Summer Trailer">
+                  <source src="./assets/videos/gnw9XCENpQg.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                </video>
                 <figcaption>
                   <a
                     href="https://www.youtube.com/watch?v=gnw9XCENpQg"
@@ -293,7 +309,7 @@
                 </figcaption>
               </figure>
             </section>
-            <section class="project-media">
+            <section class="project-media project-media--legacy-gallery">
               <h2 class="project-details__content-title">
                 Screenshots &amp; development gallery
               </h2>
@@ -444,7 +460,7 @@
       <div class="main-container">
         <div class="main-footer__upper">
           <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm">Find me online</h2>
+            <h2 class="heading heading-sm">Socials</h2>
             <div class="main-footer__social-cont">
               <a
                 href="https://www.linkedin.com/in/brandon-smith5701/"
@@ -453,17 +469,11 @@
                 rel="noopener noreferrer"
                 >LinkedIn</a
               ><a
-                href="https://brandon5701.itch.io/"
+                href="https://github.com/Gexes"
                 class=""
                 target="_blank"
                 rel="noopener noreferrer"
-                >itch.io</a
-              ><a
-                href="./assets/documents/brandon-smith-resume.pdf"
-                class=""
-                target="_blank"
-                rel="noopener noreferrer"
-                >Résumé</a
+                >GitHub</a
               >
             </div>
           </div>

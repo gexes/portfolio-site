@@ -175,6 +175,19 @@
                   based on room dimensions.
                 </p>
               </div>
+              <section class="project-highlights" aria-labelledby="flesh-highlights-title">
+                <h2 id="flesh-highlights-title" class="project-details__content-title">Technical Highlights</h2>
+                <div class="project-highlight-grid">
+                  <a class="project-highlight-card" href="#procedural-worlds">
+                    <img class="project-highlight-card__media" src="./assets/gif/in-the-flesh-preview.gif" alt="In the Flesh destructible environment" loading="lazy" decoding="async" />
+                    <span class="project-highlight-card__body"><span class="project-highlight-card__title">Procedural destruction</span><span class="project-highlight-card__desc">A GPU-assisted voxel system for dense, destructible organic environments.</span><span class="project-highlight-card__link">Read more</span></span>
+                  </a>
+                  <a class="project-highlight-card" href="#chunk-grid-tool">
+                    <img class="project-highlight-card__media" src="./assets/png/in-the-flesh-07.png" alt="In the Flesh chunk-grid editor tool" loading="lazy" decoding="async" />
+                    <span class="project-highlight-card__body"><span class="project-highlight-card__title">Chunk Grid Baker</span><span class="project-highlight-card__desc">A custom editor workflow that turns room boundaries into reusable level chunks.</span><span class="project-highlight-card__link">Read more</span></span>
+                  </a>
+                </div>
+              </section>
               <div class="project-details__desc">
                 <h2 id="procedural-worlds" class="project-details__content-title">
                   Design &amp; development
@@ -226,7 +239,14 @@
                   ChunkAutoDestroyer unloads and registers completely mined
                   chunk coordinates to prevent memory leakage.
                 </p>
-                <h3 class="project-details__content-title">
+                <div class="project-detail-media">
+                  <figure><img src="./assets/png/in-the-flesh-01.png" alt="In the Flesh destructible environment" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/in-the-flesh-02.png" alt="Voxel terrain generation" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/in-the-flesh-03.png" alt="Voxel damage states" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/in-the-flesh-04.png" alt="GPU-driven terrain rendering" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/in-the-flesh-05.png" alt="Destructible terrain outcome" loading="lazy" decoding="async" /></figure>
+                </div>
+                <h3 id="chunk-grid-tool" class="project-details__content-title">
                   Goal: Modular Level Layout Iteration
                 </h3>
                 <p class="project-details__desc-para">
@@ -265,6 +285,12 @@
                   structural components, or trigger layout visual rebuild checks
                   within a few mouse clicks.
                 </p>
+                <div class="project-detail-media">
+                  <figure><img src="./assets/png/in-the-flesh-06.png" alt="Chunk Grid Baker boundary setup" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/in-the-flesh-07.png" alt="Chunk Grid Baker editor" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/in-the-flesh-08.png" alt="Generated chunk layout" loading="lazy" decoding="async" /></figure>
+                  <figure><img src="./assets/png/in-the-flesh-09.png" alt="Completed modular level layout" loading="lazy" decoding="async" /></figure>
+                </div>
               </div>
               <div class="project-details__tools-used">
                 <h2 class="project-details__content-title">
@@ -283,22 +309,10 @@
                 Gameplay &amp; demonstrations
               </h2>
               <figure>
-                <iframe
-                  class="project-video"
-                  src="https://www.youtube.com/embed/a86Hit61EgE"
-                  title="In the Flesh Trailer"
-                  allow="
-                    accelerometer;
-                    autoplay;
-                    clipboard-write;
-                    encrypted-media;
-                    gyroscope;
-                    picture-in-picture;
-                    web-share;
-                  "
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
+                <video class="project-video" controls preload="metadata" playsinline title="In the Flesh Trailer">
+                  <source src="./assets/videos/a86Hit61EgE.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                </video>
                 <figcaption>
                   <a
                     href="https://www.youtube.com/watch?v=a86Hit61EgE"
@@ -310,22 +324,10 @@
                 </figcaption>
               </figure>
               <figure>
-                <iframe
-                  class="project-video"
-                  src="https://www.youtube.com/embed/-gQHZt3L1Zw"
-                  title="Iteration of Procedural Generation"
-                  allow="
-                    accelerometer;
-                    autoplay;
-                    clipboard-write;
-                    encrypted-media;
-                    gyroscope;
-                    picture-in-picture;
-                    web-share;
-                  "
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
+                <video class="project-video" controls preload="metadata" playsinline title="Iteration of Procedural Generation">
+                  <source src="./assets/videos/-gQHZt3L1Zw.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                </video>
                 <figcaption>
                   <a
                     href="https://www.youtube.com/watch?v=-gQHZt3L1Zw"
@@ -338,22 +340,10 @@
               </figure>
             </section>
             <figure>
-              <iframe
-                class="project-video"
-                src="https://www.youtube.com/embed/2bJPCLR_asw"
-                title="Consume | Run | Evolve"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+              <video class="project-video" controls preload="metadata" playsinline title="Consume | Run | Evolve">
+                <source src="./assets/videos/2bJPCLR_asw.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
               <figcaption>
                 <a
                   class="portfolio-text-link"
@@ -365,22 +355,10 @@
               </figcaption>
             </figure>
             <figure>
-              <iframe
-                class="project-video"
-                src="https://www.youtube.com/embed/UOLjDz0hohY"
-                title="ChunkEditor Tool"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+              <video class="project-video" controls preload="metadata" playsinline title="ChunkEditor Tool">
+                <source src="./assets/videos/UOLjDz0hohY.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
               <figcaption>
                 <a
                   class="portfolio-text-link"
@@ -391,7 +369,7 @@
                 >
               </figcaption>
             </figure>
-            <section class="project-media">
+            <section class="project-media project-media--legacy-gallery">
               <h2 class="project-details__content-title">
                 Screenshots &amp; development gallery
               </h2>
@@ -574,7 +552,7 @@
       <div class="main-container">
         <div class="main-footer__upper">
           <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm">Find me online</h2>
+            <h2 class="heading heading-sm">Socials</h2>
             <div class="main-footer__social-cont">
               <a
                 href="https://www.linkedin.com/in/brandon-smith5701/"
@@ -583,17 +561,11 @@
                 rel="noopener noreferrer"
                 >LinkedIn</a
               ><a
-                href="https://brandon5701.itch.io/"
+                href="https://github.com/Gexes"
                 class=""
                 target="_blank"
                 rel="noopener noreferrer"
-                >itch.io</a
-              ><a
-                href="./assets/documents/brandon-smith-resume.pdf"
-                class=""
-                target="_blank"
-                rel="noopener noreferrer"
-                >Résumé</a
+                >GitHub</a
               >
             </div>
           </div>
