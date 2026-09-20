@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gameplay Prototypes | Brandon Smith</title>
+    <meta name="description" content="Small gameplay prototypes, mechanic recreations, and technical experiments by Brandon Smith." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#0062b9" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="header">
+      <div class="header__content">
+        <a class="header__logo-container" href="./index.html" aria-label="Brandon Smith home">
+          <div class="header__logo-img-cont"><img src="./assets/jpeg/brandon-smith.jpg" alt="Brandon Smith" class="header__logo-img" width="50" height="50" /></div>
+          <span class="header__logo-sub">Brandon Smith</span>
+        </a>
+        <nav class="header__main" aria-label="Main navigation">
+          <ul class="header__links"><li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Projects</a></li><li class="header__link-wrapper"><a href="./index.html#about" class="header__link">About Me</a></li><li class="header__link-wrapper"><a href="./index.html#contact" class="header__link">Contact</a></li></ul>
+          <button class="header__main-ham-menu-cont" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><img src="./assets/svg/ham-menu.svg" alt="" class="header__main-ham-menu" /><img src="./assets/svg/ham-menu-close.svg" alt="" class="header__main-ham-menu-close d-none" /></button>
+        </nav>
+      </div>
+      <nav class="header__sm-menu" id="mobile-menu" aria-label="Mobile navigation"><div class="header__sm-menu-content"><ul class="header__sm-menu-links"><li class="header__sm-menu-link"><a href="./index.html#projects">Projects</a></li><li class="header__sm-menu-link"><a href="./index.html#about">About Me</a></li><li class="header__sm-menu-link"><a href="./index.html#contact">Contact</a></li></ul></div></nav>
+    </header>
+
+    <main id="main">
+      <section class="prototype-index">
+        <div class="main-container">
+          <header class="prototype-index__intro">
+            <p class="portfolio-kicker">Mechanics · Systems · Experiments</p>
+            <h1 class="heading-primary">Gameplay Prototypes</h1>
+            <p>Focused recreations and technical studies exploring how gameplay systems work.</p>
+          </header>
+
+          <!-- Duplicate a card and its detail template when a new prototype is ready. -->
+          <div class="prototype-grid">
+            <a class="prototype-card" href="./prototype-template.html">
+              <div class="prototype-card__media"><span>Media placeholder</span><strong>Prototype 01</strong></div>
+              <div class="prototype-card__body"><p class="portfolio-kicker">Unity · Gameplay system</p><h2>Prototype title</h2><p>A short explanation of the mechanic, recreation, or technical experiment.</p><span>View prototype</span></div>
+            </a>
+            <a class="prototype-card" href="./prototype-template.html">
+              <div class="prototype-card__media"><span>Media placeholder</span><strong>Prototype 02</strong></div>
+              <div class="prototype-card__body"><p class="portfolio-kicker">Engine · Category</p><h2>Prototype title</h2><p>Use this space to explain what the prototype explores in one sentence.</p><span>View prototype</span></div>
+            </a>
+            <a class="prototype-card" href="./prototype-template.html">
+              <div class="prototype-card__media"><span>Media placeholder</span><strong>Prototype 03</strong></div>
+              <div class="prototype-card__body"><p class="portfolio-kicker">Engine · Category</p><h2>Prototype title</h2><p>Keep each entry focused on a single mechanic, system, or technical question.</p><span>View prototype</span></div>
+            </a>
+            <a class="prototype-card" href="./prototype-template.html">
+              <div class="prototype-card__media"><span>Media placeholder</span><strong>Prototype 04</strong></div>
+              <div class="prototype-card__body"><p class="portfolio-kicker">Engine · Category</p><h2>Prototype title</h2><p>Add a GIF or video when the experiment is ready to be shown publicly.</p><span>View prototype</span></div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-container"><div class="main-footer__upper"><div class="main-footer__row main-footer__row-1"><h2 class="heading heading-sm">Socials</h2><div class="main-footer__social-cont"><a href="https://www.linkedin.com/in/brandon-smith5701/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/Gexes" target="_blank" rel="noopener noreferrer">GitHub</a></div></div><div class="main-footer__row main-footer__row-2"><h2 class="heading heading-sm text-lt">Brandon Smith</h2><p class="main-footer__short-desc">Technical game designer bridging gameplay design and software engineering.</p></div></div></div>
+    </footer>
+    <script src="./index.js" defer></script>
+  </body>
+</html>
