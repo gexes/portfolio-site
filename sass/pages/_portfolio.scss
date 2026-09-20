@@ -70,6 +70,60 @@ section[id] {
   color: #0062b9;
   letter-spacing: 0.08em;
 }
+.projects__row-content > .portfolio-kicker {
+  display: none;
+}
+.home-hero {
+  display: none;
+}
+.projects {
+  padding-top: 8rem;
+}
+.project-cs-hero {
+  color: #333;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+.project-cs-hero__content {
+  padding: 14rem 0 8rem;
+}
+.project-cs-hero .text-primary {
+  color: #555;
+}
+.project-facts--card {
+  display: block;
+  width: 100%;
+  margin: 0 0 3rem;
+  padding: 0;
+  background: transparent;
+}
+.project-facts--card > div {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  margin-bottom: 0.45rem;
+}
+.project-facts--card dt {
+  flex: 0 0 11rem;
+  color: #222;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.project-facts--card dt::after {
+  content: "";
+}
+.project-facts--card dd {
+  margin-top: 0;
+  color: #777;
+  font-size: 1.8rem;
+}
+.project-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+  align-items: center;
+}
 .highlights {
   background: #f5f7fa;
 }
@@ -133,7 +187,7 @@ section[id] {
   border-radius: 6px;
 }
 .project-facts dt {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -142,6 +196,47 @@ section[id] {
 .project-facts dd {
   font-size: 1.8rem;
   margin-top: 0.5rem;
+}
+.project-facts {
+  display: block;
+  background: transparent;
+  padding: 0;
+}
+.project-facts > div {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  margin-bottom: 0.45rem;
+}
+.project-facts dt {
+  flex: 0 0 11rem;
+  color: #222;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.project-details .project-facts dt::after {
+  content: ":";
+}
+.project-details .project-facts dt:has(+ dd a)::after {
+  content: "";
+}
+.project-facts dd {
+  color: #777;
+}
+.about-profile {
+  width: 32rem;
+  height: 32rem;
+  margin: -4rem auto 8rem;
+  overflow: hidden;
+  border: 1px solid #e1e5e9;
+  background: #f1f3f5;
+}
+.about-profile__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 35%;
 }
 .project-details__desc .project-details__content-title:not(:first-child) {
   margin-top: 4rem;
@@ -227,10 +322,16 @@ section[id] {
 @media only screen and (max-width: 37.5em) {
   .project-gallery,
   .project-facts {
-    grid-template-columns: 1fr;
+    display: block;
   }
   .highlights__grid {
     grid-template-columns: 1fr;
+  }
+  .projects {
+    padding-top: 6rem;
+  }
+  .project-facts--card {
+    display: block;
   }
   .project-facts {
     gap: 1.5rem;
@@ -245,6 +346,11 @@ section[id] {
   .home-hero__content {
     padding-top: 15rem;
     padding-bottom: 10rem;
+  }
+  .about-profile {
+    width: 24rem;
+    height: 24rem;
+    margin-top: -2rem;
   }
   .header__logo-sub {
     font-size: 1.6rem;
