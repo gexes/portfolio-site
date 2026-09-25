@@ -19,17 +19,14 @@ Dart Sass replaces the old Node Sass dependency, which does not support the inst
 3. `charons-corner.html`: Charon's Corner — gameplay leadership and spline navigation.
 4. `in-the-flesh.html`: In the Flesh — destructible voxels, GPU rendering, and editor tools.
 5. `psycorp.html`: Psycorp — verified overview of a project in development.
-6. `harvest-nuke.html`: Harvest Nuke — quests, dialogue, and enemy AI.
-7. `mythical-messenger.html`: Mythical Messenger — bubble-gun interaction and spline enemies.
-8. `striking-hell.html`: Striking Hell — level and enemy design.
 
 ## Migration notes (September 19, 2026)
 
-- Project images and original animated GIFs are local in `assets/png`, `assets/jpeg`, and `assets/gif`. Identical downloads are shared between pages. The media archive contains 85 unique files (about 213 MB), so galleries and project previews use lazy loading. GIFs retain their original animation; video conversion is a possible later optimization.
+- Project images and original animated GIFs are local in `assets/png`, `assets/jpeg`, and `assets/gif`. Identical downloads are shared between pages. The media archive contains 50 unique files (about 131 MB), so galleries and project previews use lazy loading. GIFs retain their original animation; video conversion is a possible later optimization.
 - The résumé and two embedded design documents are local PDFs in `assets/documents`. Embedded PDFs include direct open links for browsers without PDF viewing support.
-- All 12 distinct YouTube videos on the seven complete Wix case studies are embedded with responsive players, descriptive titles, lazy loading, and direct YouTube fallback links. Playback still depends on YouTube and the source video's availability.
+- All eight distinct YouTube videos on the four complete Wix case studies are embedded with responsive players, descriptive titles, lazy loading, and direct YouTube fallback links. Playback still depends on YouTube and the source video's availability.
 - `assets/media-manifest.json` records original download URLs, local paths, byte sizes, and SHA-256 hashes. `assets/embed-manifest.json` records project sources and external video embeds.
-- Psycorp's Wix detail page duplicates Dreamscape's overview, contributions, metadata, images, and Steam link. Its migrated page uses only the distinct description, role, engine, and artwork from the Wix project index. Add Psycorp-specific contributions, media, team details, and a build link when available.
+- Psycorp's Wix detail page duplicates Dreamscape's overview, contributions, metadata, images, and Steam link. Its migrated page uses only the distinct description, role, engine, team size, and artwork from the Wix project index. Add Psycorp-specific contributions and media when available.
 - The source uses both "Birds of Impalitism" and "Birds of Impalatism". Navigation retains the portfolio's title, while the verified itch.io URL keeps its published spelling.
 - The homepage highlights technical game design and Unity development. Personal details come from the public home/about pages. No degree completion date, email address, or additional social profiles have been invented.
 - The template's inactive form is replaced with verified LinkedIn, itch.io, and résumé links. A contact form will need a real submission service if added later.

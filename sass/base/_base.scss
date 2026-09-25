@@ -31,10 +31,11 @@ body {
   box-sizing: border-box;
   position: relative;
   line-height: 1.5;
-  font-family: sans-serif;
+  background: $themeClrBackground;
+  color: #fff;
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Oxanium', sans-serif;
   
 }
 

@@ -2,9 +2,8 @@
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background: #000;
-  background: #fff;
-  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  background: $themeClrBackground;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.28);
 
   &__content {
     display: flex;
@@ -20,11 +19,11 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: #333;
+    color: #fff;
     transition: color .3s;
 
     &:hover {
-      color: $themeClrPrimary;
+      color: #f4d000;
     }
   }
   &__logo-img-cont {
@@ -64,14 +63,14 @@
     padding: 2.2rem 3rem;
     display: inline-block;
     font-size: 1.6rem;
-    color: #333;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
     transition: color .3s;
 
     &:hover {
-      color: $themeClrPrimary;
+      color: #f4d000;
     }
     @include respond(tab-port) {
       padding: 3rem 1.8rem;
@@ -97,7 +96,7 @@
   }
 
   &__sm-menu {
-    background: #fff;
+    background: $themeClrBackground;
     position: absolute;
     width: 100%;
     top: 100%;
@@ -124,21 +123,21 @@
       text-decoration: none;
       padding: 2.5rem 3rem;
       font-size: 1.6rem;
-      color: #333;
+      color: #fff;
       text-align: right;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 2px;
       transition: color .3s;
       
       &:hover {
-        color: $themeClrPrimary;
+        color: #f4d000;
       }
     }
     &:first-child {
       a {
-        border-top: 1px solid #eee;
+          border-top: 1px solid rgba(255, 255, 255, 0.2);
       }
     }
   }

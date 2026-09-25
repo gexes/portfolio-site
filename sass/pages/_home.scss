@@ -2,8 +2,8 @@
   color: #fff;
   background: linear-gradient(
       to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
+      rgba($themeClrBackground, 0.8),
+      rgba($themeClrBackground, 0.8)
     ),
     url(../assets/svg/common-bg.svg);
   background-position: center;
@@ -91,7 +91,8 @@
 }
 
 .about {
-  background: rgb(250, 250, 250);
+  background: #150222;
+  color: #fff;
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -110,7 +111,7 @@
     }
     &-details-para {
       font-size: 1.8rem;
-      color: grey;
+      color: #ded7ed;
       max-width: 60rem;
       line-height: 1.7;
       margin-bottom: 1rem;
@@ -175,7 +176,7 @@
       }
       &-desc {
         font-size: 1.8rem;
-        color: grey;
+        color: #ded7ed;
         max-width: 60rem;
         line-height: 1.7;
         margin-bottom: 3rem;
@@ -190,8 +191,8 @@
 .contact {
   background: linear-gradient(
       to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
+      rgba($themeClrBackground, 0.8),
+      rgba($themeClrBackground, 0.8)
     ),
     url(../assets/svg/common-bg.svg);
   background-size: cover;
