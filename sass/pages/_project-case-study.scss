@@ -2,8 +2,8 @@
   color: #fff;
   background: linear-gradient(
       to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
+      rgba($themeClrBackground, 0.8),
+      rgba($themeClrBackground, 0.8)
     ),
     url(../assets/svg/common-bg.svg);
   background-size: cover;
@@ -74,7 +74,7 @@
     &-para {
       font-size: 1.8rem;
       line-height: 1.7;
-      color: grey;
+      color: #ded7ed;
       margin-bottom: 2rem;
     }
   }
@@ -90,10 +90,10 @@
       margin-bottom: 1.5rem;
       margin-right: 1.5rem;
       font-size: 1.6rem;
-      background: rgba(#999, 0.2);
+      background: rgba(#fff, 0.12);
       border-radius: $commonBorderRadius;
       font-weight: 600;
-      color: #777;
+      color: #ded7ed;
     }
   }
   &__links {
