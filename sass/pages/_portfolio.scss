@@ -746,6 +746,16 @@ section[id] {
   background: #10051b;
   border-radius: 5px;
 }
+.case-visual-grid .case-visual--tuning-sheet {
+  grid-column: 1 / -1;
+}
+#golem-iteration .case-visual-grid .case-visual:first-child {
+  grid-column: auto;
+}
+.case-visual--tuning-sheet img {
+  aspect-ratio: auto;
+  background: #f4f7fb;
+}
 .case-visual .project-video {
   margin-top: 0;
 }
