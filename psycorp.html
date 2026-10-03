@@ -74,191 +74,321 @@
       </nav>
     </header>
     <main id="main">
-      <section class="project-cs-hero">
-        <div class="project-cs-hero__content">
-          <p class="portfolio-kicker">Technical Director · In development</p>
-          <h1 class="heading-primary">Psycorp</h1>
-          <div class="project-cs-hero__info">
-            <p class="text-primary">
-              A narrative walking simulator about three siblings, AI
-              cybernetics, and a surveillance empire. A Unity project in
-              development.
+  <section class="project-cs-hero">
+    <div class="project-cs-hero__content">
+      <p class="portfolio-kicker">
+        Technical Director · In development
+      </p>
+      <h1 class="heading-primary">
+        Psycorp
+      </h1>
+      <div class="project-cs-hero__info">
+        <p class="text-primary">
+          A narrative walking simulator about three siblings, AI cybernetics, and a surveillance empire. I build the tools and runtime systems that let the team stage scenes and carry their consequences forward.
+        </p>
+      </div>
+      <div class="project-cs-hero__cta portfolio-actions">
+        <a href="https://store.steampowered.com/app/4537570/PSYCORP/" class="btn btn--med btn--theme" target="_blank" rel="noopener noreferrer">
+          View on Steam
+        </a>
+        <a href="https://github.com/Gexes" class="btn btn--med btn--theme-inv" target="_blank" rel="noopener noreferrer">
+          GitHub profile
+        </a>
+      </div>
+      <figure class="case-hero-media">
+        <img src="./assets/png/psycorp-01.png" alt="Psycorp project artwork" decoding="async">
+        <figcaption>
+          Project artwork sets the tone for the narrative game that these authoring and state systems support.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="project-details" id="overview">
+    <div class="main-container">
+      <div class="project-details__content">
+        <div class="project-details__content-main">
+          <section class="case-overview" aria-labelledby="at-a-glance">
+            <h2 id="at-a-glance" class="project-details__content-title">
+              Project at a glance
+            </h2>
+            <dl class="case-facts">
+              <div>
+                <dt>
+                  Role
+                </dt>
+                <dd>
+                  Technical Director &amp; Managing Director
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Team size
+                </dt>
+                <dd>
+                  20
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Engine / tools
+                </dt>
+                <dd>
+                  Unity, C#, Yarn Spinner, Cinemachine
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Duration
+                </dt>
+                <dd>
+                  In development
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Focus
+                </dt>
+                <dd>
+                  Designer tools, narrative staging, persistent state
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Platform
+                </dt>
+                <dd>
+                  PC
+                </dd>
+              </div>
+            </dl>
+            <h3 class="case-subtitle">
+              What I Owned
+            </h3>
+            <p class="project-details__desc-para">
+              I built Glikit, the Unity authoring toolset for actors, cameras, objectives, flags, sequencers, and Yarn nodes. I also worked on the runtime coordination behind dialogue scenes and on the menu, save-slot, checkpoint, and cross-scene restoration flow.
             </p>
-          </div>
-          <div class="project-cs-hero__cta">
-            <a href="#overview" class="btn btn--bg">Learn More</a>
-          </div>
-        </div>
-      </section>
-      <section class="project-details" id="overview">
-        <div class="main-container">
-          <div class="project-details__content">
-            <div class="project-details__showcase-img-cont">
-              <img
-                src="./assets/png/psycorp-01.png"
-                alt="Psycorp project artwork"
-                class="project-details__showcase-img"
-              />
-            </div>
-            <div class="project-details__content-main">
-              <dl class="project-facts">
-                <div>
-                  <dt>Role</dt>
-                  <dd>Technical Director &amp; Managing Director</dd>
-                </div>
-                <div>
-                  <dt>Engine</dt>
-                  <dd>Unity</dd>
-                </div>
-                <div>
-                  <dt>Team size</dt>
-                  <dd>20</dd>
-                </div>
-                <div>
-                  <dt>Platform</dt>
-                  <dd>PC</dd>
-                </div>
-                <div>
-                  <dt>Project type</dt>
-                  <dd>In development</dd>
-                </div>
-                <div>
-                  <dt>Build:</dt>
-                  <dd><a href="https://store.steampowered.com/app/4537570/PSYCORP/" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">Steam</a></dd>
-                </div>
-                <div>
-                  <dt>Source:</dt>
-                  <dd><a href="https://github.com/Gexes" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">GitHub</a></dd>
-                </div>
-              </dl>
-              <div class="project-details__desc">
-                <h2 class="project-details__content-title">Project overview</h2>
-                <p class="project-details__desc-para">
-                  Three siblings inherit AI cybernetics from their dying CEO
-                  father. Each implant is engineered to amplify their worst
-                  traits as they battle for control of a surveillance empire.
-                  Psycorp is a Unity narrative game in development. As
-                  Technical Director and Managing Director, I built the
-                  systems that connect narrative authoring, actor staging,
-                  cameras, progression, and persistent game state.
-                </p>
+          </section>
+          <section class="case-featured" aria-labelledby="featured-work">
+            <span class="case-anchor" id="psycorp-highlights-title" aria-hidden="true"></span>
+            <h2 id="featured-work" class="project-details__content-title">
+              Featured work
+            </h2>
+            <p class="case-section-intro">
+              Three selected parts of my work on Psycorp.
+            </p>
+            <article class="case-story" id="glikit">
+              <span class="case-anchor" id="narrative-framework" aria-hidden="true">
+              </span>
+              <p class="case-story__index">
+                01 / Featured work
+              </p>
+              <h3>
+                Giving designers one place to build a scene
+              </h3>
+              <p class="project-details__desc-para">
+                As more dialogue moments and actors were added, setting up each scene by hand made missing references easy to overlook. A scene could work in isolation and still be hard for another designer to repeat.
+              </p>
+              <div class="case-visual-grid">
+                <figure class="case-visual">
+                  <div class="project-gif-placeholder" role="img" aria-label="GIF to capture: In the Unity editor, start with an empty Glikit actor definition, assign a prefab and stable ID, add a camera anchor and dialogue event, then trigger that actor through Yarn in play mode.">
+                    <span>
+                      GIF to capture
+                    </span>
+                    <strong>
+                      In the Unity editor, start with an empty Glikit actor definition, assign a prefab and stable ID, add a camera anchor and dialogue event, then trigger that actor through Yarn in play mode.
+                    </strong>
+                  </div>
+                  <figcaption>
+                    This capture should show the full handoff from designer input to a working runtime scene.
+                  </figcaption>
+                </figure>
               </div>
-              <div class="project-details__desc">
-                <h2 class="project-details__content-title">My contributions</h2>
-                <p class="project-details__desc-para">
-                  I built Glikit, a Unity toolset connecting narrative
-                  authoring, actors, cameras, objectives, and Yarn Spinner. I
-                  also developed the menu, save-slot flow, and cross-scene
-                  restoration system.
-                </p>
+              <p class="project-details__desc-para">
+                I built Glikit around reusable definitions and validation for actors, flags, objectives, sequencers, camera setups, and Yarn nodes. The point was to catch setup problems while authoring and make the same workflow usable across scenes.
+              </p>
+            </article>
+            <article class="case-story" id="narrative-staging">
+              <span class="case-anchor" id="camera-actor-pipeline" aria-hidden="true">
+              </span>
+              <span class="case-anchor" id="yarn-integration" aria-hidden="true">
+              </span>
+              <p class="case-story__index">
+                02 / Featured work
+              </p>
+              <h3>
+                Connecting Yarn, actors, and cameras at runtime
+              </h3>
+              <p class="project-details__desc-para">
+                Dialogue had to do more than display lines. It needed to stage actors, change shots, and update objectives without every Yarn command reaching into a different scene object.
+              </p>
+              <div class="case-visual-grid">
+                <figure class="case-visual">
+                  <div class="project-gif-placeholder" role="img" aria-label="SCREENSHOT to capture: Show a short Yarn node with actor, camera, and objective commands beside the matching Glikit definitions or Unity inspector fields.">
+                    <span>
+                      SCREENSHOT to capture
+                    </span>
+                    <strong>
+                      Show a short Yarn node with actor, camera, and objective commands beside the matching Glikit definitions or Unity inspector fields.
+                    </strong>
+                  </div>
+                  <figcaption>
+                    The paired views should make the authoring contract between Yarn and Unity readable.
+                  </figcaption>
+                </figure>
+                <figure class="case-visual">
+                  <div class="project-gif-placeholder" role="img" aria-label="GIF to capture: Record one dialogue sequence spawning or staging an actor, switching to an authored camera shot, updating an objective, then returning to the gameplay camera.">
+                    <span>
+                      GIF to capture
+                    </span>
+                    <strong>
+                      Record one dialogue sequence spawning or staging an actor, switching to an authored camera shot, updating an objective, then returning to the gameplay camera.
+                    </strong>
+                  </div>
+                  <figcaption>
+                    The runtime capture should prove that narrative commands affect several systems in one sequence.
+                  </figcaption>
+                </figure>
               </div>
-              <section class="project-highlights" aria-labelledby="psycorp-highlights-title">
-                <h2 id="psycorp-highlights-title" class="project-details__content-title">Technical Highlights</h2>
-                <div class="project-highlight-grid">
-                  <a class="project-highlight-card" href="#narrative-framework">
-                    <span class="project-highlight-card__media project-gif-placeholder project-gif-placeholder--card" role="img" aria-label="GIF placeholder for the Glikit narrative toolchain"><span>GIF placeholder</span><strong>Glikit narrative toolchain</strong></span>
-                    <span class="project-highlight-card__body"><span class="project-highlight-card__title">Glikit narrative toolchain</span><span class="project-highlight-card__desc">A validated editor workflow for actors, dialogue events, objectives, flags, cameras, and Yarn nodes.</span><span class="project-highlight-card__link">Read more</span></span>
-                  </a>
-                  <a class="project-highlight-card" href="#save-menu-pipeline">
-                    <span class="project-highlight-card__media project-gif-placeholder project-gif-placeholder--card" role="img" aria-label="GIF placeholder for the persistent story-state pipeline"><span>GIF placeholder</span><strong>Persistent story-state pipeline</strong></span>
-                    <span class="project-highlight-card__body"><span class="project-highlight-card__title">Persistent story-state pipeline</span><span class="project-highlight-card__desc">A menu, save-slot, checkpoint, and restoration flow built around the same state used by dialogue.</span><span class="project-highlight-card__link">Read more</span></span>
-                  </a>
-                </div>
-              </section>
-              <section class="project-system-map" aria-labelledby="system-map-title">
-                <h2 id="system-map-title" class="project-details__content-title">How the systems connect</h2>
-                <p class="project-details__desc-para">One shared pipeline takes designer-authored content from setup to gameplay.</p>
-                <div class="system-flow" aria-label="PSYCORP narrative system flow">
+              <p class="project-details__desc-para">
+                I used stable actor IDs, scene configurations, camera anchors, and runtime coordinators to connect Yarn commands to game services. That made an authored sequence capable of changing the scene while keeping the staging rules in one pipeline.
+              </p>
+              <figure class="case-visual" aria-labelledby="system-map-title">
+                <div class="system-flow" aria-label="Psycorp narrative system flow">
                   <div><strong>Glikit editor</strong><span>Creates and validates content</span></div>
                   <span class="system-flow__arrow" aria-hidden="true">→</span>
-                  <div><strong>Definitions &amp; sequencers</strong><span>Store actors, scenes, flags, and Yarn nodes</span></div>
+                  <div><strong>Definitions &amp; sequencers</strong><span>Store actors, flags, cameras, and Yarn nodes</span></div>
                   <span class="system-flow__arrow" aria-hidden="true">→</span>
-                  <div><strong>Runtime coordinator</strong><span>Owns dialogue state, UI, and execution</span></div>
+                  <div><strong>Runtime coordinator</strong><span>Owns dialogue state and execution</span></div>
                   <span class="system-flow__arrow" aria-hidden="true">→</span>
                   <div><strong>Game services</strong><span>Drive actors, cameras, objectives, and saves</span></div>
                 </div>
-              </section>
-
-              <section id="narrative-framework" class="project-case-section">
-                <h2 class="project-details__content-title">Custom editor &amp; narrative framework</h2>
-                <div class="case-study-points">
-                  <div><h3>Problem</h3><p>Manual scene setup was slow and prone to missing references.</p></div>
-                  <div><h3>Goal</h3><p>Give designers one reliable workflow for building narrative events.</p></div>
-                  <div><h3>Approach</h3><p>Glikit creates and validates actors, flags, objectives, sequencers, camera setups, and Yarn nodes.</p></div>
-                  <div><h3>Outcome</h3><p>Scenes are faster to build, easier to validate, and consistent across the project.</p></div>
-                </div>
-                <figure class="project-gif-figure">
-                  <div class="project-gif-placeholder" role="img" aria-label="GIF placeholder showing an actor and dialogue event being created in Glikit"><span>GIF placeholder</span><strong>Create an actor and dialogue event in Glikit</strong><small>Actor setup, camera anchors, and event sequencing.</small></div>
-                  <figcaption>Planned capture: Glikit’s setup workflow.</figcaption>
+                <figcaption id="system-map-title">The pipeline shows where authored content becomes runtime actions and shared game state.</figcaption>
+              </figure>
+            </article>
+            <article class="case-story" id="psycorp-restoration">
+              <span class="case-anchor" id="save-menu-pipeline" aria-hidden="true">
+              </span>
+              <p class="case-story__index">
+                03 / Featured work
+              </p>
+              <h3>
+                Restoring a scene without replaying its events
+              </h3>
+              <p class="project-details__desc-para">
+                Saving a narrative game is more than remembering the player position. A loaded scene also needs the right flags, objectives, actors, objects, and camera state, without firing earlier events again.
+              </p>
+              <div class="case-visual-grid">
+                <figure class="case-visual">
+                  <div class="project-gif-placeholder" role="img" aria-label="GIF to capture: Save after a dialogue choice changes a flag and objective, return to the main menu, load that slot, and show the actor, objective, and camera state restored without replaying the dialogue.">
+                    <span>
+                      GIF to capture
+                    </span>
+                    <strong>
+                      Save after a dialogue choice changes a flag and objective, return to the main menu, load that slot, and show the actor, objective, and camera state restored without replaying the dialogue.
+                    </strong>
+                  </div>
+                  <figcaption>
+                    This capture should show the save data rebuilding the scene, not only returning the player to a location.
+                  </figcaption>
                 </figure>
-              </section>
-
-              <section id="camera-actor-pipeline" class="project-case-section">
-                <h2 class="project-details__content-title">Camera pipeline &amp; actor staging</h2>
-                <div class="case-study-points">
-                  <div><h3>Problem</h3><p>Dialogue scenes needed reusable actor staging and reliable camera control.</p></div>
-                  <div><h3>Goal</h3><p>Let writers direct actors and shots from Yarn without scene-specific code.</p></div>
-                  <div><h3>Approach</h3><p>Stable actor IDs, scene configurations, and camera-anchor presets drive spawning, animation, and shot changes.</p></div>
-                  <div><h3>Outcome</h3><p>Actors and shots can be reused while gameplay cameras restore automatically.</p></div>
-                </div>
-                <figure class="project-gif-figure">
-                  <div class="project-gif-placeholder" role="img" aria-label="GIF placeholder showing camera anchors and actor staging"><span>GIF placeholder</span><strong>Author camera anchors, then switch shots from Yarn</strong><small>Camera setup followed by the finished runtime shot.</small></div>
-                  <figcaption>Planned capture: camera authoring and runtime results.</figcaption>
-                </figure>
-              </section>
-
-              <section id="yarn-integration" class="project-case-section">
-                <h2 class="project-details__content-title">Yarn Spinner gameplay integration</h2>
-                <div class="case-study-points">
-                  <div><h3>Problem</h3><p>Dialogue choices needed to change gameplay without fragile scene references.</p></div>
-                  <div><h3>Goal</h3><p>Use Yarn as a readable control layer for narrative gameplay.</p></div>
-                  <div><h3>Approach</h3><p>Custom commands connect Yarn to actors, cameras, objectives, flags, saves, and scene systems.</p></div>
-                  <div><h3>Outcome</h3><p>Writers can build interactive scenes using the same state as gameplay and saves.</p></div>
-                </div>
-                <figure class="project-gif-figure">
-                  <div class="project-gif-placeholder" role="img" aria-label="GIF placeholder showing Yarn commands changing gameplay"><span>GIF placeholder</span><strong>Run a Yarn sequence that changes the scene</strong><small>Actor, objective, and camera commands working together.</small></div>
-                  <figcaption>Planned capture: Yarn controlling gameplay.</figcaption>
-                </figure>
-              </section>
-
-              <section id="save-menu-pipeline" class="project-case-section">
-                <h2 class="project-details__content-title">Main menu, save system &amp; restoration</h2>
-                <div class="case-study-points">
-                  <div><h3>Problem</h3><p>Saves had to rebuild a complete narrative scene without firing gameplay events.</p></div>
-                  <div><h3>Goal</h3><p>Create a flexible multi-slot system that preserves story and gameplay state.</p></div>
-                  <div><h3>Approach</h3><p>Stable IDs and ordered restoration rebuild global state, actors, objects, the player, and cameras.</p></div>
-                  <div><h3>Outcome</h3><p>Players can reliably start, resume, delete, and checkpoint playthroughs.</p></div>
-                </div>
-                <figure class="project-gif-figure">
-                  <div class="project-gif-placeholder" role="img" aria-label="GIF placeholder showing save-slot selection and scene restoration"><span>GIF placeholder</span><strong>Select a slot and restore a narrative scene</strong><small>Save selection, scene transition, and restored state.</small></div>
-                  <figcaption>Planned capture: menu-to-game restoration.</figcaption>
-                </figure>
-              </section>
-              <div class="project-details__tools-used">
-                <h2 class="project-details__content-title">
-                  Tools &amp; disciplines
-                </h2>
-                <div class="skills"><div class="skills__skill">Unity</div><div class="skills__skill">C#</div><div class="skills__skill">Yarn Spinner</div><div class="skills__skill">Cinemachine</div><div class="skills__skill">Animancer</div><div class="skills__skill">Custom editor tooling</div><div class="skills__skill">ScriptableObjects</div><div class="skills__skill">JSON save architecture</div><div class="skills__skill">Narrative systems</div></div>
               </div>
-            </div>
-            <div class="project-details__content-main">
-              <div class="project-details__links">
-                <h2 class="project-details__content-title">
-                  Explore the project
-                </h2>
-                <div class="portfolio-actions">
-                  <a
-                    href="./index.html#projects"
-                    class="btn btn--med btn--theme-inv"
-                    >All projects</a
-                  >
-                </div>
+              <p class="project-details__desc-para">
+                I tied save slots and checkpoints to stable IDs and an ordered restoration flow. Global state is restored before the scene rebuilds its visible state, so players can resume from the menu into a coherent narrative moment.
+              </p>
+            </article>
+          </section>
+          <section class="case-support" aria-labelledby="supporting-contributions">
+            <h2 id="supporting-contributions" class="project-details__content-title">
+              Supporting contributions
+            </h2>
+            <ul>
+              <li>
+                Menu and save-slot flow
+              </li>
+              <li>
+                Checkpoint handling
+              </li>
+              <li>
+                Objective tracking and flags
+              </li>
+              <li>
+                Dialogue command and editor validation
+              </li>
+              <li>
+                Actor animation integration
+              </li>
+            </ul>
+          </section>
+          <section class="case-takeaway" aria-labelledby="project-takeaway">
+            <h2 id="project-takeaway" class="project-details__content-title">
+              Project takeaway
+            </h2>
+            <p class="project-details__desc-para">
+              Psycorp changed the way I think about narrative implementation. Once several people author content, a working scene is only one part of the job; the authoring rules and restoration order have to be understandable and repeatable too.
+            </p>
+          </section>
+          <section class="case-development" aria-labelledby="development-material">
+            <h2 id="development-material" class="project-details__content-title">
+              Gallery &amp; development material
+            </h2>
+            <details class="case-archive">
+              <summary>
+                Open the development image gallery (1 items)
+              </summary>
+              <div class="project-gallery">
+                <figure class="case-visual">
+                  <a href="./assets/png/psycorp-01.png" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/png/psycorp-01.png" alt="Project artwork establishes the narrative world supported by the Glikit authoring pipeline." loading="lazy" decoding="async">
+                  </a>
+                  <figcaption>
+                    Project artwork establishes the narrative world supported by the Glikit authoring pipeline.
+                  </figcaption>
+                </figure>
               </div>
+            </details>
+          </section>
+          <section class="case-docs" aria-labelledby="documentation">
+            <h2 id="documentation" class="project-details__content-title">
+              Documentation &amp; links
+            </h2>
+            <p class="project-details__desc-para">
+              For a deeper look at the project, use the build and project links below.
+            </p>
+            <div class="case-link-list">
+              <a href="https://store.steampowered.com/app/4537570/PSYCORP/" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">
+                View on Steam
+              </a>
+              <a href="https://github.com/Gexes" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">
+                GitHub profile
+              </a>
+              <a href="./index.html#projects" class="portfolio-text-link">
+                All projects
+              </a>
             </div>
-          </div>
+          </section>
+          <nav class="project-pagination" aria-label="Other projects">
+            <a href="./in-the-flesh.html" aria-label="Previous project: In the Flesh">
+              <span>
+                Previous project
+              </span>
+              <strong>
+                &larr; In the Flesh
+              </strong>
+            </a>
+            <a href="./project-dreamscape.html" aria-label="Next project: Project Dreamscape">
+              <span>
+                Next project
+              </span>
+              <strong>
+                Project Dreamscape &rarr;
+              </strong>
+            </a>
+          </nav>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
+  </section>
+</main>
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
