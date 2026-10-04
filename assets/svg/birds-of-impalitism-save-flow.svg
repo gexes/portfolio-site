@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1330" viewBox="0 0 1600 1330" role="img" aria-labelledby="title desc">
+<title id="title">Birds of Impalitism: save flow and connected systems</title>
+<desc id="desc">Runtime owners feed SaveGameController and SaveData, which SaveSystem writes to save.json. Explicit or queued loading restores the player, pickup and reveal IDs, and area tear UI. World flags are an unsupported dictionary; batteryCharge is unused.</desc>
+<style>@font-face{font-family:Oxanium;src:url("../fonts/Oxanium-Regular.ttf")}@font-face{font-family:Oxanium;src:url("../fonts/Oxanium-Bold.ttf");font-weight:700}text{font-family:Oxanium,Arial,sans-serif}</style>
+<rect x="0" y="0" width="1600" height="1330" rx="0" fill="#ffffff" stroke="#ffffff"/>
+<rect x="470" y="40" width="660" height="177" rx="5" fill="#ffffff" stroke="#969ba0"/>
+<rect x="471" y="41" width="658" height="58" rx="4" fill="#b9dfec" stroke="#b9dfec"/>
+<path d="M470 100 L1130 100" stroke="#687681" stroke-width="3" fill="none"/>
+<text x="613.306" y="81" fill="#103a57" font-family="Oxanium, sans-serif" font-size="38" font-weight="700">SaveGameController</text>
+<text x="492" y="139" fill="#202831" font-family="Oxanium, sans-serif" font-size="29" font-weight="400">SaveGame() / LoadGame()</text>
+<text x="492" y="176" fill="#202831" font-family="Oxanium, sans-serif" font-size="29" font-weight="400">Persistent controller; queued scene load</text>
+<path d="M800 217 L800 255" stroke="#687681" stroke-width="3" fill="none"/>
+<path d="M224 255 L1376 255" stroke="#687681" stroke-width="3" fill="none"/>
+<path d="M224 255 L224 290" stroke="#687681" stroke-width="3" fill="none"/>
+<path d="M608 255 L608 290" stroke="#687681" stroke-width="3" fill="none"/>
+<path d="M992 255 L992 290" stroke="#687681" stroke-width="3" fill="none"/>
+<path d="M1376 255 L1376 290" stroke="#687681" stroke-width="3" fill="none"/>
+<rect x="48" y="290" width="352" height="226" rx="5" fill="#ffffff" stroke="#969ba0"/>
+<path d="M48 350 L400 350" stroke="#687681" stroke-width="3" fill="none"/>
+<text x="100.10000000000001" y="331" fill="#103a57" font-family="Oxanium, sans-serif" font-size="30" font-weight="700">Player Transform</text>
+<text x="70" y="389" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">Position + yaw</text>
+<text x="70" y="426" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">Found at save/load time</text>
+<text x="70" y="463" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">Controller disabled</text>
+<text x="70" y="500" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">while applying transform</text>
+<rect x="432" y="290" width="352" height="263" rx="5" fill="#ffffff" stroke="#969ba0"/>
+<path d="M432 350 L784 350" stroke="#687681" stroke-width="3" fill="none"/>
+<text x="454.672" y="331" fill="#103a57" font-family="Oxanium, sans-serif" font-size="28" font-weight="700">BatteryPickupManager</text>
+<text x="454" y="389" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">Collected pickup IDs</text>
+<text x="454" y="426" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">Completed reveal IDs</text>
+<text x="454" y="463" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">BatteryPickup +</text>
+<text x="454" y="500" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">DialogueReveal</text>
+<text x="454" y="537" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">Restore object visibility</text>
+<rect x="816" y="290" width="352" height="263" rx="5" fill="#ffffff" stroke="#969ba0"/>
+<path d="M816 350 L1168 350" stroke="#687681" stroke-width="3" fill="none"/>
+<text x="855.729" y="331" fill="#103a57" font-family="Oxanium, sans-serif" font-size="29" font-weight="700">TimePeriodChanger</text>
+<text x="838" y="389" fill="#202831" font-family="Oxanium, sans-serif" font-size="24" font-weight="400">Area tear counts + UI</text>
+<text x="838" y="426" fill="#202831" font-family="Oxanium, sans-serif" font-size="24" font-weight="400">Registry:</text>
+<text x="838" y="463" fill="#202831" font-family="Oxanium, sans-serif" font-size="24" font-weight="400">TimePeriodChangerManager</text>
+<text x="838" y="500" fill="#202831" font-family="Oxanium, sans-serif" font-size="24" font-weight="400">Last area set by trigger</text>
+<text x="838" y="537" fill="#202831" font-family="Oxanium, sans-serif" font-size="24" font-weight="400">Restore counts and UI</text>
+<rect x="1200" y="290" width="352" height="226" rx="5" fill="#ffffff" stroke="#969ba0"/>
+<path d="M1200 350 L1552 350" stroke="#687681" stroke-width="3" fill="none"/>
+<text x="1237.119" y="331" fill="#103a57" font-family="Oxanium, sans-serif" font-size="29" font-weight="700">WorldStateManager</text>
+<text x="1222" y="389" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">Boolean flags API</text>
+<text x="1222" y="426" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">SaveFlags / LoadFlags</text>
+<text x="1222" y="463" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">Dictionary unsupported</text>
+<text x="1222" y="500" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">by JsonUtility</text>
+<path d="M470 128 L26 128" stroke="#687681" stroke-width="3" fill="none"/>
+<path d="M26 128 L26 746" stroke="#687681" stroke-width="3" fill="none"/>
+<path d="M26 746 L400 746" stroke="#687681" stroke-width="3" fill="none"/>
+<text x="48" y="624" fill="#364653" font-family="Oxanium, sans-serif" font-size="26" font-weight="400">Save: gather state</text>
+<text x="48" y="661" fill="#364653" font-family="Oxanium, sans-serif" font-size="26" font-weight="400">Load: restore state</text>
+<text x="48" y="698" fill="#364653" font-family="Oxanium, sans-serif" font-size="26" font-weight="400">through the controller</text>
+<rect x="400" y="610" width="800" height="270" rx="5" fill="#ffffff" stroke="#969ba0"/>
+<path d="M400 670 L1200 670" stroke="#687681" stroke-width="3" fill="none"/>
+<text x="719.216" y="651" fill="#103a57" font-family="Oxanium, sans-serif" font-size="36" font-weight="700">SaveData</text>
+<text x="424" y="713" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">playerX, playerY, playerZ</text>
+<text x="424" y="749" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">playerRotY</text>
+<text x="424" y="785" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">collectedBatteryIDs</text>
+<text x="424" y="821" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">revealedDialogueIDs</text>
+<text x="839" y="713" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">tearCountEnterance</text>
+<text x="839" y="749" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">tearCountBeach</text>
+<text x="839" y="785" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">tearCountFoodCourt</text>
+<text x="839" y="821" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">lastTimePeriodArea</text>
+<text x="424" y="862" fill="#704600" font-family="Oxanium, sans-serif" font-size="26" font-weight="400">batteryCharge: unused   |   worldFlags: not serialized</text>
+<path d="M800 880 L800 930" stroke="#687681" stroke-width="3" fill="none"/>
+<rect x="400" y="930" width="800" height="170" rx="5" fill="#ffffff" stroke="#969ba0"/>
+<path d="M400 990 L1200 990" stroke="#687681" stroke-width="3" fill="none"/>
+<text x="694.9159999999999" y="971" fill="#103a57" font-family="Oxanium, sans-serif" font-size="36" font-weight="700">SaveSystem</text>
+<text x="422" y="1029" fill="#202831" font-family="Oxanium, sans-serif" font-size="29" font-weight="400">JsonUtility: ToJson / FromJson&lt;SaveData&gt;</text>
+<text x="422" y="1066" fill="#202831" font-family="Oxanium, sans-serif" font-size="29" font-weight="400">File: WriteAllText / ReadAllText</text>
+<text x="1226" y="968" fill="#103a57" font-family="Oxanium, sans-serif" font-size="26" font-weight="700">Save triggers</text>
+<text x="1226" y="1005" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">F5 / pause save</text>
+<text x="1226" y="1042" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">InteractableLevelTear</text>
+<text x="48" y="967" fill="#103a57" font-family="Oxanium, sans-serif" font-size="26" font-weight="700">Load triggers</text>
+<text x="48" y="1004" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">F9 / pause load</text>
+<text x="48" y="1041" fill="#202831" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">Queued -&gt; sceneLoaded</text>
+<path d="M800 1100 L800 1145" stroke="#687681" stroke-width="3" fill="none"/>
+<rect x="400" y="1145" width="800" height="125" rx="5" fill="#ffffff" stroke="#969ba0"/>
+<path d="M400 1205 L1200 1205" stroke="#687681" stroke-width="3" fill="none"/>
+<text x="724.35" y="1186" fill="#103a57" font-family="Oxanium, sans-serif" font-size="34" font-weight="700">save.json</text>
+<text x="422" y="1244" fill="#202831" font-family="Oxanium, sans-serif" font-size="28" font-weight="400">Application.persistentDataPath + &quot;/save.json&quot;</text>
+<text x="464.875" y="1310" fill="#364653" font-family="Oxanium, sans-serif" font-size="25" font-weight="400">Scene destination / returnScene is not stored in SaveData.</text>
+</svg>

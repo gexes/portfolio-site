@@ -84,7 +84,7 @@
       </h1>
       <div class="project-cs-hero__info">
         <p class="text-primary">
-          A vaporwave momentum shooter set in the decaying Palamus Mall. I built the save and progression systems that keep player choices and world state consistent across scenes.
+          A vaporwave momentum shooter set in the decaying Palamus Mall. I built the save controller and progression flow for player position, collected pickups, dialogue reveals, and area tear counts.
         </p>
       </div>
       <div class="project-cs-hero__cta portfolio-actions">
@@ -168,7 +168,7 @@
               What I Owned
             </h3>
             <p class="project-details__desc-para">
-              I designed and programmed the save controller and data flow for player position, batteries, goggle chunks, world flags, and dialogue progress. I also designed the dialogue interaction flow and coordinated the technical implementation with the team.
+              I designed and programmed the save controller and its connections to player position, pickup IDs, completed dialogue reveals, and area tear counts. I also designed the dialogue interaction flow and coordinated the technical implementation with the team. The current code uses BatteryPickupManager and TimePeriodChanger for progression; the gallery records earlier battery and goggle setups.
             </p>
           </section>
           <section class="case-featured" aria-labelledby="featured-work">
@@ -189,7 +189,7 @@
                 Deciding what the save file owns
               </h3>
               <p class="project-details__desc-para">
-                The save needed to remember more than a checkpoint. Player position, pickups, progression, and world flags had to agree after loading, even when different systems produced those values.
+                The save needed to remember both where the player was and what they had completed. I used one SaveData snapshot for position and yaw, collected pickup IDs, completed dialogue reveal IDs, three area tear counts, and the last entered area.
               </p>
               <div class="case-visual-grid">
                 <figure class="case-visual">
@@ -197,25 +197,20 @@
                     <img src="./assets/png/birds-of-impalitism-13.png" alt="Unity Save Game Controller inspector showing references to world and battery managers" loading="lazy" decoding="async">
                   </a>
                   <figcaption>
-                    The controller inspector shows the central handoff between the save flow and subsystem managers.
+                    An earlier controller setup shows the manager references used during development. The diagram below follows the current scripts.
                   </figcaption>
                 </figure>
-                <figure class="case-visual">
-                  <div class="project-gif-placeholder" role="img" aria-label="DIAGRAM to capture: Draw the actual save-data fields and arrows from BatteryPickup, GoggleChunkManager, WorldStateManager, dialogue progress, and player position into the save file, then back into those systems on load.">
-                    <span>
-                      DIAGRAM to capture
-                    </span>
-                    <strong>
-                      Draw the actual save-data fields and arrows from BatteryPickup, GoggleChunkManager, WorldStateManager, dialogue progress, and player position into the save file, then back into those systems on load.
-                    </strong>
-                  </div>
+                <figure class="case-visual" style="grid-column: 1 / -1;">
+                  <a href="./assets/svg/birds-of-impalitism-save-flow.svg" target="_blank" rel="noopener noreferrer" aria-label="Open the save system diagram at full size">
+                    <img src="./assets/png/birds-of-impalitism-save-flow.png" alt="Save flow: player transform, pickup and dialogue IDs, and area tear counts feed SaveGameController and SaveData, then SaveSystem writes save.json. Explicit or queued loading restores the player, object visibility, and area UI. batteryCharge is unused; worldFlags is an unsupported dictionary." width="2400" height="1995" style="height: auto; aspect-ratio: auto; background: #fff;" loading="lazy" decoding="async">
+                  </a>
                   <figcaption>
-                    The diagram should make ownership of each saved value explicit.
+                    The current save path, exact data fields, and restoration targets. WorldStateManager exposes a flags API, but its dictionary is not serialized by Unity 2022.3 JsonUtility. Open the diagram to inspect it at full size.
                   </figcaption>
                 </figure>
               </div>
               <p class="project-details__desc-para">
-                I designed a shared data model and a save controller that gathers state from the battery tracker, goggle chunks, and world flags. Each scene tracks its own progression so reloading one area does not overwrite another.
+                SaveGameController gathers a snapshot and SaveSystem writes it to save.json. BatteryPickupManager exports its pickup and reveal ID sets as lists, while registered TimePeriodChanger components copy the three shared area counts. The area counts belong to Entrance, Beach, and FoodCourt rather than individual scene save files.
               </p>
             </article>
             <article class="case-story" id="cross-scene-persistence">
@@ -226,7 +221,7 @@
                 Keeping progression through scene changes
               </h3>
               <p class="project-details__desc-para">
-                A player should not lose a collected item or a dialogue step just because they leave an area. The difficult part was keeping scene-local objects and shared progression from disagreeing after a transition.
+                A collected pickup or completed dialogue reveal needs to stay completed when the player leaves an area. The controller and managers persist between scenes, while newly created scene objects read their completion IDs from BatteryPickupManager.
               </p>
               <div class="case-visual-grid">
                 <figure class="case-visual">
@@ -234,7 +229,7 @@
                     <img src="./assets/png/birds-of-impalitism-11.png" alt="Unity Goggle Chunk Manager inspector" loading="lazy" decoding="async">
                   </a>
                   <figcaption>
-                    The goggle chunk manager is one of the scene systems that reports collectible state into the save flow.
+                    An earlier goggle chunk manager inspector. The current scripts use completed reveal IDs and area tear counts; this image records the former setup.
                   </figcaption>
                 </figure>
                 <figure class="case-visual">
@@ -242,25 +237,20 @@
                     <img src="./assets/png/birds-of-impalitism-12.png" alt="Unity Battery Pickup inspector" loading="lazy" decoding="async">
                   </a>
                   <figcaption>
-                    The battery pickup illustrates why individual world objects need a persistent collected state.
+                    An earlier pickup inspector shows the ID-based setup. The current BatteryPickup records its pickupID, reveals connected objects, and increments its area's tear count.
                   </figcaption>
                 </figure>
                 <figure class="case-visual">
-                  <div class="project-gif-placeholder" role="img" aria-label="GIF to capture: Collect a battery and a goggle chunk, change scenes, return, and show both pickups remain collected while the player’s progression UI retains the change.">
-                    <span>
-                      GIF to capture
-                    </span>
-                    <strong>
-                      Collect a battery and a goggle chunk, change scenes, return, and show both pickups remain collected while the player’s progression UI retains the change.
-                    </strong>
-                  </div>
+                  <a href="./assets/gif/birds-of-impalitism-tear-counter.gif" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/gif/birds-of-impalitism-tear-counter.gif" alt="First-person gameplay with the area tear counter and collection objective displayed in the HUD." loading="lazy" decoding="async">
+                  </a>
                   <figcaption>
-                    The capture should verify persistence across a full scene round trip.
+                    Gameplay capture of the area tear counter and collection objective. The HUD shows progress toward the level exit.
                   </figcaption>
                 </figure>
               </div>
               <p class="project-details__desc-para">
-                Subsystems report their state to the unified save file at checkpoints and exits. When a scene loads, it reads the relevant data before presenting its objects, so each area can restore its own progress.
+                InteractableLevelTear saves before level entry and records the return scene in memory. The win flow and level pause menu queue a load before returning. On the next sceneLoaded event, the controller restores the snapshot and refreshes the area UI. Other scene changes carry manager state in memory without automatically reading the file.
               </p>
             </article>
             <article class="case-story" id="world-restoration">
@@ -273,7 +263,7 @@
                 Rebuilding the world on load
               </h3>
               <p class="project-details__desc-para">
-                A save file is only useful if the loaded world matches it. I added an automatic load path that reconstructs object and world state when a scene opens, with validation for invalid entries before they can cause errors.
+                Loading has to apply the saved values to scene objects. BatteryPickupManager rebuilds its ID sets and resets pickups and dialogue reveals, including inactive objects. Collected ordinary pickups stay hidden, their connected objects become visible, and completed reveals restore their object visibility.
               </p>
               <div class="case-visual-grid">
                 <figure class="case-visual">
@@ -281,33 +271,28 @@
                     <img src="./assets/png/birds-of-impalitism-14.png" alt="Unity World State Manager inspector" loading="lazy" decoding="async">
                   </a>
                   <figcaption>
-                    The world-state manager owns scene conditions that must be rebuilt from saved values.
+                    WorldStateManager provides a boolean flags API. The current JSON serializer does not support its dictionary, so the code does not persist those flags to disk.
                   </figcaption>
                 </figure>
                 <figure class="case-visual">
                   <a href="./assets/png/birds-of-impalitism-15.png" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/png/birds-of-impalitism-15.png" alt="Code view of the save and restoration logic" loading="lazy" decoding="async">
+                    <img src="./assets/png/birds-of-impalitism-15.png" alt="Earlier code view of the save and restoration logic" loading="lazy" decoding="async">
                   </a>
                   <figcaption>
-                    The code view records the validation and restoration path behind the player-facing result.
+                    An earlier code view from development. The revised document describes the current load sequence and its reference and file checks.
                   </figcaption>
                 </figure>
                 <figure class="case-visual">
-                  <div class="project-gif-placeholder" role="img" aria-label="GIF to capture: Save after unlocking a world flag, quit to the menu, load the save, and show the same object or route in its unlocked state while an already-collected pickup stays absent.">
-                    <span>
-                      GIF to capture
-                    </span>
-                    <strong>
-                      Save after unlocking a world flag, quit to the menu, load the save, and show the same object or route in its unlocked state while an already-collected pickup stays absent.
-                    </strong>
-                  </div>
+                  <a href="./assets/gif/Birds-of-impalitism-collecting-pickup.gif" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/gif/Birds-of-impalitism-collecting-pickup.gif" alt="First-person gameplay showing the player approach a battery pickup, with the in-game HUD visible." loading="lazy" decoding="async">
+                  </a>
                   <figcaption>
-                    A before-and-after reload capture should prove the world matches the saved progression.
+                    In-game pickup capture. The battery pickup and HUD are visible as the player moves through the area.
                   </figcaption>
                 </figure>
               </div>
               <p class="project-details__desc-para">
-                That work is mostly invisible during normal play, but it lets a player resume without finding an already-collected item back in the world or an unlocked area closed again.
+                LoadGame also restores player position and yaw with CharacterController temporarily disabled, then reloads the area counts and updates the last area's UI. The code checks for a missing file or player; the design document records the remaining limits, including dictionary serialization and malformed-save handling.
               </p>
             </article>
           </section>
@@ -320,13 +305,13 @@
                 Dialogue interaction logic
               </li>
               <li>
-                Checkpoint and scene-exit save triggers
+                Manual save/load and level-entry save triggers
               </li>
               <li>
-                Player stat persistence
+                Player position and yaw persistence
               </li>
               <li>
-                Invalid-save validation
+                Queued loading on level return and Continue
               </li>
               <li>
                 Design documentation for subsystem owners
@@ -338,7 +323,7 @@
               Project takeaway
             </h2>
             <p class="project-details__desc-para">
-              Birds of Impalitism made state ownership a concrete design concern for me. The visible result is simply a world that remembers the player, but getting there required every scene and subsystem to agree on what the save file means.
+              Birds of Impalitism made state ownership a concrete design concern for me. Carrying manager state between scenes, writing a snapshot to disk, and restoring scene objects each need an explicit handoff. Reviewing the save fields against their runtime owners also shows where older features and unused fields have stopped matching the implementation.
             </p>
           </section>
           <section class="case-development" aria-labelledby="development-material">
