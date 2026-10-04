@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1100" viewBox="0 0 1200 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Project Dreamscape enemy tuning note, April 11, 2025</title>
+  <desc id="desc">A retrospective sheet showing before and after prefab values for Follower, Charger, and Golem, with the issue and reason for each pass. Values come from balancing commit a5a02976 on the Balancing-Brandon branch. Reasons come from the enemy balancing design document.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #1e2440; }
+    .eyebrow { font-size: 18px; font-weight: 700; letter-spacing: 2px; fill: #0062b9; }
+    .heading { font-size: 39px; font-weight: 700; }
+    .date { font-size: 21px; font-weight: 700; fill: #365173; }
+    .sub { font-size: 19px; fill: #53617b; }
+    .enemy { font-size: 26px; font-weight: 700; }
+    .role { font-size: 18px; fill: #0062b9; }
+    .issue { font-size: 18px; fill: #3f4e68; }
+    .label { font-size: 17px; font-weight: 700; fill: #60708b; letter-spacing: 1px; }
+    .metric { font-size: 20px; }
+    .value { font-size: 23px; font-weight: 700; }
+    .after { fill: #0062b9; }
+    .reason { font-size: 18px; fill: #32405b; }
+    .footer { font-size: 16px; fill: #52617d; }
+  </style>
+  <rect width="1200" height="1100" fill="#f4f7fb"/>
+  <rect width="1200" height="12" fill="#0062b9"/>
+  <text x="58" y="62" class="eyebrow">PROJECT DREAMSCAPE / COMBAT DESIGN</text>
+  <text x="58" y="111" class="heading">Enemy tuning note</text>
+  <text x="1142" y="108" text-anchor="end" class="date">11 APR 2025</text>
+  <text x="58" y="143" class="sub">Recorded balancing pass after playtest feedback · Follower / Charger / Golem</text>
+
+  <rect x="42" y="174" width="1116" height="264" rx="8" fill="#fff" stroke="#d8e1ec"/>
+  <rect x="42" y="174" width="8" height="264" fill="#0062b9"/>
+  <text x="68" y="215" class="enemy">FOLLOWER</text>
+  <text x="250" y="215" class="role">Steady crowd pressure</text>
+  <text x="68" y="246" class="issue">Playtest issue: groups lost pressure because Followers went down too quickly.</text>
+  <line x1="68" x2="1132" y1="263" y2="263" stroke="#d8e1ec"/>
+  <text x="68" y="289" class="label">PREFAB VALUE</text>
+  <text x="668" y="289" class="label">BEFORE</text>
+  <text x="872" y="289" class="label">AFTER</text>
+  <text x="68" y="324" class="metric">Max health</text><text x="668" y="324" class="value">50</text><text x="872" y="324" class="value after">65</text>
+  <text x="68" y="358" class="metric">Base speed</text><text x="668" y="358" class="value">2</text><text x="872" y="358" class="value after">3</text>
+  <text x="68" y="392" class="metric">Base damage range</text><text x="668" y="392" class="value">10–15</text><text x="872" y="392" class="value after">7–11</text>
+  <text x="68" y="423" class="reason">Reason: keep the enemy present in group fights without high damage spikes.</text>
+
+  <rect x="42" y="454" width="1116" height="264" rx="8" fill="#fff" stroke="#d8e1ec"/>
+  <rect x="42" y="454" width="8" height="264" fill="#0062b9"/>
+  <text x="68" y="495" class="enemy">CHARGER</text>
+  <text x="250" y="495" class="role">Burst disruption</text>
+  <text x="68" y="526" class="issue">Playtest issue: burst hits and a long charge left too little clear counterplay.</text>
+  <line x1="68" x2="1132" y1="543" y2="543" stroke="#d8e1ec"/>
+  <text x="68" y="569" class="label">PREFAB VALUE</text>
+  <text x="668" y="569" class="label">BEFORE</text>
+  <text x="872" y="569" class="label">AFTER</text>
+  <text x="68" y="604" class="metric">Base damage range</text><text x="668" y="604" class="value">10–15</text><text x="872" y="604" class="value after">4–12</text>
+  <text x="68" y="638" class="metric">Charge duration</text><text x="668" y="638" class="value">20</text><text x="872" y="638" class="value after">8</text>
+  <text x="68" y="672" class="metric">Detection distance</text><text x="668" y="672" class="value">15</text><text x="872" y="672" class="value after">30</text>
+  <text x="68" y="703" class="reason">Reason: reduce damage and shorten the charge while preserving a visible approach.</text>
+
+  <rect x="42" y="734" width="1116" height="264" rx="8" fill="#fff" stroke="#d8e1ec"/>
+  <rect x="42" y="734" width="8" height="264" fill="#0062b9"/>
+  <text x="68" y="775" class="enemy">GOLEM</text>
+  <text x="250" y="775" class="role">Area control</text>
+  <text x="68" y="806" class="issue">Playtest issue: frequent interruption kept the area attack from holding space.</text>
+  <line x1="68" x2="1132" y1="823" y2="823" stroke="#d8e1ec"/>
+  <text x="68" y="849" class="label">PREFAB VALUE</text>
+  <text x="668" y="849" class="label">BEFORE</text>
+  <text x="872" y="849" class="label">AFTER</text>
+  <text x="68" y="884" class="metric">Max health</text><text x="668" y="884" class="value">200</text><text x="872" y="884" class="value after">250</text>
+  <text x="68" y="918" class="metric">Daze damage threshold</text><text x="668" y="918" class="value">25</text><text x="872" y="918" class="value after">30</text>
+  <text x="68" y="952" class="metric">Ground smash launch force</text><text x="668" y="952" class="value">7.5</text><text x="872" y="952" class="value after">12</text>
+  <text x="68" y="983" class="reason">Reason: let the smash complete often enough to make players move.</text>
+
+  <line x1="42" x2="1158" y1="1022" y2="1022" stroke="#c8d4e4"/>
+  <text x="42" y="1048" class="footer">Values: Git commit a5a02976 (Balancing-Brandon branch). Reasons: Enemy Balancing Documentation, pp. 1–3.</text>
+  <text x="42" y="1074" class="footer">Retrospective sheet dated by the commit. The source material does not record the playtest session date.</text>
+</svg>
