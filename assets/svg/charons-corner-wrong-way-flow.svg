@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Charon's Corner: wrong-way detection follows the road</title>
+  <desc id="desc">Ground contact identifies the road and mesh segment. Its configured spline tangent is compared with horizontal travel velocity. Speed and delay checks control the existing WrongWayCanvas. Leaving the road clears the warning.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10" fill="#f4d000"/></marker>
+  </defs>
+  <rect width="800" height="500" fill="#10051b"/>
+  <g fill="#21152e" stroke="#756b80" stroke-width="2">
+    <rect x="24" y="30" width="352" height="170" rx="6"/>
+    <rect x="424" y="30" width="352" height="170" rx="6"/>
+    <rect x="424" y="280" width="352" height="170" rx="6"/>
+    <rect x="24" y="280" width="352" height="170" rx="6"/>
+  </g>
+  <g fill="none" stroke="#f4d000" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M382 115 H412"/>
+    <path d="M600 212 V268"/>
+    <path d="M412 365 H382"/>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <g fill="#ffffff" font-size="29" font-weight="700">
+      <text x="46" y="82">1. Road contact</text>
+      <text x="446" y="82">2. Local direction</text>
+      <text x="446" y="332">3. Travel heading</text>
+      <text x="46" y="332">4. Delayed feedback</text>
+    </g>
+    <g fill="#ded7ed" font-size="22">
+      <text x="46" y="127">Ground hit identifies the road</text>
+      <text x="46" y="161">and its cooked spline segment</text>
+      <text x="446" y="127">Sample the tangent here</text>
+      <text x="446" y="161">Apply Forward / Backward</text>
+      <text x="446" y="377">Compare horizontal velocity</text>
+      <text x="446" y="411">with the local travel direction</text>
+      <text x="46" y="377">Check speed and reverse time</text>
+      <text x="46" y="411">Use the existing warning canvas</text>
+      <text x="400" y="484" text-anchor="middle">Leaving the road clears the warning.</text>
+    </g>
+  </g>
+</svg>

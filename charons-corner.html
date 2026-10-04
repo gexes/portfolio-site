@@ -6,7 +6,7 @@
     <title>Charon's Corner | Brandon Smith</title>
     <meta
       name="description"
-      content="A high-speed, bowling-inspired adventure through the afterlife. I led feature iteration and built guiding-light, checkpoint, and spline-based navigation systems."
+      content="A high-speed, bowling-inspired game. My work spans spline track layouts, checkpoint recovery, guiding-light behavior, and wrong-way feedback tied to the road beneath the player."
     />
     <meta name="theme-color" content="#0062b9" />
     <link rel="icon" type="image/png" href="./assets/png/brandon-smith-favicon.png" />
@@ -84,7 +84,7 @@
       </h1>
       <div class="project-cs-hero__info">
         <p class="text-primary">
-          A high-speed, bowling-inspired trip through the afterlife. I designed level flow and built spline, checkpoint, and direction systems that help fast traversal stay readable.
+          A high-speed, bowling-inspired trip through the afterlife. I designed level flow and built track and navigation systems, including wrong-way feedback that follows the road beneath the player.
         </p>
       </div>
       <div class="project-cs-hero__cta portfolio-actions">
@@ -96,9 +96,9 @@
         </a>
       </div>
       <figure class="case-hero-media">
-        <img src="./assets/gif/charons-corner-06.gif" alt="Charon's Corner track traversal" decoding="async">
+        <img src="./assets/gif/charons-corner-06.gif" alt="Charon's Corner gameplay montage" decoding="async">
         <figcaption>
-          The moving track shows the speed and directional clarity the level framework needed to support.
+          Gameplay montage showing the speed, obstacles, and afterlife setting that the level and navigation systems needed to support.
         </figcaption>
       </figure>
     </div>
@@ -165,7 +165,7 @@
               What I Owned
             </h3>
             <p class="project-details__desc-para">
-              I led gameplay feature iteration across design sprints, built the guiding-light mechanic and checkpoint recovery, and programmed wrong-way feedback from spline orientation. I also developed a repeatable spline-based approach to track layout.
+              I led gameplay feature iteration across design sprints, built the guiding-light mechanic and checkpoint recovery, and developed a repeatable spline-based approach to track layout. I also refactored wrong-way detection when correct travel across differently authored splines triggered false warnings.
             </p>
           </section>
           <section class="case-featured" aria-labelledby="featured-work">
@@ -191,10 +191,10 @@
               <div class="case-visual-grid">
                 <figure class="case-visual">
                   <a href="./assets/gif/charons-corner-06.gif" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/gif/charons-corner-06.gif" alt="Fast traversal along a Charon’s Corner track" loading="lazy" decoding="async">
+                    <img src="./assets/gif/charons-corner-06.gif" alt="Charon’s Corner gameplay montage showing tracks and obstacles" loading="lazy" decoding="async">
                   </a>
                   <figcaption>
-                    The traversal clip shows how the track asks the player to steer through a continuous, readable route.
+                    The gameplay montage puts steering, obstacles, and speed in context; the track layout has to remain readable while the player is moving.
                   </figcaption>
                 </figure>
                 <figure class="case-visual">
@@ -241,7 +241,7 @@
                 </figure>
               </div>
               <p class="project-details__desc-para">
-                I built layouts from cascading spline paths so slope transitions and directional flow could be shaped consistently. The framework gave level designers a starting structure, while changes in elevation and obstacles kept the path from becoming a flat “snake way.”
+                I built layouts from cascading spline paths so slope transitions and directional flow could be shaped consistently. The framework gave level designers a starting structure, while elevation changes and obstacles kept the route active. The wrong-way refactor also exposed an authoring rule: check each spline’s travel setting instead of assuming its knot order matches the course.
               </p>
             </article>
             <article class="case-story" id="checkpoint-guidance">
@@ -251,7 +251,7 @@
                 03 / Featured work
               </p>
               <h3>
-                Helping players recover and reorient
+                Making navigation feedback follow the road
               </h3>
               <p class="project-details__desc-para">
                 At this speed, a missed turn or fall can cost the player their sense of direction. I added checkpoint recovery to return the player to a known position, plus a guiding light as a moving point of interest.
@@ -262,7 +262,7 @@
                     <img src="./assets/gif/charons-corner-player-crossing-checkpoint.gif" alt="Gameplay of the player rolling through a checkpoint in a dark track section." loading="lazy" decoding="async">
                   </a>
                   <figcaption>
-                    Gameplay capture of the player crossing a checkpoint on the track.
+                    Checkpoint crossing: the player advances to the next authored recovery point.
                   </figcaption>
                 </figure>
                 <figure class="case-visual">
@@ -275,7 +275,31 @@
                 </figure>
               </div>
               <p class="project-details__desc-para">
-                The wrong-way system compares the player’s orientation with the spline direction and presents UI feedback when they face away from the objective. Together these systems support experimentation without making recovery confusing.
+                Direction testing exposed a different problem: the wrong-way warning appeared during correct travel in Level 3’s clothing section. Four splines were authored opposite to the course direction, and the detector searched nearby splines without confirming which road the player was on.
+              </p>
+              <div class="case-visual-grid">
+                <figure class="case-visual">
+                  <a href="./assets/svg/charons-corner-wrong-way-flow.svg" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/svg/charons-corner-wrong-way-flow.svg" alt="Wrong-way flow: ground contact selects the road segment, its configured tangent is compared with travel velocity, and delayed feedback controls the existing canvas." loading="lazy" decoding="async">
+                  </a>
+                  <figcaption>
+                    The revised check starts with the road beneath the player. Each segment supplies a local direction, including curves and loops.
+                  </figcaption>
+                </figure>
+                <figure class="case-visual">
+                  <a href="./assets/gif/charons-corner-level-3-clothing-track.gif" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/gif/charons-corner-level-3-clothing-track.gif" alt="Gameplay on Level 3’s clothing track as the Wrong Way warning appears during traversal." loading="lazy" decoding="async">
+                  </a>
+                  <figcaption>
+                    The existing WrongWayCanvas appears during traversal on the clothing track, showing the direction feedback in its level context.
+                  </figcaption>
+                </figure>
+              </div>
+              <p class="project-details__desc-para">
+                I corrected the four direction settings and changed detection to use the ground hit’s road and mesh segment. The player is a rolling marble, so the check compares horizontal travel velocity with that segment’s configured tangent. A Forward or Backward setting defines the route without reversing the track geometry.
+              </p>
+              <p class="project-details__desc-para">
+                I restored the UI component removed by a scene override and kept the existing warning delay. Controlled Unity play-mode checks covered correct and reverse travel on Level 3’s active roads, leaving the track, and the canvas appearing and hiding. Regression tests also covered shared road meshes, closed-loop seams, and scaled or rotated tracks; brief reversals stayed hidden.
               </p>
             </article>
           </section>
@@ -291,10 +315,10 @@
                 Guiding-light implementation
               </li>
               <li>
-                Checkpoint coordinate tracking
+                Checkpoint recovery and coordinate tracking
               </li>
               <li>
-                Wrong-way UI feedback
+                Road-contact direction detection and wrong-way UI integration
               </li>
               <li>
                 Obstacle and elevation passes
@@ -306,7 +330,7 @@
               Project takeaway
             </h2>
             <p class="project-details__desc-para">
-              Charon’s Corner made me design the track as part of the controller. The spline gave the team a repeatable construction method, but the level only worked when slope, obstacle placement, recovery, and guidance all respected the player’s speed.
+              Charon’s Corner made me treat track construction and player feedback as one design problem. A spline can generate a usable road while still pointing opposite to the intended route. The wrong-way refactor taught me to check both the authored direction and the road the player is actually on before trusting a navigation warning.
             </p>
           </section>
           <section class="case-development" aria-labelledby="development-material">
