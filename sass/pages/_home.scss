@@ -8,15 +8,16 @@
     url(../assets/svg/common-bg.svg);
   background-position: center;
 
-  height: 100vh;
+  height: 68vh;
 
-  min-height: 80rem;
-  max-height: 120rem;
+  min-height: 54rem;
+  max-height: 72rem;
   position: relative;
 
   @include respond(phone) {
-    height: unset;
+    height: auto;
     min-height: unset;
+    max-height: none;
   }
 
   &__socials {
@@ -29,17 +30,6 @@
       display: none;
     }
   }
-  &__mouse-scroll-cont {
-    position: absolute;
-    bottom: 3%;
-    left: 50%;
-    transform: translateX(-50%);
-
-    @include respond(phone) {
-      display: none;
-    }
-  }
-
   &__social {
     width: 5rem;
   }
@@ -73,7 +63,7 @@
     width: 92%;
 
     @include respond(phone) {
-      padding: 19rem 0 13rem 0;
+      padding: 12rem 0 8rem 0;
       margin: auto;
       position: static;
       transform: translate(0, 0);

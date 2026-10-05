@@ -1,7 +1,7 @@
 {
   "name": "dopefolio",
   "version": "1.0.0",
-  "description": "Brandon Smith — technical game designer portfolio",
+  "description": "Brandon Smith — game designer portfolio, systems and technical design",
   "main": "index.js",
   "scripts": {
     "compile:scss": "sass --watch --no-source-map sass/main.scss css/style.css",
