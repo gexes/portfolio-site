@@ -6,7 +6,7 @@
     <title>In the Flesh | Brandon Smith</title>
     <meta
       name="description"
-      content="A destructible voxel horror game inside a living organism. I built procedural terrain, GPU-driven rendering, omnidirectional controls, and custom level tools."
+      content="I built destructible procedural terrain, omnidirectional controls, and designer-facing level tools so players could harvest flesh, uncover organs, and open their own routes through an overgrown spaceship."
     />
     <meta name="theme-color" content="#0062b9" />
     <link rel="icon" type="image/png" href="./assets/png/brandon-smith-favicon.png" />
@@ -84,7 +84,7 @@
       </h1>
       <div class="project-cs-hero__info">
         <p class="text-primary">
-          A destructible voxel horror game inside a living organism. I made the terrain playable at scale and built editor tools so the team could shape it into levels.
+          I built destructible procedural terrain, omnidirectional controls, and designer-facing level tools so players could harvest flesh, uncover organs, and open their own routes through an overgrown spaceship.
         </p>
       </div>
       <div class="project-cs-hero__cta portfolio-actions">
@@ -94,6 +94,7 @@
         <a href="https://github.com/Gexes" class="btn btn--med btn--theme-inv" target="_blank" rel="noopener noreferrer">
           GitHub profile
         </a>
+        <a href="#technical-deep-dive" class="btn btn--med btn--theme-inv">Technical deep dive</a>
       </div>
       <figure class="case-hero-media">
         <img src="./assets/png/in-the-flesh-03.png" alt="A corridor inside the organic environment" decoding="async">
@@ -165,8 +166,13 @@
               What I Owned
             </h3>
             <p class="project-details__desc-para">
-              I built the destructible flesh terrain and its GPU and CPU update paths, developed omnidirectional controls and gathering mechanics, and made the Chunk Grid Baker workflow for authoring and baking level layouts.
+              I designed and implemented the destructible terrain workflow, developed omnidirectional controls and gathering mechanics, and made the Chunk Grid Baker tools for authoring and testing level layouts. Rendering and collision updates supported the same goal: a space the player could change through harvesting.
             </p>
+            <h3 class="case-subtitle">Design problem</h3>
+            <p class="project-details__desc-para">Harvesting was also traversal: drilling through flesh opened new routes and exposed organs that supported growth. Procedural, destructible terrain made the environment part of progression, while omnidirectional movement let players navigate the spaces they carved out.</p>
+            <h3 class="case-subtitle">Constraints</h3>
+            <p class="project-details__desc-para">An eight-person team had three months to turn dense, changing terrain into playable levels. Drilling needed timely visual and collision feedback, and designers needed a way to build, preview, and revise rooms without placing every block by hand.</p>
+
           </section>
           <section class="case-featured" aria-labelledby="featured-work">
             <span class="case-anchor" id="flesh-highlights-title" aria-hidden="true"></span>
@@ -209,37 +215,32 @@
                 </figure>
               </div>
               <p class="project-details__desc-para">
-                I kept each voxel as lightweight state for damage, scale, and visual condition, while sharing its static mesh data. The terrain can respond locally to drilling without making every block carry a full object pipeline.
+                Damage changes the terrain locally, so a drilled opening becomes a route the player can use. That ties the harvesting action to a visible change in the environment.
               </p>
             </article>
-            <article class="case-story" id="performance-pipeline">
-              <p class="case-story__index">
-                02 / Featured work
-              </p>
-              <h3>
-                Splitting the work between rendering and physics
-              </h3>
+
+            <article class="case-story" id="harvesting-and-traversal">
+              <p class="case-story__index">02 / Featured work</p>
+              <h3>Making harvesting open the way forward</h3>
               <p class="project-details__desc-para">
-                Rendering thousands of changing blocks and rebuilding their colliders at the same frequency caused two different bottlenecks. Solving one side alone would still leave drilling vulnerable to frame spikes.
+                Drilling is both a gathering action and a way through the world. Players harvest flesh, find hidden organs, and grow powerful enough to break tougher layers. Omnidirectional controls support movement through the spaces they carve out.
               </p>
-              <div class="case-visual-grid">
-                <figure class="case-visual">
-                  <a href="./assets/png/in-the-flesh-06.png" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/png/in-the-flesh-06.png" alt="Diagram of the chunk builder, renderer, mesh generator, and block data" loading="lazy" decoding="async">
+              <div class="case-video-grid">
+              <figure class="case-visual">
+                <video class="project-video" controls preload="metadata" playsinline title="Consume | Run | Evolve">
+                  <source src="./assets/videos/2bJPCLR_asw.mp4" type="video/mp4">
+                  Your browser does not support embedded video.
+                </video>
+                <figcaption>
+                  The gameplay clip shows the movement and growth loop surrounding the terrain system.
+                  <a href="https://www.youtube.com/watch?v=2bJPCLR_asw" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">
+                    Watch on YouTube
                   </a>
-                  <figcaption>
-                    The system diagram shows why block state, GPU rendering, and CPU collider work are handled separately.
-                  </figcaption>
-                </figure>
-                <figure class="case-visual">
-                  <img src="./assets/gif/in-the-flesh-UnityProfilerDuringDrilling.gif" alt="Unity Profiler during voxel drilling" loading="lazy" decoding="async">
-                  <figcaption>
-                    The profiler during drilling shows the runtime cost of the terrain update while the player breaks blocks.
-                  </figcaption>
-                </figure>
+                </figcaption>
+              </figure>
               </div>
               <p class="project-details__desc-para">
-                I moved visual instance assembly to a compute shader and indirect instancing, grouped by damage state. On the CPU, dirty chunks defer collider rebuilding to a refresh interval. Shared mesh data and unloading mined chunks keep the world state lighter.
+                I implemented the omnidirectional controls, drill gathering, and timed slider upgrade minigame. These mechanics connect movement and harvesting to progression: the route a player can take depends on what they can break and collect.
               </p>
             </article>
             <article class="case-story" id="chunk-grid-tool">
@@ -271,7 +272,7 @@
                 </figure>
               </div>
               <p class="project-details__desc-para">
-                The bake pass saves generated meshes as persistent assets and reuses matching geometry instead of writing duplicates. That lets the team iterate on room layouts in the editor and commit a reusable result for play.
+                The workflow lets a designer preview a room, revise its dimensions, and bake a reusable layout for play. I treated those authoring steps as part of the gameplay system, so testing a new space did not require a custom terrain setup.
               </p>
             </article>
           </section>
@@ -305,6 +306,53 @@
               In the Flesh taught me to treat authoring cost and runtime cost as one design problem. The destruction fantasy needed both a cheaper update path and a workflow that let someone build levels with it.
             </p>
           </section>
+          <section class="case-featured" aria-labelledby="technical-deep-dive">
+            <h2 id="technical-deep-dive" class="project-details__content-title">Technical deep dive</h2>
+            <p class="project-details__desc-para">
+              Drilling needs to change what the player sees and where they can move without overwhelming each frame. The rendering and physics pipeline supports that interaction; the baking workflow makes its terrain practical to author.
+            </p>
+            <article class="case-story" id="performance-pipeline">
+              <p class="case-story__index">
+                01 / Implementation
+              </p>
+              <h3>
+                Splitting the work between rendering and physics
+              </h3>
+              <p class="project-details__desc-para">
+                Rendering thousands of changing blocks and rebuilding their colliders at the same frequency caused two different bottlenecks. Solving one side alone would still leave drilling vulnerable to frame spikes.
+              </p>
+              <div class="case-visual-grid">
+                <figure class="case-visual">
+                  <a href="./assets/png/in-the-flesh-06.png" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/png/in-the-flesh-06.png" alt="Diagram of the chunk builder, renderer, mesh generator, and block data" loading="lazy" decoding="async">
+                  </a>
+                  <figcaption>
+                    The system diagram shows why block state, GPU rendering, and CPU collider work are handled separately.
+                  </figcaption>
+                </figure>
+                <figure class="case-visual">
+                  <img src="./assets/gif/in-the-flesh-UnityProfilerDuringDrilling.gif" alt="Unity Profiler during voxel drilling" loading="lazy" decoding="async">
+                  <figcaption>
+                    The profiler during drilling shows the runtime cost of the terrain update while the player breaks blocks.
+                  </figcaption>
+                </figure>
+              </div>
+              <p class="project-details__desc-para">
+                I moved visual instance assembly to a compute shader and indirect instancing, grouped by damage state. On the CPU, dirty chunks defer collider rebuilding to a refresh interval. Shared mesh data and unloading mined chunks keep the world state lighter.
+              </p>
+            </article>
+            <article class="case-story" id="terrain-data-and-baking">
+              <p class="case-story__index">02 / Implementation</p>
+              <h3>Sharing terrain data and baking reusable meshes</h3>
+              <p class="project-details__desc-para">I kept each voxel as lightweight state for damage, scale, and visual condition, while sharing its static mesh data. The terrain can respond locally to drilling without making every block carry a full object pipeline.</p>
+              <p class="project-details__desc-para">
+                Compute buffers carry block state and instance matrices for the GPU rendering path. Dirty flags mark changed geometry; the current mesh rebuild queue processes a limited batch in <code>LateUpdate</code>, spreading collider work across frames rather than rebuilding all changed chunks at once.
+              </p>
+              <p class="project-details__desc-para">
+                To keep layout iteration practical, the bake pass saves generated meshes as persistent assets and reuses matching geometry. Mesh hashing uses MD5 over vertices, normals, UVs, and triangle indices to identify duplicate meshes during baking.
+              </p>
+            </article>
+          </section>
           <section class="case-development" aria-labelledby="development-material">
             <h2 id="development-material" class="project-details__content-title">
               Gallery &amp; development material
@@ -322,18 +370,7 @@
                   </a>
                 </figcaption>
               </figure>
-              <figure class="case-visual">
-                <video class="project-video" controls preload="metadata" playsinline title="Consume | Run | Evolve">
-                  <source src="./assets/videos/2bJPCLR_asw.mp4" type="video/mp4">
-                  Your browser does not support embedded video.
-                </video>
-                <figcaption>
-                  The gameplay clip shows the movement and growth loop surrounding the terrain system.
-                  <a href="https://www.youtube.com/watch?v=2bJPCLR_asw" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">
-                    Watch on YouTube
-                  </a>
-                </figcaption>
-              </figure>
+
               <figure class="case-visual">
                 <video class="project-video" controls preload="metadata" playsinline title="ChunkEditor Tool">
                   <source src="./assets/videos/UOLjDz0hohY.mp4" type="video/mp4">
@@ -424,20 +461,12 @@
           </section>
           <nav class="project-pagination" aria-label="Other projects">
             <a href="./project-dreamscape.html" aria-label="Previous project: Project Dreamscape">
-              <span>
-                Previous project
-              </span>
-              <strong>
-                &larr; Project Dreamscape
-              </strong>
+              <span>Previous project</span>
+              <strong>&larr; Project Dreamscape</strong>
             </a>
-            <a href="./psycorp.html" aria-label="Next project: Psycorp">
-              <span>
-                Next project
-              </span>
-              <strong>
-                Psycorp &rarr;
-              </strong>
+            <a href="./birds-of-impalitism.html" aria-label="Next project: Birds of Impalitism">
+              <span>Next project</span>
+              <strong>Birds of Impalitism &rarr;</strong>
             </a>
           </nav>
         </div>
@@ -469,9 +498,7 @@
           <div class="main-footer__row main-footer__row-2">
             <h2 class="heading heading-sm text-lt">Brandon Smith</h2>
             <p class="main-footer__short-desc">
-              Technical game designer bridging gameplay design and software
-              engineering. Modular systems, clear player feedback, and
-              thoughtful iteration.
+              Game designer specializing in systems, gameplay, and technical design. Hands-on Unity/C# implementation, designer-facing tools, and thoughtful iteration.
             </p>
           </div>
         </div>

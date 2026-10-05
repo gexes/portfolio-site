@@ -6,7 +6,7 @@
     <title>Birds of Impalitism | Brandon Smith</title>
     <meta
       name="description"
-      content="A vaporwave-inspired momentum shooter. I designed and implemented save/load architecture, progression, and dialogue systems across multiple scenes."
+      content="I designed and implemented the save flow so player discoveries, collectibles, and progression could survive scene transitions and reloads. Birds of Impalitism is a vaporwave-inspired momentum shooter set in Palamus Mall."
     />
     <meta name="theme-color" content="#0062b9" />
     <link rel="icon" type="image/png" href="./assets/png/brandon-smith-favicon.png" />
@@ -77,14 +77,14 @@
   <section class="project-cs-hero">
     <div class="project-cs-hero__content">
       <p class="portfolio-kicker">
-        Technical Designer
+        Technical Designer / Programmer
       </p>
       <h1 class="heading-primary">
         Birds of Impalitism
       </h1>
       <div class="project-cs-hero__info">
         <p class="text-primary">
-          A vaporwave momentum shooter set in the decaying Palamus Mall. I built the save controller and progression flow for player position, collected pickups, dialogue reveals, and area tear counts.
+          I designed and implemented the save flow so player discoveries, collectibles, and progression could survive scene transitions and reloads. Birds of Impalitism is a vaporwave-inspired momentum shooter set in Palamus Mall.
         </p>
       </div>
       <div class="project-cs-hero__cta portfolio-actions">
@@ -120,7 +120,7 @@
                   Role
                 </dt>
                 <dd>
-                  Technical Designer
+                  Technical Designer / Programmer
                 </dd>
               </div>
               <div>
@@ -168,8 +168,13 @@
               What I Owned
             </h3>
             <p class="project-details__desc-para">
-              I designed and programmed the save controller and its connections to player position, pickup IDs, completed dialogue reveals, and area tear counts. I also designed the dialogue interaction flow and coordinated the technical implementation with the team. The current code uses BatteryPickupManager and TimePeriodChanger for progression; the gallery records earlier battery and goggle setups.
+              I designed the progression data model and implemented the save controller, connecting player position, pickup IDs, completed dialogue reveals, and area tear counts. I also designed the dialogue interaction flow and coordinated the technical implementation with the team. The current code uses BatteryPickupManager and TimePeriodChanger for progression; the gallery records earlier battery and goggle setups.
             </p>
+            <h3 class="case-subtitle">Design problem</h3>
+            <p class="project-details__desc-para">Players revisit areas to collect items, uncover dialogue, and unlock progression. Returning to a scene should preserve those discoveries rather than make the player repeat them. The save flow needed to reconstruct that experience, not just restore a position.</p>
+            <h3 class="case-subtitle">Constraints</h3>
+            <p class="project-details__desc-para">Scene objects are recreated on transitions, while progression managers carry state between scenes. I needed explicit ownership for pickup IDs, dialogue reveal IDs, and area counts, and a clear handoff between in-memory state and a saved snapshot.</p>
+
           </section>
           <section class="case-featured" aria-labelledby="featured-work">
             <span class="case-anchor" id="birds-highlights-title" aria-hidden="true"></span>
@@ -189,7 +194,7 @@
                 Deciding what the save file owns
               </h3>
               <p class="project-details__desc-para">
-                The save needed to remember both where the player was and what they had completed. I used one SaveData snapshot for position and yaw, collected pickup IDs, completed dialogue reveal IDs, three area tear counts, and the last entered area.
+                Because revisiting a space should preserve the player’s progress, the save needed to remember both where they were and what they had completed. I used one SaveData snapshot for position and yaw, collected pickup IDs, completed dialogue reveal IDs, three area tear counts, and the last entered area.
               </p>
               <div class="case-visual-grid">
                 <figure class="case-visual">
@@ -263,7 +268,7 @@
                 Rebuilding the world on load
               </h3>
               <p class="project-details__desc-para">
-                Loading has to apply the saved values to scene objects. BatteryPickupManager rebuilds its ID sets and resets pickups and dialogue reveals, including inactive objects. Collected ordinary pickups stay hidden, their connected objects become visible, and completed reveals restore their object visibility.
+                A successful load should make the scene match the player’s discoveries: collected items stay collected and revealed objects remain visible. BatteryPickupManager rebuilds its ID sets and resets pickups and dialogue reveals, including inactive objects. Collected ordinary pickups stay hidden, their connected objects become visible, and completed reveals restore their object visibility.
               </p>
               <div class="case-visual-grid">
                 <figure class="case-visual">
@@ -450,21 +455,13 @@
             </div>
           </section>
           <nav class="project-pagination" aria-label="Other projects">
-            <a href="./charons-corner.html" aria-label="Previous project: Charon's Corner">
-              <span>
-                Previous project
-              </span>
-              <strong>
-                &larr; Charon's Corner
-              </strong>
+            <a href="./in-the-flesh.html" aria-label="Previous project: In the Flesh">
+              <span>Previous project</span>
+              <strong>&larr; In the Flesh</strong>
             </a>
-            <a href="./project-dreamscape.html" aria-label="Next project: Project Dreamscape">
-              <span>
-                Next project
-              </span>
-              <strong>
-                Project Dreamscape &rarr;
-              </strong>
+            <a href="./psycorp.html" aria-label="Next project: Psycorp">
+              <span>Next project</span>
+              <strong>Psycorp &rarr;</strong>
             </a>
           </nav>
         </div>
@@ -496,9 +493,7 @@
           <div class="main-footer__row main-footer__row-2">
             <h2 class="heading heading-sm text-lt">Brandon Smith</h2>
             <p class="main-footer__short-desc">
-              Technical game designer bridging gameplay design and software
-              engineering. Modular systems, clear player feedback, and
-              thoughtful iteration.
+              Game designer specializing in systems, gameplay, and technical design. Hands-on Unity/C# implementation, designer-facing tools, and thoughtful iteration.
             </p>
           </div>
         </div>

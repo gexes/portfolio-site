@@ -79,8 +79,16 @@ section[id] {
 .projects__row-content > .portfolio-kicker {
   display: none;
 }
-.home-hero {
-  display: none;
+.home-hero__specialization {
+  margin-top: 1.5rem;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.home-hero__cta .btn--theme-inv {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
 }
 .projects {
   padding-top: 8rem;
@@ -129,6 +137,16 @@ section[id] {
   flex-wrap: wrap;
   gap: 1.5rem 2.5rem;
   align-items: center;
+}
+.project-card-link--disabled {
+  background: #69656f;
+  color: #e3e0e6;
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+.project-card-link--disabled:hover {
+  transform: none;
 }
 .prototype-index {
   min-height: 100vh;
