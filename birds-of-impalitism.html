@@ -88,18 +88,16 @@
         </p>
       </div>
       <div class="project-cs-hero__cta portfolio-actions">
-        <a href="https://glikgames.itch.io/birds-of-impalatism" class="btn btn--med btn--theme" target="_blank" rel="noopener noreferrer">
-          Play on itch.io
+        <a href="https://store.steampowered.com/app/4736240/Birds_of_Impalatism/" class="btn btn--med btn--theme" target="_blank" rel="noopener noreferrer">
+          Play on Steam
         </a>
-        <a href="https://github.com/Gexes" class="btn btn--med btn--theme-inv" target="_blank" rel="noopener noreferrer">
-          GitHub profile
-        </a>
-        <a href="./assets/documents/birds-of-impalitism-design.pdf" class="btn btn--med btn--theme-inv" target="_blank" rel="noopener noreferrer">
-          Save design document
-        </a>
+              <a href="https://glikgames.itch.io/birds-of-impalatism" class="btn btn--med btn--theme" target="_blank" rel="noopener noreferrer">Play on itch.io</a>
       </div>
+      <nav class="case-reading" aria-label="Case study reading links"><a href="#save-architecture">Save system</a> <a href="./assets/documents/birds-of-impalitism-design.pdf">Save system design (PDF)</a></nav>
       <figure class="case-hero-media">
-        <img src="./assets/gif/birds-of-impalitism-08.gif" alt="Birds of Impalitism gameplay in Palamus Mall" decoding="async">
+        <button type="button" class="image-preview" aria-haspopup="dialog">
+                    <img src="./assets/gif/birds-of-impalitism-08.gif" alt="Birds of Impalitism gameplay in Palamus Mall" decoding="async">
+                  </button>
         <figcaption>
           Gameplay footage shows the world whose collected items and progression need to survive a reload.
         </figcaption>
@@ -197,18 +195,11 @@
                 Because revisiting a space should preserve the player’s progress, the save needed to remember both where they were and what they had completed. I used one SaveData snapshot for position and yaw, collected pickup IDs, completed dialogue reveal IDs, three area tear counts, and the last entered area.
               </p>
               <div class="case-visual-grid">
-                <figure class="case-visual">
-                  <a href="./assets/png/birds-of-impalitism-13.png" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/png/birds-of-impalitism-13.png" alt="Unity Save Game Controller inspector showing references to world and battery managers" loading="lazy" decoding="async">
-                  </a>
-                  <figcaption>
-                    An earlier controller setup shows the manager references used during development. The diagram below follows the current scripts.
-                  </figcaption>
-                </figure>
+
                 <figure class="case-visual" style="grid-column: 1 / -1;">
-                  <a href="./assets/svg/birds-of-impalitism-save-flow.svg" target="_blank" rel="noopener noreferrer" aria-label="Open the save system diagram at full size">
+                  <button type="button" class="image-preview" aria-haspopup="dialog" data-full-src="./assets/svg/birds-of-impalitism-save-flow.svg">
                     <img src="./assets/png/birds-of-impalitism-save-flow.png" alt="Save flow: player transform, pickup and dialogue IDs, and area tear counts feed SaveGameController and SaveData, then SaveSystem writes save.json. Explicit or queued loading restores the player, object visibility, and area UI. batteryCharge is unused; worldFlags is an unsupported dictionary." width="2400" height="1995" style="height: auto; aspect-ratio: auto; background: #fff;" loading="lazy" decoding="async">
-                  </a>
+                  </button>
                   <figcaption>
                     The current save path, exact data fields, and restoration targets. WorldStateManager exposes a flags API, but its dictionary is not serialized by Unity 2022.3 JsonUtility. Open the diagram to inspect it at full size.
                   </figcaption>
@@ -229,26 +220,12 @@
                 A collected pickup or completed dialogue reveal needs to stay completed when the player leaves an area. The controller and managers persist between scenes, while newly created scene objects read their completion IDs from BatteryPickupManager.
               </p>
               <div class="case-visual-grid">
+
+
                 <figure class="case-visual">
-                  <a href="./assets/png/birds-of-impalitism-11.png" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/png/birds-of-impalitism-11.png" alt="Unity Goggle Chunk Manager inspector" loading="lazy" decoding="async">
-                  </a>
-                  <figcaption>
-                    An earlier goggle chunk manager inspector. The current scripts use completed reveal IDs and area tear counts; this image records the former setup.
-                  </figcaption>
-                </figure>
-                <figure class="case-visual">
-                  <a href="./assets/png/birds-of-impalitism-12.png" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/png/birds-of-impalitism-12.png" alt="Unity Battery Pickup inspector" loading="lazy" decoding="async">
-                  </a>
-                  <figcaption>
-                    An earlier pickup inspector shows the ID-based setup. The current BatteryPickup records its pickupID, reveals connected objects, and increments its area's tear count.
-                  </figcaption>
-                </figure>
-                <figure class="case-visual">
-                  <a href="./assets/gif/birds-of-impalitism-tear-counter.gif" target="_blank" rel="noopener noreferrer">
+                  <button type="button" class="image-preview" aria-haspopup="dialog">
                     <img src="./assets/gif/birds-of-impalitism-tear-counter.gif" alt="First-person gameplay with the area tear counter and collection objective displayed in the HUD." loading="lazy" decoding="async">
-                  </a>
+                  </button>
                   <figcaption>
                     Gameplay capture of the area tear counter and collection objective. The HUD shows progress toward the level exit.
                   </figcaption>
@@ -270,32 +247,9 @@
               <p class="project-details__desc-para">
                 A successful load should make the scene match the player’s discoveries: collected items stay collected and revealed objects remain visible. BatteryPickupManager rebuilds its ID sets and resets pickups and dialogue reveals, including inactive objects. Collected ordinary pickups stay hidden, their connected objects become visible, and completed reveals restore their object visibility.
               </p>
-              <div class="case-visual-grid">
-                <figure class="case-visual">
-                  <a href="./assets/png/birds-of-impalitism-14.png" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/png/birds-of-impalitism-14.png" alt="Unity World State Manager inspector" loading="lazy" decoding="async">
-                  </a>
-                  <figcaption>
-                    WorldStateManager provides a boolean flags API. The current JSON serializer does not support its dictionary, so the code does not persist those flags to disk.
-                  </figcaption>
-                </figure>
-                <figure class="case-visual">
-                  <a href="./assets/png/birds-of-impalitism-15.png" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/png/birds-of-impalitism-15.png" alt="Earlier code view of the save and restoration logic" loading="lazy" decoding="async">
-                  </a>
-                  <figcaption>
-                    An earlier code view from development. The revised document describes the current load sequence and its reference and file checks.
-                  </figcaption>
-                </figure>
-                <figure class="case-visual">
-                  <a href="./assets/gif/Birds-of-impalitism-collecting-pickup.gif" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/gif/Birds-of-impalitism-collecting-pickup.gif" alt="First-person gameplay showing the player approach a battery pickup, with the in-game HUD visible." loading="lazy" decoding="async">
-                  </a>
-                  <figcaption>
-                    In-game pickup capture. The battery pickup and HUD are visible as the player moves through the area.
-                  </figcaption>
-                </figure>
-              </div>
+              <figure class="case-visual"><button type="button" class="image-preview" aria-haspopup="dialog">
+                    <img src="./assets/gif/birds-of-impalitism-worldstate-saving.gif" alt="Gameplay, pause menu, title screen and return to the same area" loading="lazy" decoding="async">
+                  </button><figcaption>Watch the counter at the upper right. It rises from 0/3 to 1/3. After the player returns through the title menu, the area still shows 1/3.</figcaption></figure>
               <p class="project-details__desc-para">
                 LoadGame also restores player position and yaw with CharacterController temporarily disabled, then reloads the area counts and updates the last area's UI. The code checks for a missing file or player; the design document records the remaining limits, including dictionary serialization and malformed-save handling.
               </p>
@@ -349,85 +303,6 @@
                 </figcaption>
               </figure>
             </div>
-            <details class="case-archive">
-              <summary>
-                Open the development image gallery (9 items)
-              </summary>
-              <div class="project-gallery">
-                <figure class="case-visual">
-                  <a href="./assets/gif/birds-of-impalitism-01.gif" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/gif/birds-of-impalitism-01.gif" alt="A menu interaction shows the entry point to the player’s saved run." loading="lazy" decoding="async">
-                  </a>
-                  <figcaption>
-                    A menu interaction shows the entry point to the player’s saved run.
-                  </figcaption>
-                </figure>
-                <figure class="case-visual">
-                  <a href="./assets/png/birds-of-impalitism-02.png" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/png/birds-of-impalitism-02.png" alt="The colorful mall environment shows the world being persisted." loading="lazy" decoding="async">
-                  </a>
-                  <figcaption>
-                    The colorful mall environment shows the world being persisted.
-                  </figcaption>
-                </figure>
-                <figure class="case-visual">
-                  <a href="./assets/png/birds-of-impalitism-03.png" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/png/birds-of-impalitism-03.png" alt="A different mall area shows why progression spans multiple spaces." loading="lazy" decoding="async">
-                  </a>
-                  <figcaption>
-                    A different mall area shows why progression spans multiple spaces.
-                  </figcaption>
-                </figure>
-                <figure class="case-visual">
-                  <a href="./assets/png/birds-of-impalitism-04.png" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/png/birds-of-impalitism-04.png" alt="The arcade view shows the gameplay context for collectibles and flags." loading="lazy" decoding="async">
-                  </a>
-                  <figcaption>
-                    The arcade view shows the gameplay context for collectibles and flags.
-                  </figcaption>
-                </figure>
-                <figure class="case-visual">
-                  <a href="./assets/png/birds-of-impalitism-05.png" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/png/birds-of-impalitism-05.png" alt="An interaction prompt shows the narrative flow that also needs saved progress." loading="lazy" decoding="async">
-                  </a>
-                  <figcaption>
-                    An interaction prompt shows the narrative flow that also needs saved progress.
-                  </figcaption>
-                </figure>
-                <figure class="case-visual">
-                  <a href="./assets/png/birds-of-impalitism-06.png" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/png/birds-of-impalitism-06.png" alt="A completed screen shows a progression result the player can reach." loading="lazy" decoding="async">
-                  </a>
-                  <figcaption>
-                    A completed screen shows a progression result the player can reach.
-                  </figcaption>
-                </figure>
-                <figure class="case-visual">
-                  <a href="./assets/png/birds-of-impalitism-07.png" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/png/birds-of-impalitism-07.png" alt="Another mall location shows the variety of scene state to restore." loading="lazy" decoding="async">
-                  </a>
-                  <figcaption>
-                    Another mall location shows the variety of scene state to restore.
-                  </figcaption>
-                </figure>
-                <figure class="case-visual">
-                  <a href="./assets/gif/birds-of-impalitism-09.gif" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/gif/birds-of-impalitism-09.gif" alt="The pause menu exposes the save and load actions to the player." loading="lazy" decoding="async">
-                  </a>
-                  <figcaption>
-                    The pause menu exposes the save and load actions to the player.
-                  </figcaption>
-                </figure>
-                <figure class="case-visual">
-                  <a href="./assets/gif/birds-of-impalitism-10.gif" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/gif/birds-of-impalitism-10.gif" alt="The menu flow shows a second save/load interaction state." loading="lazy" decoding="async">
-                  </a>
-                  <figcaption>
-                    The menu flow shows a second save/load interaction state.
-                  </figcaption>
-                </figure>
-              </div>
-            </details>
           </section>
           <section class="case-docs" aria-labelledby="documentation">
             <h2 id="documentation" class="project-details__content-title">
@@ -436,19 +311,14 @@
             <p class="project-details__desc-para">
               The design document details the data model and the scene-to-save relationships behind the selected examples.
               <a href="./assets/documents/birds-of-impalitism-design.pdf" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">
-                Save system design document
+                Read the save system design (PDF)
               </a>
             </p>
             <div class="case-link-list">
-              <a href="https://glikgames.itch.io/birds-of-impalatism" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">
-                Play on itch.io
+              <a href="https://store.steampowered.com/app/4736240/Birds_of_Impalatism/" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">
+                Play on Steam
               </a>
-              <a href="https://github.com/Gexes" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">
-                GitHub profile
-              </a>
-              <a href="./assets/documents/birds-of-impalitism-design.pdf" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">
-                Save design document
-              </a>
+              <a href="https://glikgames.itch.io/birds-of-impalatism" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">Play on itch.io</a>
               <a href="./index.html#projects" class="portfolio-text-link">
                 All projects
               </a>
@@ -498,13 +368,7 @@
           </div>
         </div>
         <div class="main-footer__lower">
-          &copy; 2026 Brandon Smith. Template by
-          <a
-            href="https://rammaheshwari.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Ram Maheshwari</a
-          >.
+          &copy; 2026 Brandon Smith.
         </div>
       </div>
     </footer>

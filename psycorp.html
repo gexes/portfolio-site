@@ -91,12 +91,12 @@
         <a href="https://store.steampowered.com/app/4537570/PSYCORP/" class="btn btn--med btn--theme" target="_blank" rel="noopener noreferrer">
           View on Steam
         </a>
-        <a href="https://github.com/Gexes" class="btn btn--med btn--theme-inv" target="_blank" rel="noopener noreferrer">
-          GitHub profile
-        </a>
       </div>
+      <nav class="case-reading" aria-label="Case study reading links"><a href="#narrative-staging">Dialogue staging</a></nav>
       <figure class="case-hero-media">
-        <img src="./assets/png/psycorp-01.png" alt="Psycorp project artwork" decoding="async">
+        <button type="button" class="image-preview" aria-haspopup="dialog">
+                    <img src="./assets/png/psycorp-01.png" alt="Psycorp project artwork" decoding="async">
+                  </button>
         <figcaption>
           Project artwork sets the tone for the narrative game that these authoring and state systems support.
         </figcaption>
@@ -189,19 +189,8 @@
                 As more dialogue moments and actors were added, setting up each scene by hand made missing references easy to overlook. A scene could work in isolation and still be hard for another designer to repeat.
               </p>
               <div class="case-visual-grid">
-                <figure class="case-visual">
-                  <div class="project-gif-placeholder" role="img" aria-label="GIF to capture: In the Unity editor, start with an empty Glikit actor definition, assign a prefab and stable ID, add a camera anchor and dialogue event, then trigger that actor through Yarn in play mode.">
-                    <span>
-                      GIF to capture
-                    </span>
-                    <strong>
-                      In the Unity editor, start with an empty Glikit actor definition, assign a prefab and stable ID, add a camera anchor and dialogue event, then trigger that actor through Yarn in play mode.
-                    </strong>
-                  </div>
-                  <figcaption>
-                    This capture should show the full handoff from designer input to a working runtime scene.
-                  </figcaption>
-                </figure>
+                <figure class="case-visual code-example"><strong>ActorDefinition.cs</strong><pre><code>public string actorId;
+public GameObject prefab;</code></pre><figcaption>A designer pairs an actor ID with its prefab. Dialogue and camera commands can use that ID wherever the actor appears.</figcaption></figure>
               </div>
               <p class="project-details__desc-para">
                 I built Glikit around reusable definitions and validation for actors, flags, objectives, sequencers, camera setups, and Yarn nodes. The point was to catch setup problems while authoring and make the same workflow usable across scenes.
@@ -222,32 +211,9 @@
                 Dialogue had to do more than display lines. It needed to stage actors, change shots, and update objectives without every Yarn command reaching into a different scene object.
               </p>
               <div class="case-visual-grid">
-                <figure class="case-visual">
-                  <div class="project-gif-placeholder" role="img" aria-label="SCREENSHOT to capture: Show a short Yarn node with actor, camera, and objective commands beside the matching Glikit definitions or Unity inspector fields.">
-                    <span>
-                      SCREENSHOT to capture
-                    </span>
-                    <strong>
-                      Show a short Yarn node with actor, camera, and objective commands beside the matching Glikit definitions or Unity inspector fields.
-                    </strong>
-                  </div>
-                  <figcaption>
-                    The paired views should make the authoring contract between Yarn and Unity readable.
-                  </figcaption>
-                </figure>
-                <figure class="case-visual">
-                  <div class="project-gif-placeholder" role="img" aria-label="GIF to capture: Record one dialogue sequence spawning or staging an actor, switching to an authored camera shot, updating an objective, then returning to the gameplay camera.">
-                    <span>
-                      GIF to capture
-                    </span>
-                    <strong>
-                      Record one dialogue sequence spawning or staging an actor, switching to an authored camera shot, updating an objective, then returning to the gameplay camera.
-                    </strong>
-                  </div>
-                  <figcaption>
-                    The runtime capture should prove that narrative commands affect several systems in one sequence.
-                  </figcaption>
-                </figure>
+                <figure class="case-visual code-example"><strong>DollyExamples.yarn</strong><pre><code>&lt;&lt;cam_actor_anchor "DollyCameraExampleActor" "elevator_reveal" true&gt;&gt;
+&lt;&lt;cam_gameplay&gt;&gt;</code></pre><figcaption>This Yarn example selects the elevator reveal shot by actor and anchor name. The final argument waits for camera travel before the next command hands control back.</figcaption></figure>
+
               </div>
               <p class="project-details__desc-para">
                 I used stable actor IDs, scene configurations, camera anchors, and runtime coordinators to connect Yarn commands to game services. That made an authored sequence capable of changing the scene while keeping the staging rules in one pipeline.
@@ -278,18 +244,14 @@
                 Saving a narrative game is more than remembering the player position. A loaded scene also needs the right flags, objectives, actors, objects, and camera state, without firing earlier events again.
               </p>
               <div class="case-visual-grid">
-                <figure class="case-visual">
-                  <div class="project-gif-placeholder" role="img" aria-label="GIF to capture: Save after a dialogue choice changes a flag and objective, return to the main menu, load that slot, and show the actor, objective, and camera state restored without replaying the dialogue.">
-                    <span>
-                      GIF to capture
-                    </span>
-                    <strong>
-                      Save after a dialogue choice changes a flag and objective, return to the main menu, load that slot, and show the actor, objective, and camera state restored without replaying the dialogue.
-                    </strong>
-                  </div>
-                  <figcaption>
-                    This capture should show the save data rebuilding the scene, not only returning the player to a location.
-                  </figcaption>
+                <figure class="case-visual code-example">
+                  <strong>SaveManager.LoadFromSlot</strong>
+                  <ol>
+                    <li>Read the selected slot into a pending load.</li>
+                    <li>Match the pending data to the active scene.</li>
+                    <li>Apply saved gameplay state through the scene handler. A slot without gameplay state keeps the authored setup.</li>
+                  </ol>
+                  <figcaption>The scene check matters when loading from a menu. A valid save belongs to a particular scene, and the objects that receive it must be available.</figcaption>
                 </figure>
               </div>
               <p class="project-details__desc-para">
@@ -337,9 +299,9 @@
               </summary>
               <div class="project-gallery">
                 <figure class="case-visual">
-                  <a href="./assets/png/psycorp-01.png" target="_blank" rel="noopener noreferrer">
+                  <button type="button" class="image-preview" aria-haspopup="dialog">
                     <img src="./assets/png/psycorp-01.png" alt="Project artwork establishes the narrative world supported by the Glikit authoring pipeline." loading="lazy" decoding="async">
-                  </a>
+                  </button>
                   <figcaption>
                     Project artwork establishes the narrative world supported by the Glikit authoring pipeline.
                   </figcaption>
@@ -357,9 +319,6 @@
             <div class="case-link-list">
               <a href="https://store.steampowered.com/app/4537570/PSYCORP/" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">
                 View on Steam
-              </a>
-              <a href="https://github.com/Gexes" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">
-                GitHub profile
               </a>
               <a href="./index.html#projects" class="portfolio-text-link">
                 All projects
@@ -410,13 +369,7 @@
           </div>
         </div>
         <div class="main-footer__lower">
-          &copy; 2026 Brandon Smith. Template by
-          <a
-            href="https://rammaheshwari.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Ram Maheshwari</a
-          >.
+          &copy; 2026 Brandon Smith.
         </div>
       </div>
     </footer>

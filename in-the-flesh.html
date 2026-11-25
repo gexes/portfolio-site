@@ -91,13 +91,12 @@
         <a href="https://glikgames.itch.io/in-the-flesh" class="btn btn--med btn--theme" target="_blank" rel="noopener noreferrer">
           Play on itch.io
         </a>
-        <a href="https://github.com/Gexes" class="btn btn--med btn--theme-inv" target="_blank" rel="noopener noreferrer">
-          GitHub profile
-        </a>
-        <a href="#technical-deep-dive" class="btn btn--med btn--theme-inv">Technical deep dive</a>
       </div>
+      <nav class="case-reading" aria-label="Case study reading links"><a href="#technical-deep-dive">Technical deep dive</a></nav>
       <figure class="case-hero-media">
-        <img src="./assets/png/in-the-flesh-03.png" alt="A corridor inside the organic environment" decoding="async">
+        <button type="button" class="image-preview" aria-haspopup="dialog">
+                    <img src="./assets/png/in-the-flesh-03.png" alt="A corridor inside the organic environment" decoding="async">
+                  </button>
         <figcaption>
           A finished environment shows the density and visual target the voxel system had to support.
         </figcaption>
@@ -194,6 +193,13 @@
               <p class="project-details__desc-para">
                 The design asked players to drill through flesh, uncover organs, and open new routes as their jaws grew. A dense field of individual blocks made that interaction possible, but treating every block like a regular scene object was too expensive.
               </p>
+              <div class="voxel-stages"><figure class="case-visual"><button type="button" class="image-preview" aria-haspopup="dialog">
+                    <img src="./assets/jpeg/voxel-iteration-4.jpg" alt="A single red chunk contains the first small cut. The surrounding wall stays intact." loading="lazy" decoding="async">
+                  </button><figcaption><strong>Iteration 1 · 0:04</strong><br>A single red chunk contains the first small cut. The surrounding wall stays intact.</figcaption></figure><figure class="case-visual"><button type="button" class="image-preview" aria-haspopup="dialog">
+                    <img src="./assets/jpeg/voxel-iteration-18.jpg" alt="One drill action removes several blocks, opening a cavity wider than a single voxel." loading="lazy" decoding="async">
+                  </button><figcaption><strong>Iteration 3 · 0:18</strong><br>One drill action removes several blocks, opening a cavity wider than a single voxel.</figcaption></figure><figure class="case-visual"><button type="button" class="image-preview" aria-haspopup="dialog">
+                    <img src="./assets/jpeg/voxel-iteration-46.jpg" alt="Rounded cells and a shrinking animation give the cut surface the appearance of tissue." loading="lazy" decoding="async">
+                  </button><figcaption><strong>Iteration 7 · 0:46</strong><br>Rounded cells and a shrinking animation give the cut surface the appearance of tissue.</figcaption></figure></div>
               <div class="case-visual-grid">
                 <figure class="case-visual">
                   <video class="project-video" controls preload="metadata" playsinline title="Iteration of Procedural Generation">
@@ -208,7 +214,9 @@
                   </figcaption>
                 </figure>
                 <figure class="case-visual">
-                  <img src="./assets/gif/in-the-flesh-drillingthrough.gif" alt="Player drilling through destructible flesh voxels" loading="lazy" decoding="async">
+                  <button type="button" class="image-preview" aria-haspopup="dialog">
+                    <img src="./assets/gif/in-the-flesh-drillingthrough.gif" alt="Player drilling through destructible flesh voxels" loading="lazy" decoding="async">
+                  </button>
                   <figcaption>
                     Drilling through the voxel wall shows the core interaction and how damage opens a route through the environment.
                   </figcaption>
@@ -255,17 +263,17 @@
               </p>
               <div class="case-visual-grid">
                 <figure class="case-visual">
-                  <a href="./assets/png/in-the-flesh-07.png" target="_blank" rel="noopener noreferrer">
+                  <button type="button" class="image-preview" aria-haspopup="dialog" data-full-src="./assets/png/in-the-flesh-07.png">
                     <img src="./assets/png/in-the-flesh-07.png" alt="Unity Chunk Grid Builder inspector and grid preview" loading="lazy" decoding="async">
-                  </a>
+                  </button>
                   <figcaption>
                     The live grid preview and inspector controls show how a designer sets dimensions before committing terrain.
                   </figcaption>
                 </figure>
                 <figure class="case-visual">
-                  <a href="./assets/png/in-the-flesh-09.png" target="_blank" rel="noopener noreferrer">
+                  <button type="button" class="image-preview" aria-haspopup="dialog" data-full-src="./assets/png/in-the-flesh-09.png">
                     <img src="./assets/png/in-the-flesh-09.png" alt="Committed chunk grid in the Unity editor" loading="lazy" decoding="async">
-                  </a>
+                  </button>
                   <figcaption>
                     The committed grid shows the authored layout produced by the editor workflow.
                   </figcaption>
@@ -323,15 +331,17 @@
               </p>
               <div class="case-visual-grid">
                 <figure class="case-visual">
-                  <a href="./assets/png/in-the-flesh-06.png" target="_blank" rel="noopener noreferrer">
+                  <button type="button" class="image-preview" aria-haspopup="dialog" data-full-src="./assets/png/in-the-flesh-06.png">
                     <img src="./assets/png/in-the-flesh-06.png" alt="Diagram of the chunk builder, renderer, mesh generator, and block data" loading="lazy" decoding="async">
-                  </a>
+                  </button>
                   <figcaption>
                     The system diagram shows why block state, GPU rendering, and CPU collider work are handled separately.
                   </figcaption>
                 </figure>
                 <figure class="case-visual">
-                  <img src="./assets/gif/in-the-flesh-UnityProfilerDuringDrilling.gif" alt="Unity Profiler during voxel drilling" loading="lazy" decoding="async">
+                  <button type="button" class="image-preview" aria-haspopup="dialog">
+                    <img src="./assets/gif/in-the-flesh-UnityProfilerDuringDrilling.gif" alt="Unity Profiler during voxel drilling" loading="lazy" decoding="async">
+                  </button>
                   <figcaption>
                     The profiler during drilling shows the runtime cost of the terrain update while the player breaks blocks.
                   </figcaption>
@@ -390,49 +400,49 @@
               </summary>
               <div class="project-gallery">
                 <figure class="case-visual">
-                  <a href="./assets/png/in-the-flesh-01.png" target="_blank" rel="noopener noreferrer">
+                  <button type="button" class="image-preview" aria-haspopup="dialog">
                     <img src="./assets/png/in-the-flesh-01.png" alt="Title artwork establishes the horror tone." loading="lazy" decoding="async">
-                  </a>
+                  </button>
                   <figcaption>
                     Title artwork establishes the horror tone.
                   </figcaption>
                 </figure>
                 <figure class="case-visual">
-                  <a href="./assets/png/in-the-flesh-02.png" target="_blank" rel="noopener noreferrer">
+                  <button type="button" class="image-preview" aria-haspopup="dialog">
                     <img src="./assets/png/in-the-flesh-02.png" alt="A ship corridor shows the spaces the player explores between destructible areas." loading="lazy" decoding="async">
-                  </a>
+                  </button>
                   <figcaption>
                     A ship corridor shows the spaces the player explores between destructible areas.
                   </figcaption>
                 </figure>
                 <figure class="case-visual">
-                  <a href="./assets/png/in-the-flesh-04.png" target="_blank" rel="noopener noreferrer">
+                  <button type="button" class="image-preview" aria-haspopup="dialog">
                     <img src="./assets/png/in-the-flesh-04.png" alt="The organic interior shows the visual density the renderer supports." loading="lazy" decoding="async">
-                  </a>
+                  </button>
                   <figcaption>
                     The organic interior shows the visual density the renderer supports.
                   </figcaption>
                 </figure>
                 <figure class="case-visual">
-                  <a href="./assets/png/in-the-flesh-05.png" target="_blank" rel="noopener noreferrer">
+                  <button type="button" class="image-preview" aria-haspopup="dialog">
                     <img src="./assets/png/in-the-flesh-05.png" alt="An organ is the reward that gives digging a gameplay purpose." loading="lazy" decoding="async">
-                  </a>
+                  </button>
                   <figcaption>
                     An organ is the reward that gives digging a gameplay purpose.
                   </figcaption>
                 </figure>
                 <figure class="case-visual">
-                  <a href="./assets/png/in-the-flesh-08.png" target="_blank" rel="noopener noreferrer">
+                  <button type="button" class="image-preview" aria-haspopup="dialog" data-full-src="./assets/png/in-the-flesh-08.png">
                     <img src="./assets/png/in-the-flesh-08.png" alt="A close inspector view shows the grid preview and bake controls." loading="lazy" decoding="async">
-                  </a>
+                  </button>
                   <figcaption>
                     A close inspector view shows the grid preview and bake controls.
                   </figcaption>
                 </figure>
                 <figure class="case-visual">
-                  <a href="./assets/gif/in-the-flesh-preview.gif" target="_blank" rel="noopener noreferrer">
+                  <button type="button" class="image-preview" aria-haspopup="dialog">
                     <img src="./assets/gif/in-the-flesh-preview.gif" alt="The project preview introduces the look and tone of the game." loading="lazy" decoding="async">
-                  </a>
+                  </button>
                   <figcaption>
                     The project preview introduces the look and tone of the game.
                   </figcaption>
@@ -450,9 +460,6 @@
             <div class="case-link-list">
               <a href="https://glikgames.itch.io/in-the-flesh" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">
                 Play on itch.io
-              </a>
-              <a href="https://github.com/Gexes" class="portfolio-text-link" target="_blank" rel="noopener noreferrer">
-                GitHub profile
               </a>
               <a href="./index.html#projects" class="portfolio-text-link">
                 All projects
@@ -503,13 +510,7 @@
           </div>
         </div>
         <div class="main-footer__lower">
-          &copy; 2026 Brandon Smith. Template by
-          <a
-            href="https://rammaheshwari.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Ram Maheshwari</a
-          >.
+          &copy; 2026 Brandon Smith.
         </div>
       </div>
     </footer>
