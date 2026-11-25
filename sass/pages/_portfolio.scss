@@ -1,4 +1,4 @@
-// Game portfolio additions retain the original Dopefolio layout and palette.
+// Game portfolio layout and styling.
 :focus-visible {
   outline: 3px solid #0062b9;
   outline-offset: 5px;
@@ -944,4 +944,97 @@ section[id] {
     animation: none !important;
     transition: none !important;
   }
+}
+
+.case-reading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 2rem;
+  margin: 2rem 0;
+  font-size: 1.8rem;
+  a { text-decoration: underline; }
+}
+
+.voxel-stages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  gap: 2rem;
+  margin-block: 3rem;
+  img { aspect-ratio: 16 / 9; }
+}
+
+.track-study {
+  position: relative;
+  img { aspect-ratio: auto; }
+  span {
+    position: absolute;
+    color: #160b21;
+    background: #ffe25d;
+    border: 2px solid #20152b;
+    border-radius: 50%;
+    width: 2.6rem;
+    height: 2.6rem;
+    display: grid;
+    place-items: center;
+    font: bold 1.5rem/1 sans-serif;
+    transform: translate(-50%, -100%);
+  }
+  &__path { left: 27%; top: 28%; }
+  &__edge { left: 38%; top: 62%; }
+}
+
+.code-example {
+  background: #20152b;
+  color: #faf5ff;
+  padding: 2rem;
+  font-size: 1.7rem;
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; margin: 1rem 0; }
+}
+
+.image-preview {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.media-viewer {
+  margin: auto;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  overflow: visible;
+  max-width: none;
+  max-height: none;
+
+  &::backdrop { background: rgba(34, 22, 45, .38); }
+
+  &__picture {
+    position: relative;
+    width: min(96vw, calc(90dvh * var(--ratio)));
+    img { display: block; width: 100%; height: auto; }
+  }
+
+  &__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    padding: .5rem 1rem;
+    opacity: 0;
+    pointer-events: none;
+    &:focus-visible { opacity: 1; pointer-events: auto; }
+  }
+}
+
+.media-viewer__picture { cursor: pointer; }
+.media-viewer.is-zoomed {
+  max-width: 96vw;
+  max-height: 90dvh;
+  overflow: auto;
+  .media-viewer__picture { width: max(150vw, 100rem); cursor: pointer; }
 }
